@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "woodnfungus:palm_log",
+    "woodnfungus:stripped_palm_log",
+    "woodnfungus:palm_core_log",
+    "woodnfungus:palm_wood",
+    "woodnfungus:stripped_palm_wood",
+    "woodnfungus:palm_core_wood",
+    "woodnfungus:boulderbark_log",
+    "woodnfungus:boulderbark_wood",
+    "woodnfungus:stripped_boulderbark_log",
+    "woodnfungus:stripped_boulderbark_wood"
+  ]
+}

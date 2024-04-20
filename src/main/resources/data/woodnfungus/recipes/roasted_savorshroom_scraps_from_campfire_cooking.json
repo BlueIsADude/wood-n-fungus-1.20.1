@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "tag": "woodnfungus:small_savorshroom_cookable"
+  },
+  "result": "woodnfungus:roasted_savorshroom_scraps"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "woodnfungus:block/palm_core_log_top",
+    "side": "woodnfungus:block/palm_core_log"
+  }
+}

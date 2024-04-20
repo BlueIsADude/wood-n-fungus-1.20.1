@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "woodnfungus:block/savorshroom_planks",
+    "side": "woodnfungus:block/savorshroom_planks",
+    "top": "woodnfungus:block/savorshroom_planks"
+  }
+}

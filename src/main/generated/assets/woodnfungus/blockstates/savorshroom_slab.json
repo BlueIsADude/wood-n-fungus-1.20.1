@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "woodnfungus:block/savorshroom_slab"
+    },
+    "type=double": {
+      "model": "woodnfungus:block/savorshroom_planks"
+    },
+    "type=top": {
+      "model": "woodnfungus:block/savorshroom_slab_top"
+    }
+  }
+}

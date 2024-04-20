@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "woodnfungus",
+	"version": "${version}",
+	"name": "Wood n' Fungus",
+	"description": "A mod all about trees and giant mushrooms!",
+	"authors": [
+		"BlueTheDude"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/woodnfungus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bluethedude.woodnfungus.WoodNFungus"
+		],
+		"client": [
+			"net.bluethedude.woodnfungus.WoodNFungusClient"
+		],
+		"fabric-datagen": [
+			"net.bluethedude.woodnfungus.WoodNFungusDataGenerator"
+		]
+	},
+	"mixins": [
+		"woodnfungus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

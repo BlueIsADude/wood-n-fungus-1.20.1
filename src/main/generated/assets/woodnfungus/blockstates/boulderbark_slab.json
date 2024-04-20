@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "woodnfungus:block/boulderbark_slab"
+    },
+    "type=double": {
+      "model": "woodnfungus:block/boulderbark_planks"
+    },
+    "type=top": {
+      "model": "woodnfungus:block/boulderbark_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "woodnfungus:block/palm_planks",
+    "side": "woodnfungus:block/palm_planks",
+    "top": "woodnfungus:block/palm_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "woodnfungus:block/boulderbark_log",
+    "side": "woodnfungus:block/boulderbark_log"
+  }
+}

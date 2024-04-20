@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "woodnfungus:block/lime_boulderbark_leaves"
+  }
+}

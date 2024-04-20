@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "woodnfungus:savorshroom_planks",
+    "woodnfungus:savorshroom_stairs",
+    "woodnfungus:savorshroom_slab",
+    "woodnfungus:savorshroom_fence",
+    "woodnfungus:savorshroom_fence_gate",
+    "woodnfungus:savorshroom_button",
+    "woodnfungus:savorshroom_pressure_plate"
+  ]
+}
