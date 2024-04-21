@@ -31,6 +31,7 @@ public class ModItems {
     public static final Item BOULDERBARK_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.BOULDERBARK_BOAT_ID, ModBoats.BOULDERBARK_BOAT_KEY, false);
     public static final Item BOULDERBARK_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.BOULDERBARK_CHEST_BOAT_ID, ModBoats.BOULDERBARK_BOAT_KEY, true);
 
+    public static final Item ROASTED_SAVORSHROOM_CHUNKS = registerItem("roasted_savorshroom_chunks", new Item(new FabricItemSettings().food(ModFoodComponents.SAVORSHROOM_CHUNKS)));
     public static final Item ROASTED_SAVORSHROOM_SCRAPS = registerItem("roasted_savorshroom_scraps", new Item(new FabricItemSettings().food(ModFoodComponents.SAVORSHROOM_SCRAPS)));
 
     private static Item registerItem(String name, Item item) {

@@ -36,7 +36,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.BOULDERBARK_LOG.asItem())
                 .add(ModBlocks.BOULDERBARK_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_BOULDERBARK_LOG.asItem())
-                .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD.asItem());
+                .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD.asItem())
+                .add(ModBlocks.SAVORSHROOM_STEM.asItem())
+                .add(ModBlocks.SAVORSHROOM_HYPHAE.asItem())
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_STEM.asItem())
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.LARGE_SAVORSHROOM_COOKABLE)
+                .add(ModBlocks.SAVORSHROOM_BLOCK.asItem())
+                .add(ModBlocks.SAVORSHROOM_STEM.asItem())
+                .add(ModBlocks.SAVORSHROOM_HYPHAE.asItem())
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_STEM.asItem())
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE.asItem());
 
         getOrCreateTagBuilder(ModTags.Items.SMALL_SAVORSHROOM_COOKABLE)
                 .add(ModBlocks.SAVORSHROOM_PLANKS.asItem())

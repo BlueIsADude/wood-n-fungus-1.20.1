@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "woodnfungus:block/savorshroom_stem",
+    "side": "woodnfungus:block/savorshroom_stem"
+  }
+}

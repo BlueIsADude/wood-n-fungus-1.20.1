@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "woodnfungus:savorshroom_block",
+    "woodnfungus:savorshroom_stem",
+    "woodnfungus:savorshroom_hyphae",
+    "woodnfungus:stripped_savorshroom_stem",
+    "woodnfungus:stripped_savorshroom_hyphae"
+  ]
+}

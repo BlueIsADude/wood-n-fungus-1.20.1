@@ -1,8 +1,8 @@
 {
   "type": "minecraft:smelting",
   "category": "food",
-  "cookingtime": 200,
-  "experience": 0.35,
+  "cookingtime": 100,
+  "experience": 0.15,
   "ingredient": {
     "tag": "woodnfungus:small_savorshroom_cookable"
   },

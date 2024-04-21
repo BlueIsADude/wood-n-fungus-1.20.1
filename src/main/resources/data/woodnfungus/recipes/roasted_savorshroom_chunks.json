@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "tag": "woodnfungus:large_savorshroom_cookable"
+  },
+  "result": "woodnfungus:roasted_savorshroom_chunks"
+}

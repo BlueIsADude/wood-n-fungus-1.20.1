@@ -153,6 +153,18 @@ public class ModBlocks {
             .sign(ModBlocks.STANDING_BOULDERBARK_SIGN, ModBlocks.WALL_BOULDERBARK_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
 
+    public static final Block SAVORSHROOM_STEM = registerBlock("savorshroom_stem",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.WARPED_STEM)));
+    public static final Block SAVORSHROOM_HYPHAE = registerBlock("savorshroom_hyphae",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.WARPED_HYPHAE)));
+    public static final Block STRIPPED_SAVORSHROOM_STEM = registerBlock("stripped_savorshroom_stem",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_WARPED_STEM)));
+    public static final Block STRIPPED_SAVORSHROOM_HYPHAE = registerBlock("stripped_savorshroom_hyphae",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_WARPED_HYPHAE)));
+
+    public static final Block SAVORSHROOM_BLOCK = registerBlock("savorshroom_block",
+            new MushroomBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM_BLOCK)));
+
     public static final Block SAVORSHROOM_PLANKS = registerBlock("savorshroom_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));
     public static final Block SAVORSHROOM_STAIRS = registerBlock("savorshroom_stairs",

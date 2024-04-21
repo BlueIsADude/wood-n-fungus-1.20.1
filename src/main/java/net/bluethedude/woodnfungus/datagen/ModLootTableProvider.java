@@ -58,6 +58,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAGENTA_BOULDERBARK_LEAVES);
         addDrop(ModBlocks.PINK_BOULDERBARK_LEAVES);
 
+        addDrop(ModBlocks.SAVORSHROOM_BLOCK, mushroomBlockDrops(ModBlocks.SAVORSHROOM_BLOCK, ModBlocks.SAVORSHROOM_STEM)); //todo
+        addDrop(ModBlocks.SAVORSHROOM_STEM);
+        addDrop(ModBlocks.STRIPPED_SAVORSHROOM_STEM);
+        addDrop(ModBlocks.SAVORSHROOM_HYPHAE);
+        addDrop(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE);
         addDrop(ModBlocks.SAVORSHROOM_PLANKS);
         addDrop(ModBlocks.SAVORSHROOM_STAIRS);
         addDrop(ModBlocks.SAVORSHROOM_SLAB, slabDrops(ModBlocks.SAVORSHROOM_SLAB));

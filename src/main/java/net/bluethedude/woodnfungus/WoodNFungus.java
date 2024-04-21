@@ -76,6 +76,17 @@ public class WoodNFungus implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MAGENTA_BOULDERBARK_LEAVES, 30, 60);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PINK_BOULDERBARK_LEAVES, 30, 60);
 
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_STEM, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_SAVORSHROOM_STEM, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_HYPHAE, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_BLOCK, 5, 10);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_PLANKS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_STAIRS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_SLAB, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_FENCE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_FENCE_GATE, 5, 20);
+
 		ModBoats.registerBoats();
 		ModWorldGeneration.generateModWorldGen();
 	}

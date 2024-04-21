@@ -23,7 +23,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_PALM_LOG)
                 .add(ModBlocks.PALM_CORE_LOG)
                 .add(ModBlocks.BOULDERBARK_LOG)
-                .add(ModBlocks.STRIPPED_BOULDERBARK_LOG);
+                .add(ModBlocks.STRIPPED_BOULDERBARK_LOG)
+                .add(ModBlocks.SAVORSHROOM_STEM)
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_STEM)
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(ModBlocks.PALM_LEAVES)
@@ -54,7 +57,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BOULDERBARK_LOG)
                 .add(ModBlocks.BOULDERBARK_WOOD)
                 .add(ModBlocks.STRIPPED_BOULDERBARK_LOG)
-                .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD);
+                .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD)
+                .add(ModBlocks.SAVORSHROOM_STEM)
+                .add(ModBlocks.SAVORSHROOM_HYPHAE)
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_STEM)
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.PALM_PLANKS)

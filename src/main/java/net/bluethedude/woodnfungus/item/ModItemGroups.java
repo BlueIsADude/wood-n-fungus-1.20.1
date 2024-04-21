@@ -78,7 +78,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MAGENTA_BOULDERBARK_LEAVES);
                         entries.add(ModBlocks.PINK_BOULDERBARK_LEAVES);
 
+                        entries.add(ModItems.ROASTED_SAVORSHROOM_CHUNKS);
                         entries.add(ModItems.ROASTED_SAVORSHROOM_SCRAPS);
+
+                        entries.add(ModBlocks.SAVORSHROOM_BLOCK);
+                        entries.add(ModBlocks.SAVORSHROOM_STEM);
+                        entries.add(ModBlocks.STRIPPED_SAVORSHROOM_STEM);
+                        entries.add(ModBlocks.SAVORSHROOM_HYPHAE);
+                        entries.add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE);
                         entries.add(ModBlocks.SAVORSHROOM_PLANKS);
                         entries.add(ModBlocks.SAVORSHROOM_STAIRS);
                         entries.add(ModBlocks.SAVORSHROOM_SLAB);
