@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-21T12:18:32.1207762	Wood n' Fungus/Tags for minecraft:block
+// 1.20.1	2024-04-21T13:40:20.6800292	Wood n' Fungus/Tags for minecraft:block
 b0d904c7c9d40b1b7952946aa23fedea7ba94345 data\minecraft\tags\blocks\buttons.json
 c016ae7646e697a2d8ce556a0908027f49b23402 data\minecraft\tags\blocks\doors.json
 05f46db7602020a67008551e88c61bf270718572 data\minecraft\tags\blocks\slabs.json
@@ -12,8 +12,8 @@ d19fda91d7ce61730889d1edf4dd6df8594c3983 data\minecraft\tags\blocks\leaves.json
 3bb40b56d0cdb2abaae7e0f56f2559cc5f2c3626 data\minecraft\tags\blocks\planks.json
 5b9bc5ae1c1273592bca121038e1981c55897c04 data\woodnfungus\tags\blocks\boulderbark_plantable.json
 05f46db7602020a67008551e88c61bf270718572 data\minecraft\tags\blocks\wooden_slabs.json
-b3374279eaa968acfd03ea79570d5c5ada95235e data\minecraft\tags\blocks\wooden_trapdoors.json
 c70d05b92569efb475fa8e1a42ff321d504effe9 data\minecraft\tags\blocks\logs.json
+b3374279eaa968acfd03ea79570d5c5ada95235e data\minecraft\tags\blocks\wooden_trapdoors.json
 065bc25c5655d30060d57cc1a495fb548e536f35 data\minecraft\tags\blocks\wooden_pressure_plates.json
 8e217fbc0bfca202967b01ad330cefed04de832a data\minecraft\tags\blocks\fence_gates.json
 c016ae7646e697a2d8ce556a0908027f49b23402 data\minecraft\tags\blocks\wooden_doors.json
