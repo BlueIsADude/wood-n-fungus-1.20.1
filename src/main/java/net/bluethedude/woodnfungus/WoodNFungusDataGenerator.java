@@ -3,6 +3,7 @@ package net.bluethedude.woodnfungus;
 import net.bluethedude.woodnfungus.datagen.*;
 import net.bluethedude.woodnfungus.world.ModConfiguredFeatures;
 import net.bluethedude.woodnfungus.world.ModPlacedFeatures;
+import net.bluethedude.woodnfungus.world.biome.ModBiomes;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
@@ -24,5 +25,6 @@ public class WoodNFungusDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::boostrap);
 	}
 }
