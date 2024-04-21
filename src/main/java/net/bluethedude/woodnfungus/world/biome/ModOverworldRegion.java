@@ -20,8 +20,7 @@ public class ModOverworldRegion extends Region {
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<MultiNoiseUtil.NoiseHypercube,
             RegistryKey<Biome>>> mapper) {
-        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-            modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.DRIPSTONE_CAVES, ModBiomes.BOULDERBARK_CAVES);
-        });
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder ->
+                modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.DRIPSTONE_CAVES, ModBiomes.BOULDERBARK_CAVES));
     }
 }
