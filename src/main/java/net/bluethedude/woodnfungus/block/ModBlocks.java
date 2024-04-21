@@ -163,7 +163,7 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_WARPED_HYPHAE)));
 
     public static final Block SAVORSHROOM_BLOCK = registerBlock("savorshroom_block",
-            new MushroomBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM_BLOCK)));
+            new MushroomBlock(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK)));
 
     public static final Block SAVORSHROOM_PLANKS = registerBlock("savorshroom_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));

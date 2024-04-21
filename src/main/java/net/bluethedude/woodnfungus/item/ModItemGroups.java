@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
 
     public static final ItemGroup WOOD_N_FUNGUS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(WoodNFungus.MOD_ID, "coconut"),
+            new Identifier(WoodNFungus.MOD_ID, "boulderbark_sapling"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.woodnfungusgroup"))
                     .icon(() -> new ItemStack(ModBlocks.BOULDERBARK_SAPLING)).entries((displayContext, entries) -> {
                         entries.add(ModItems.COCONUT);

@@ -73,7 +73,14 @@
 	"block.woodnfungus.magenta_boulderbark_leaves": "Magenta Boulderbark Leaves",
 	"block.woodnfungus.pink_boulderbark_leaves": "Pink Boulderbark Leaves",
 
+	"item.woodnfungus.roasted_savorshroom_chunks": "Roasted Savorshroom Chunks",
 	"item.woodnfungus.roasted_savorshroom_scraps": "Roasted Savorshroom Scraps",
+
+	"block.woodnfungus.savorshroom_stem": "Savorshroom Stem",
+	"block.woodnfungus.stripped_savorshroom_stem": "Stripped Savorshroom Stem",
+	"block.woodnfungus.savorshroom_hyphae": "Savorshroom Hyphae",
+	"block.woodnfungus.stripped_savorshroom_hyphae": "Stripped Savorshroom Hyphae",
+	"block.woodnfungus.savorshroom_block": "Savorshroom Block",
 
 	"block.woodnfungus.savorshroom_planks": "Savorshroom Planks",
 	"block.woodnfungus.savorshroom_stairs": "Savorshroom Stairs",
