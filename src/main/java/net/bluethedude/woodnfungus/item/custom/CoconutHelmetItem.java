@@ -41,11 +41,11 @@ public class CoconutHelmetItem extends ArmorItem {
             ArmorMaterial mapArmorMaterial = entry.getKey();
             StatusEffectInstance mapStatusEffect = entry.getValue();
 
-            addStatusEffect(player, mapArmorMaterial, mapStatusEffect);
+            addStatusEffect(player, mapStatusEffect);
         }
     }
 
-    private void addStatusEffect(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffectInstance mapStatusEffect) {
+    private void addStatusEffect(PlayerEntity player, StatusEffectInstance mapStatusEffect) {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
 
         if(!hasPlayerEffect) {
