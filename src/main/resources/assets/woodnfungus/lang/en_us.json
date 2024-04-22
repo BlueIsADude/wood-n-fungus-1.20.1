@@ -93,5 +93,7 @@
 	"block.woodnfungus.petrified_log": "Petrified Log",
 	"block.woodnfungus.stripped_petrified_log": "Stripped Petrified Log",
 	"block.woodnfungus.petrified_wood": "Petrified Wood",
-	"block.woodnfungus.stripped_petrified_wood": "Stripped Petrified Wood"
+	"block.woodnfungus.stripped_petrified_wood": "Stripped Petrified Wood",
+
+	"tooltip.woodnfungus.coconut_helmet": "§6Applies Absorption if all armor slots are filled."
 }

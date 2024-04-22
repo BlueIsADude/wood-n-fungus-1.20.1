@@ -4,7 +4,7 @@ import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.ModBlocks;
 import net.bluethedude.woodnfungus.entity.ModBoats;
-import net.bluethedude.woodnfungus.item.custom.EffectHelmetItem;
+import net.bluethedude.woodnfungus.item.custom.CoconutHelmetItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -16,7 +16,7 @@ public class ModItems {
     public static final Item COCONUT_MILK = registerItem("coconut_milk", new Item(new FabricItemSettings().food(ModFoodComponents.COCONUT_MILK)));
     public static final Item COCONUT_SHELL = registerItem("coconut_shell", new Item(new FabricItemSettings()));
     public static final Item COCONUT_HELMET = registerItem("coconut_helmet",
-            new EffectHelmetItem(ModArmorMaterials.COCONUT, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new CoconutHelmetItem(ModArmorMaterials.COCONUT, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
     public static final Item PALM_SIGN = registerItem("palm_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_PALM_SIGN, ModBlocks.WALL_PALM_SIGN));
