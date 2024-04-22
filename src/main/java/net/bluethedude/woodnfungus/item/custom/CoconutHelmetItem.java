@@ -38,7 +38,6 @@ public class CoconutHelmetItem extends ArmorItem {
     }
     private void evaluateArmorEffects(PlayerEntity player) {
         for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
-            ArmorMaterial mapArmorMaterial = entry.getKey();
             StatusEffectInstance mapStatusEffect = entry.getValue();
 
             addStatusEffect(player, mapStatusEffect);
