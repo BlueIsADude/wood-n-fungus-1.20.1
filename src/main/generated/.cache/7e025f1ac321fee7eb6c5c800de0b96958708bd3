@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-21T21:58:43.5448843	Wood n' Fungus/Block Loot Tables
+// 1.20.1	2024-04-22T15:22:18.8467131	Wood n' Fungus/Block Loot Tables
 46e0f37b9c2eb74a721871eb7eb49bd9d3d313ff data\woodnfungus\loot_tables\blocks\savorshroom_pressure_plate.json
 b19a083caad67a9cd878811b1618074282a1a6a5 data\woodnfungus\loot_tables\blocks\savorshroom_block.json
 2080583f358bab3ea66b93645474f83f4a7f95cb data\woodnfungus\loot_tables\blocks\savorshroom_stairs.json
@@ -49,8 +49,8 @@ b51eb206e59f7e656cb725bf912b904165bc5af7 data\woodnfungus\loot_tables\blocks\pal
 49180a9112ac74b62477e01f68dfeef90f88f38c data\woodnfungus\loot_tables\blocks\boulderbark_stairs.json
 3d2eadad8277593142eefd4c25646e19cf239ed2 data\woodnfungus\loot_tables\blocks\boulderbark_leaves.json
 a1dfb145254d5a944ef412482f604df5efce7202 data\woodnfungus\loot_tables\blocks\purple_boulderbark_leaves.json
-8559176ba5523b63142cb7ff290f9c5207082342 data\woodnfungus\loot_tables\blocks\palm_fence.json
 25256003cb2746b12eb60f9f2672ea08dc086e77 data\woodnfungus\loot_tables\blocks\gray_boulderbark_leaves.json
+8559176ba5523b63142cb7ff290f9c5207082342 data\woodnfungus\loot_tables\blocks\palm_fence.json
 a50396ec6e1ce4e75e9f1e3af408a107616d8452 data\woodnfungus\loot_tables\blocks\boulderbark_log.json
 2d23c5cf5f91215f007cbd74ba922e944cb2ffb6 data\woodnfungus\loot_tables\blocks\palm_leaves.json
 6432e281d25cdaa25a0c8d55b2ab7d08347deedf data\woodnfungus\loot_tables\blocks\savorshroom_fence_gate.json

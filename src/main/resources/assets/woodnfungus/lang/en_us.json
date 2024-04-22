@@ -95,5 +95,5 @@
 	"block.woodnfungus.petrified_wood": "Petrified Wood",
 	"block.woodnfungus.stripped_petrified_wood": "Stripped Petrified Wood",
 
-	"tooltip.woodnfungus.coconut_helmet": "§6Applies Absorption if all armor slots are filled."
+	"tooltip.woodnfungus.coconut_helmet": "§6Applies Absorption II every 20 seconds instead of providing armor."
 }

@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-    COCONUT("coconut", 25, new int[] {1, 5, 6, 3}, 8,
+    COCONUT("coconut", 25, new int[] {0, 0, 0, 0}, 8,
             SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.COCONUT_SHELL))
     ;
 
