@@ -5,6 +5,7 @@ import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.ModBlocks;
 import net.bluethedude.woodnfungus.entity.ModBoats;
 import net.bluethedude.woodnfungus.item.custom.CoconutHelmetItem;
+import net.bluethedude.woodnfungus.item.custom.CoconutMilkItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -13,7 +14,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item COCONUT = registerItem("coconut", new Item(new FabricItemSettings()));
-    public static final Item COCONUT_MILK = registerItem("coconut_milk", new Item(new FabricItemSettings().food(ModFoodComponents.COCONUT_MILK)));
+    public static final Item COCONUT_MILK = registerItem("coconut_milk",
+            new CoconutMilkItem(new FabricItemSettings().recipeRemainder(ModItems.COCONUT_SHELL).maxCount(16)));
     public static final Item COCONUT_SHELL = registerItem("coconut_shell", new Item(new FabricItemSettings()));
     public static final Item COCONUT_HELMET = registerItem("coconut_helmet",
             new CoconutHelmetItem(ModArmorMaterials.COCONUT, ArmorItem.Type.HELMET, new FabricItemSettings()));
