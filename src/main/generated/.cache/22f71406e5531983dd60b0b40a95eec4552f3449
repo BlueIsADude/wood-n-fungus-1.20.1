@@ -1,7 +1,7 @@
-// 1.20.1	2024-04-22T15:22:18.8487123	Wood n' Fungus/World Gen
+// 1.20.1	2024-04-22T19:44:00.9043095	Wood n' Fungus/World Gen
 ffe540cfd9cee4691201f9d44813503d306017a4 data\woodnfungus\worldgen\placed_feature\petrified_wood_placed.json
 ad756a51eeee765439d484fde791133c3f7c3f34 data\woodnfungus\worldgen\configured_feature\palm.json
-7eb464beb5cdfebd2e2bc14965733360fdbe86ea data\woodnfungus\worldgen\configured_feature\boulderbark.json
+13c75456de34703f7220d6ea1037d4aa6301ee57 data\woodnfungus\worldgen\configured_feature\boulderbark.json
 95d945d84703ad7d432fddfcc4a6d44829d67e63 data\woodnfungus\worldgen\placed_feature\palm_tree_placed.json
 2f5eccf1858812b4b3fd0890fd8d116400bb7b29 data\woodnfungus\worldgen\placed_feature\boulderbark_tree_placed.json
 07599f22a741cbf786696211d9cbf9ab80d79c89 data\woodnfungus\worldgen\biome\boulderbark_caves.json

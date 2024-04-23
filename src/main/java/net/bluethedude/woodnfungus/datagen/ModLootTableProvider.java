@@ -25,6 +25,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PALM_DOOR, doorDrops(ModBlocks.PALM_DOOR));
         addDrop(ModBlocks.PALM_TRAPDOOR);
         addDrop(ModBlocks.PALM_SAPLING);
+        addPottedPlantDrops(ModBlocks.POTTED_PALM_SAPLING);
 
         addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, 0.0005f));
 
@@ -40,6 +41,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BOULDERBARK_BUTTON);
         addDrop(ModBlocks.BOULDERBARK_PRESSURE_PLATE);
         addDrop(ModBlocks.BOULDERBARK_SAPLING);
+        addPottedPlantDrops(ModBlocks.POTTED_BOULDERBARK_SAPLING);
 
         addDrop(ModBlocks.BOULDERBARK_LEAVES, leavesDrops(ModBlocks.BOULDERBARK_LEAVES, ModBlocks.BOULDERBARK_SAPLING, 0.0005f));
         addDrop(ModBlocks.WHITE_BOULDERBARK_LEAVES);

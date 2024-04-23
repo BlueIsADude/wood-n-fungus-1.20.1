@@ -11,6 +11,7 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
@@ -25,6 +26,10 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PALM_KEY = registerKey("palm");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BOULDERBARK_KEY = registerKey("boulderbark");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> HUGE_SAVORSHROOM_KEY = registerKey("huge_savorshroom");
+
+
 
     public static void boostrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
@@ -48,12 +53,12 @@ public class ModConfiguredFeatures {
 
         register(context, BOULDERBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.BOULDERBARK_LOG),
-                new StraightTrunkPlacer(1, 1, 1),
+                new StraightTrunkPlacer(3, 2, 1),
 
                 BlockStateProvider.of(ModBlocks.BOULDERBARK_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
 
-                new TwoLayersFeatureSize(1, 2, 0)).dirtProvider(BlockStateProvider.of(Blocks.STONE)).build());
+                new TwoLayersFeatureSize(1, 2, 0)).build());
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(WoodNFungus.MOD_ID, name));

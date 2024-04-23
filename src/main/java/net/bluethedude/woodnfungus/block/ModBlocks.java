@@ -7,6 +7,7 @@ import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.custom.BoulderbarkSaplingBlock;
 import net.bluethedude.woodnfungus.block.custom.PalmSaplingBlock;
+import net.bluethedude.woodnfungus.world.ModConfiguredFeatures;
 import net.bluethedude.woodnfungus.world.tree.BoulderbarkSaplingGenerator;
 import net.bluethedude.woodnfungus.world.tree.PalmSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -18,7 +19,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+
+import java.util.function.Supplier;
 
 public class ModBlocks {
 
@@ -39,6 +44,9 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
     public static final Block PALM_SAPLING = registerBlock("palm_sapling",
             new PalmSaplingBlock(new PalmSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).nonOpaque()));
+    public static final Block POTTED_PALM_SAPLING = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "potted_palm_sapling"),
+            new FlowerPotBlock(PALM_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
+
 
     public static final Block PALM_PLANKS = registerBlock("palm_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
@@ -89,6 +97,8 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque().resistance(5f)));
     public static final Block BOULDERBARK_SAPLING = registerBlock("boulderbark_sapling",
             new BoulderbarkSaplingBlock(new BoulderbarkSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).nonOpaque().resistance(50000f)));
+    public static final Block POTTED_BOULDERBARK_SAPLING = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "potted_boulderbark_sapling"),
+            new FlowerPotBlock(BOULDERBARK_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
 
     public static final Block WHITE_BOULDERBARK_LEAVES = registerBlock("white_boulderbark_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque().resistance(1f)));

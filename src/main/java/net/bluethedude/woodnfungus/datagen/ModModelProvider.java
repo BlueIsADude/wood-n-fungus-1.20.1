@@ -22,7 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PALM_LOG).log(ModBlocks.STRIPPED_PALM_LOG).wood(ModBlocks.STRIPPED_PALM_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.PALM_CORE_LOG).log(ModBlocks.PALM_CORE_LOG).wood(ModBlocks.PALM_CORE_WOOD);
         BlockStateModelGenerator.BlockTexturePool palmPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS);
-        blockStateModelGenerator.registerTintableCross(ModBlocks.PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PALM_SAPLING, ModBlocks.POTTED_PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         palmPool.stairs(ModBlocks.PALM_STAIRS);
         palmPool.slab(ModBlocks.PALM_SLAB);
@@ -40,7 +40,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.BOULDERBARK_LOG).log(ModBlocks.BOULDERBARK_LOG).wood(ModBlocks.BOULDERBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BOULDERBARK_LOG).log(ModBlocks.STRIPPED_BOULDERBARK_LOG).wood(ModBlocks.STRIPPED_BOULDERBARK_WOOD);
         BlockStateModelGenerator.BlockTexturePool boulderbarkPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BOULDERBARK_PLANKS);
-        blockStateModelGenerator.registerTintableCross(ModBlocks.BOULDERBARK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BOULDERBARK_SAPLING, ModBlocks.POTTED_BOULDERBARK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         boulderbarkPool.stairs(ModBlocks.BOULDERBARK_STAIRS);
         boulderbarkPool.slab(ModBlocks.BOULDERBARK_SLAB);
