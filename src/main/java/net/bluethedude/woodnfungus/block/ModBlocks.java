@@ -7,7 +7,6 @@ import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.custom.BoulderbarkSaplingBlock;
 import net.bluethedude.woodnfungus.block.custom.PalmSaplingBlock;
-import net.bluethedude.woodnfungus.world.ModConfiguredFeatures;
 import net.bluethedude.woodnfungus.world.tree.BoulderbarkSaplingGenerator;
 import net.bluethedude.woodnfungus.world.tree.PalmSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -19,11 +18,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-
-import java.util.function.Supplier;
 
 public class ModBlocks {
 
