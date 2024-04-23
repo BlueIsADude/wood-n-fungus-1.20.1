@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "woodnfungus:block/light_blue_candle_coconut_cake"
+    },
+    "lit=true": {
+      "model": "woodnfungus:block/light_blue_candle_coconut_cake_lit"
+    }
+  }
+}

@@ -35,7 +35,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PALM_TRAPDOOR);
 
-
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.BOULDERBARK_LOG).log(ModBlocks.BOULDERBARK_LOG).wood(ModBlocks.BOULDERBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BOULDERBARK_LOG).log(ModBlocks.STRIPPED_BOULDERBARK_LOG).wood(ModBlocks.STRIPPED_BOULDERBARK_WOOD);
@@ -88,6 +87,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COCONUT, Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT_MILK, Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT_SHELL, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.COCONUT_CAKE.asItem(), Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.COCONUT_HELMET));
 

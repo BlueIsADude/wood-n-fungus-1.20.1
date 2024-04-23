@@ -77,6 +77,44 @@ public class ModBlocks {
             .sign(ModBlocks.STANDING_PALM_SIGN, ModBlocks.WALL_PALM_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
 
+    public static final Block COCONUT_CAKE = registerBlock("coconut_cake",
+            new CakeBlock(FabricBlockSettings.copyOf(Blocks.CAKE)));
+    public static final Block CANDLE_COCONUT_CAKE = registerBlock("candle_coconut_cake.json",
+            new CandleCakeBlock(Blocks.CANDLE, FabricBlockSettings.copyOf(Blocks.CANDLE_CAKE)));
+    public static final Block WHITE_CANDLE_COCONUT_CAKE = registerBlock("white_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.WHITE_CANDLE, FabricBlockSettings.copyOf(Blocks.WHITE_CANDLE_CAKE)));
+    public static final Block LIGHT_GRAY_CANDLE_COCONUT_CAKE = registerBlock("light_gray_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.LIGHT_GRAY_CANDLE, FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_CANDLE_CAKE)));
+    public static final Block GRAY_CANDLE_COCONUT_CAKE = registerBlock("gray_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.GRAY_CANDLE, FabricBlockSettings.copyOf(Blocks.GRAY_CANDLE_CAKE)));
+    public static final Block BLACK_CANDLE_COCONUT_CAKE = registerBlock("black_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.BLACK_CANDLE, FabricBlockSettings.copyOf(Blocks.BLACK_CANDLE_CAKE)));
+    public static final Block BROWN_CANDLE_COCONUT_CAKE = registerBlock("brown_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.BROWN_CANDLE, FabricBlockSettings.copyOf(Blocks.BROWN_CANDLE_CAKE)));
+    public static final Block RED_CANDLE_COCONUT_CAKE = registerBlock("red_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.RED_CANDLE, FabricBlockSettings.copyOf(Blocks.RED_CANDLE_CAKE)));
+    public static final Block ORANGE_CANDLE_COCONUT_CAKE = registerBlock("orange_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.ORANGE_CANDLE, FabricBlockSettings.copyOf(Blocks.ORANGE_CANDLE_CAKE)));
+    public static final Block YELLOW_CANDLE_COCONUT_CAKE = registerBlock("yellow_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.YELLOW_CANDLE, FabricBlockSettings.copyOf(Blocks.YELLOW_CANDLE_CAKE)));
+    public static final Block LIME_CANDLE_COCONUT_CAKE = registerBlock("lime_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.LIME_CANDLE, FabricBlockSettings.copyOf(Blocks.LIME_CANDLE_CAKE)));
+    public static final Block GREEN_CANDLE_COCONUT_CAKE = registerBlock("green_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.GREEN_CANDLE, FabricBlockSettings.copyOf(Blocks.GREEN_CANDLE_CAKE)));
+    public static final Block CYAN_CANDLE_COCONUT_CAKE = registerBlock("cyan_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.CYAN_CANDLE, FabricBlockSettings.copyOf(Blocks.CYAN_CANDLE_CAKE)));
+    public static final Block LIGHT_BLUE_CANDLE_COCONUT_CAKE = registerBlock("light_blue_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.LIGHT_BLUE_CANDLE, FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_CANDLE_CAKE)));
+    public static final Block BLUE_CANDLE_COCONUT_CAKE = registerBlock("blue_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.BLUE_CANDLE, FabricBlockSettings.copyOf(Blocks.BLUE_CANDLE_CAKE)));
+    public static final Block PURPLE_CANDLE_COCONUT_CAKE = registerBlock("purple_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.PURPLE_CANDLE, FabricBlockSettings.copyOf(Blocks.PURPLE_CANDLE_CAKE)));
+    public static final Block MAGENTA_CANDLE_COCONUT_CAKE = registerBlock("magenta_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.MAGENTA_CANDLE, FabricBlockSettings.copyOf(Blocks.MAGENTA_CANDLE_CAKE)));
+    public static final Block PINK_CANDLE_COCONUT_CAKE = registerBlock("pink_candle_coconut_cake",
+            new CandleCakeBlock(Blocks.PINK_CANDLE, FabricBlockSettings.copyOf(Blocks.PINK_CANDLE_CAKE)));
+
+
 
 
     public static final Block BOULDERBARK_LOG = registerBlock("boulderbark_log",
