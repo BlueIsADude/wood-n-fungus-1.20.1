@@ -10,9 +10,11 @@ import net.minecraft.util.Identifier;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> BOULDERBARK_PLANTABLE =
-                    createTag("boulderbark_plantable");
+                createTag("boulderbark_plantable");
         public static final TagKey<Block> PALM_PLANTABLE =
                 createTag("boulderbark_plantable");
+        public static final TagKey<Block> CANDLE_COCONUT_CAKES =
+                createTag("candle_coconut_cakes");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(WoodNFungus.MOD_ID, name));

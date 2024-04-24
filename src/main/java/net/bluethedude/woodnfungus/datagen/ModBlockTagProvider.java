@@ -130,6 +130,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BOULDERBARK_STAIRS)
                 .add(ModBlocks.SAVORSHROOM_STAIRS);
 
+        getOrCreateTagBuilder(ModTags.Blocks.CANDLE_COCONUT_CAKES)
+                .add(ModBlocks.CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.WHITE_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.LIGHT_GRAY_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.GRAY_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.BLACK_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.BROWN_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.RED_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.ORANGE_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.YELLOW_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.LIME_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.GREEN_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.CYAN_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.LIGHT_BLUE_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.BLUE_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.PURPLE_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.MAGENTA_CANDLE_COCONUT_CAKE)
+                .add(ModBlocks.PINK_CANDLE_COCONUT_CAKE);
+
         getOrCreateTagBuilder(ModTags.Blocks.BOULDERBARK_PLANTABLE)
                 .add(Blocks.STONE)
                 .add(Blocks.DEEPSLATE)
