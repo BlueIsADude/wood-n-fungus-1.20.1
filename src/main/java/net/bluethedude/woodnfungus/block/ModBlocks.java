@@ -6,6 +6,8 @@ import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
 import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.custom.BoulderbarkSaplingBlock;
+import net.bluethedude.woodnfungus.block.custom.CandleCoconutCakeBlock;
+import net.bluethedude.woodnfungus.block.custom.CoconutCakeBlock;
 import net.bluethedude.woodnfungus.block.custom.PalmSaplingBlock;
 import net.bluethedude.woodnfungus.world.tree.BoulderbarkSaplingGenerator;
 import net.bluethedude.woodnfungus.world.tree.PalmSaplingGenerator;
@@ -78,41 +80,41 @@ public class ModBlocks {
             .group("wooden").unlockCriterionName("has_planks").build();
 
     public static final Block COCONUT_CAKE = registerBlock("coconut_cake",
-            new CakeBlock(FabricBlockSettings.copyOf(Blocks.CAKE)));
+            new CoconutCakeBlock(FabricBlockSettings.copyOf(Blocks.CAKE)));
     public static final Block CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"candle_coconut_cake.json"),
-            new CandleCakeBlock(Blocks.CANDLE, FabricBlockSettings.copyOf(Blocks.CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.CANDLE, FabricBlockSettings.copyOf(Blocks.CANDLE_CAKE)));
     public static final Block WHITE_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"white_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.WHITE_CANDLE, FabricBlockSettings.copyOf(Blocks.WHITE_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.WHITE_CANDLE, FabricBlockSettings.copyOf(Blocks.WHITE_CANDLE_CAKE)));
     public static final Block LIGHT_GRAY_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"light_gray_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.LIGHT_GRAY_CANDLE, FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.LIGHT_GRAY_CANDLE, FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_CANDLE_CAKE)));
     public static final Block GRAY_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"gray_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.GRAY_CANDLE, FabricBlockSettings.copyOf(Blocks.GRAY_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.GRAY_CANDLE, FabricBlockSettings.copyOf(Blocks.GRAY_CANDLE_CAKE)));
     public static final Block BLACK_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"black_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.BLACK_CANDLE, FabricBlockSettings.copyOf(Blocks.BLACK_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.BLACK_CANDLE, FabricBlockSettings.copyOf(Blocks.BLACK_CANDLE_CAKE)));
     public static final Block BROWN_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"brown_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.BROWN_CANDLE, FabricBlockSettings.copyOf(Blocks.BROWN_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.BROWN_CANDLE, FabricBlockSettings.copyOf(Blocks.BROWN_CANDLE_CAKE)));
     public static final Block RED_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"red_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.RED_CANDLE, FabricBlockSettings.copyOf(Blocks.RED_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.RED_CANDLE, FabricBlockSettings.copyOf(Blocks.RED_CANDLE_CAKE)));
     public static final Block ORANGE_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"orange_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.ORANGE_CANDLE, FabricBlockSettings.copyOf(Blocks.ORANGE_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.ORANGE_CANDLE, FabricBlockSettings.copyOf(Blocks.ORANGE_CANDLE_CAKE)));
     public static final Block YELLOW_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"yellow_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.YELLOW_CANDLE, FabricBlockSettings.copyOf(Blocks.YELLOW_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.YELLOW_CANDLE, FabricBlockSettings.copyOf(Blocks.YELLOW_CANDLE_CAKE)));
     public static final Block LIME_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"lime_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.LIME_CANDLE, FabricBlockSettings.copyOf(Blocks.LIME_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.LIME_CANDLE, FabricBlockSettings.copyOf(Blocks.LIME_CANDLE_CAKE)));
     public static final Block GREEN_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"green_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.GREEN_CANDLE, FabricBlockSettings.copyOf(Blocks.GREEN_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.GREEN_CANDLE, FabricBlockSettings.copyOf(Blocks.GREEN_CANDLE_CAKE)));
     public static final Block CYAN_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"cyan_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.CYAN_CANDLE, FabricBlockSettings.copyOf(Blocks.CYAN_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.CYAN_CANDLE, FabricBlockSettings.copyOf(Blocks.CYAN_CANDLE_CAKE)));
     public static final Block LIGHT_BLUE_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"light_blue_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.LIGHT_BLUE_CANDLE, FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.LIGHT_BLUE_CANDLE, FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_CANDLE_CAKE)));
     public static final Block BLUE_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"blue_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.BLUE_CANDLE, FabricBlockSettings.copyOf(Blocks.BLUE_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.BLUE_CANDLE, FabricBlockSettings.copyOf(Blocks.BLUE_CANDLE_CAKE)));
     public static final Block PURPLE_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"purple_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.PURPLE_CANDLE, FabricBlockSettings.copyOf(Blocks.PURPLE_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.PURPLE_CANDLE, FabricBlockSettings.copyOf(Blocks.PURPLE_CANDLE_CAKE)));
     public static final Block MAGENTA_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"magenta_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.MAGENTA_CANDLE, FabricBlockSettings.copyOf(Blocks.MAGENTA_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.MAGENTA_CANDLE, FabricBlockSettings.copyOf(Blocks.MAGENTA_CANDLE_CAKE)));
     public static final Block PINK_CANDLE_COCONUT_CAKE = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID,"pink_candle_coconut_cake"),
-            new CandleCakeBlock(Blocks.PINK_CANDLE, FabricBlockSettings.copyOf(Blocks.PINK_CANDLE_CAKE)));
+            new CandleCoconutCakeBlock(Blocks.PINK_CANDLE, FabricBlockSettings.copyOf(Blocks.PINK_CANDLE_CAKE)));
 
 
 
@@ -196,6 +198,8 @@ public class ModBlocks {
             .sign(ModBlocks.STANDING_BOULDERBARK_SIGN, ModBlocks.WALL_BOULDERBARK_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
 
+
+
     public static final Block SAVORSHROOM_STEM = registerBlock("savorshroom_stem",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.WARPED_STEM)));
     public static final Block SAVORSHROOM_HYPHAE = registerBlock("savorshroom_hyphae",
@@ -223,6 +227,8 @@ public class ModBlocks {
     public static final Block SAVORSHROOM_BUTTON = registerBlock("savorshroom_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS), BlockSetType.WARPED, 15, true));
 
+
+
     public static final Block PETRIFIED_LOG = registerBlock("petrified_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
     public static final Block PETRIFIED_WOOD = registerBlock("petrified_wood",
@@ -231,6 +237,8 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
     public static final Block STRIPPED_PETRIFIED_WOOD = registerBlock("stripped_petrified_wood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
+
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
