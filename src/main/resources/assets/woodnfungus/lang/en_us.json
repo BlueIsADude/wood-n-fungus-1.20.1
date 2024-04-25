@@ -71,6 +71,8 @@
 	"block.woodnfungus.boulderbark_fence_gate": "Boulderbark Fence Gate",
 	"block.woodnfungus.boulderbark_button": "Boulderbark Button",
 	"block.woodnfungus.boulderbark_pressure_plate": "Boulderbark Pressure Plate",
+	"block.woodnfungus.boulderbark_door": "Boulderbark Door",
+	"block.woodnfungus.boulderbark_trapdoor": "Boulderbark Trapdoor",
 
 	"block.woodnfungus.boulderbark_standing_sign": "Boulderbark Standing Sign",
 	"block.woodnfungus.boulderbark_wall_sign": "Boulderbark Wall Sign",
@@ -94,6 +96,7 @@
 	"block.woodnfungus.magenta_boulderbark_leaves": "Magenta Boulderbark Leaves",
 	"block.woodnfungus.pink_boulderbark_leaves": "Pink Boulderbark Leaves",
 
+	"item.woodnfungus.roasted_savorshroom": "Roasted Savorshroom",
 	"item.woodnfungus.roasted_savorshroom_chunks": "Roasted Savorshroom Chunks",
 	"item.woodnfungus.roasted_savorshroom_scraps": "Roasted Savorshroom Scraps",
 
@@ -110,6 +113,8 @@
 	"block.woodnfungus.savorshroom_fence_gate": "Savorshroom Fence Gate",
 	"block.woodnfungus.savorshroom_button": "Savorshroom Button",
 	"block.woodnfungus.savorshroom_pressure_plate": "Savorshroom Pressure Plate",
+	"block.woodnfungus.savorshroom_door": "Savorshroom Door",
+	"block.woodnfungus.savorshroom_trapdoor": "Savorshroom Trapdoor",
 
 	"block.woodnfungus.petrified_log": "Petrified Log",
 	"block.woodnfungus.stripped_petrified_log": "Stripped Petrified Log",

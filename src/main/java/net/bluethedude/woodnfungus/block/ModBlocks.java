@@ -17,7 +17,6 @@ import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -182,6 +181,10 @@ public class ModBlocks {
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).resistance(50000f), BlockSetType.OAK));
     public static final Block BOULDERBARK_BUTTON = registerBlock("boulderbark_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).resistance(50000f), BlockSetType.OAK, 15, true));
+    public static final Block BOULDERBARK_DOOR = registerBlock("boulderbark_door",
+            new DoorBlock((FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque()).resistance(50000f), BlockSetType.OAK));
+    public static final Block BOULDERBARK_TRAPDOOR = registerBlock("boulderbark_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque().resistance(50000f), BlockSetType.OAK));
 
     public static final Identifier BOULDERBARK_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "entity/signs/boulderbark");
     public static final Identifier BOULDERBARK_HANGING_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "entity/signs/hanging/boulderbark");
@@ -226,6 +229,10 @@ public class ModBlocks {
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS), BlockSetType.WARPED));
     public static final Block SAVORSHROOM_BUTTON = registerBlock("savorshroom_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS), BlockSetType.WARPED, 15, true));
+    public static final Block SAVORSHROOM_DOOR = registerBlock("savorshroom_door",
+            new DoorBlock((FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).nonOpaque()), BlockSetType.WARPED));
+    public static final Block SAVORSHROOM_TRAPDOOR = registerBlock("savorshroom_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).nonOpaque(), BlockSetType.WARPED));
 
 
 
@@ -245,8 +252,8 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(WoodNFungus.MOD_ID, name),
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, new Identifier(WoodNFungus.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
 

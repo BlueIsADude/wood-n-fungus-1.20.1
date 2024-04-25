@@ -22,12 +22,10 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> SMALL_SAVORSHROOM_COOKABLE =
-                createTag("small_savorshroom_cookable");
-        public static final TagKey<Item> SAVORSHROOM_COOKABLE =
-                createTag("savorshroom_cookable");
-        public static final TagKey<Item> LARGE_SAVORSHROOM_COOKABLE =
-                createTag("large_savorshroom_cookable");
+        public static final TagKey<Item> SAVORSHROOM_CHUNK_COOKABLE =
+                createTag("savorshroom_chunk_cookable");
+        public static final TagKey<Item> SAVORSHROOM_SCRAP_COOKABLE =
+                createTag("savorshroom_scrap_cookable");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(WoodNFungus.MOD_ID, name));

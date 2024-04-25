@@ -79,16 +79,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SAVORSHROOM_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.DOORS)
-                .add(ModBlocks.PALM_DOOR);
+                .add(ModBlocks.PALM_DOOR)
+                .add(ModBlocks.BOULDERBARK_DOOR)
+                .add(ModBlocks.SAVORSHROOM_DOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
-                .add(ModBlocks.PALM_DOOR);
+                .add(ModBlocks.PALM_DOOR)
+                .add(ModBlocks.BOULDERBARK_DOOR)
+                .add(ModBlocks.SAVORSHROOM_DOOR);
 
         getOrCreateTagBuilder(BlockTags.TRAPDOORS)
-                .add(ModBlocks.PALM_TRAPDOOR);
+                .add(ModBlocks.PALM_TRAPDOOR)
+                .add(ModBlocks.BOULDERBARK_TRAPDOOR)
+                .add(ModBlocks.SAVORSHROOM_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
-                .add(ModBlocks.PALM_TRAPDOOR);
+                .add(ModBlocks.PALM_TRAPDOOR)
+                .add(ModBlocks.BOULDERBARK_TRAPDOOR)
+                .add(ModBlocks.SAVORSHROOM_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.BUTTONS)
                 .add(ModBlocks.PALM_BUTTON)

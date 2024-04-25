@@ -4,7 +4,7 @@
   "cookingtime": 100,
   "experience": 0.35,
   "ingredient": {
-    "tag": "woodnfungus:large_savorshroom_cookable"
+    "tag": "woodnfungus:savorshroom_chunk_cookable"
   },
   "result": "woodnfungus:roasted_savorshroom_chunks"
 }

@@ -3,7 +3,6 @@
 	"package": "net.bluethedude.woodnfungus.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin",
 		"TrunkPlacerTypeInvoker",
 		"FoliagePlacerTypeInvoker",
 		"CoconutMilkMixin"

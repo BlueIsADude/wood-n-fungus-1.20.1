@@ -4,7 +4,7 @@
   "cookingtime": 50,
   "experience": 0.15,
   "ingredient": {
-    "tag": "woodnfungus:small_savorshroom_cookable"
+    "tag": "woodnfungus:savorshroom_scrap_cookable"
   },
   "result": "woodnfungus:roasted_savorshroom_scraps"
 }

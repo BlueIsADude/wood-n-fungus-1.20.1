@@ -49,6 +49,9 @@ public class ModModelProvider extends FabricModelProvider {
         boulderbarkPool.fenceGate(ModBlocks.BOULDERBARK_FENCE_GATE);
         boulderbarkPool.family(ModBlocks.BOULDERBARK_FAMILY);
 
+        blockStateModelGenerator.registerDoor(ModBlocks.BOULDERBARK_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.BOULDERBARK_TRAPDOOR);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_GRAY_BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GRAY_BOULDERBARK_LEAVES);
@@ -78,6 +81,9 @@ public class ModModelProvider extends FabricModelProvider {
         savorshroomPool.fence(ModBlocks.SAVORSHROOM_FENCE);
         savorshroomPool.fenceGate(ModBlocks.SAVORSHROOM_FENCE_GATE);
 
+        blockStateModelGenerator.registerDoor(ModBlocks.SAVORSHROOM_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.SAVORSHROOM_TRAPDOOR);
+
         blockStateModelGenerator.registerLog(ModBlocks.PETRIFIED_LOG).log(ModBlocks.PETRIFIED_LOG).wood(ModBlocks.PETRIFIED_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PETRIFIED_LOG).log(ModBlocks.STRIPPED_PETRIFIED_LOG).wood(ModBlocks.STRIPPED_PETRIFIED_WOOD);
     }
@@ -99,6 +105,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BOULDERBARK_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BOULDERBARK_CHEST_BOAT, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.ROASTED_SAVORSHROOM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ROASTED_SAVORSHROOM_CHUNKS, Models.GENERATED);
         itemModelGenerator.register(ModItems.ROASTED_SAVORSHROOM_SCRAPS, Models.GENERATED);
     }

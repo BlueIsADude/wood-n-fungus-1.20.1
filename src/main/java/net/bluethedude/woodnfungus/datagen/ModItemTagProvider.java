@@ -36,26 +36,24 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.BOULDERBARK_LOG.asItem())
                 .add(ModBlocks.BOULDERBARK_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_BOULDERBARK_LOG.asItem())
-                .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD.asItem())
-                .add(ModBlocks.SAVORSHROOM_STEM.asItem())
-                .add(ModBlocks.SAVORSHROOM_HYPHAE.asItem())
-                .add(ModBlocks.STRIPPED_SAVORSHROOM_STEM.asItem())
-                .add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE.asItem());
-
-        getOrCreateTagBuilder(ModTags.Items.LARGE_SAVORSHROOM_COOKABLE)
+                .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD.asItem());
+        
+        getOrCreateTagBuilder(ModTags.Items.SAVORSHROOM_CHUNK_COOKABLE)
                 .add(ModBlocks.SAVORSHROOM_BLOCK.asItem())
                 .add(ModBlocks.SAVORSHROOM_STEM.asItem())
                 .add(ModBlocks.SAVORSHROOM_HYPHAE.asItem())
                 .add(ModBlocks.STRIPPED_SAVORSHROOM_STEM.asItem())
                 .add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE.asItem());
 
-        getOrCreateTagBuilder(ModTags.Items.SMALL_SAVORSHROOM_COOKABLE)
+        getOrCreateTagBuilder(ModTags.Items.SAVORSHROOM_SCRAP_COOKABLE)
                 .add(ModBlocks.SAVORSHROOM_PLANKS.asItem())
                 .add(ModBlocks.SAVORSHROOM_STAIRS.asItem())
                 .add(ModBlocks.SAVORSHROOM_SLAB.asItem())
                 .add(ModBlocks.SAVORSHROOM_FENCE.asItem())
                 .add(ModBlocks.SAVORSHROOM_FENCE_GATE.asItem())
                 .add(ModBlocks.SAVORSHROOM_BUTTON.asItem())
-                .add(ModBlocks.SAVORSHROOM_PRESSURE_PLATE.asItem());
+                .add(ModBlocks.SAVORSHROOM_PRESSURE_PLATE.asItem())
+                .add(ModBlocks.SAVORSHROOM_DOOR.asItem())
+                .add(ModBlocks.SAVORSHROOM_TRAPDOOR.asItem());
     }
 }

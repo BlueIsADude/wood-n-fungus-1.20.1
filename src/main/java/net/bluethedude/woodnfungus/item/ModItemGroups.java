@@ -57,6 +57,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BOULDERBARK_FENCE_GATE);
                         entries.add(ModBlocks.BOULDERBARK_BUTTON);
                         entries.add(ModBlocks.BOULDERBARK_PRESSURE_PLATE);
+                        entries.add(ModBlocks.BOULDERBARK_DOOR);
+                        entries.add(ModBlocks.BOULDERBARK_TRAPDOOR);
                         entries.add(ModItems.BOULDERBARK_SIGN);
                         entries.add(ModItems.BOULDERBARK_HANGING_SIGN);
                         entries.add(ModItems.BOULDERBARK_BOAT);
@@ -79,6 +81,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MAGENTA_BOULDERBARK_LEAVES);
                         entries.add(ModBlocks.PINK_BOULDERBARK_LEAVES);
 
+                        entries.add(ModItems.ROASTED_SAVORSHROOM);
                         entries.add(ModItems.ROASTED_SAVORSHROOM_CHUNKS);
                         entries.add(ModItems.ROASTED_SAVORSHROOM_SCRAPS);
 
@@ -94,6 +97,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SAVORSHROOM_FENCE_GATE);
                         entries.add(ModBlocks.SAVORSHROOM_BUTTON);
                         entries.add(ModBlocks.SAVORSHROOM_PRESSURE_PLATE);
+                        entries.add(ModBlocks.SAVORSHROOM_DOOR);
+                        entries.add(ModBlocks.SAVORSHROOM_TRAPDOOR);
 
                         entries.add(ModBlocks.PETRIFIED_LOG);
                         entries.add(ModBlocks.STRIPPED_PETRIFIED_LOG);

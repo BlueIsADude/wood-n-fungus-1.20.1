@@ -40,6 +40,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BOULDERBARK_FENCE_GATE);
         addDrop(ModBlocks.BOULDERBARK_BUTTON);
         addDrop(ModBlocks.BOULDERBARK_PRESSURE_PLATE);
+        addDrop(ModBlocks.BOULDERBARK_DOOR, doorDrops(ModBlocks.BOULDERBARK_DOOR));
+        addDrop(ModBlocks.BOULDERBARK_TRAPDOOR);
         addDrop(ModBlocks.BOULDERBARK_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_BOULDERBARK_SAPLING);
 
@@ -72,6 +74,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SAVORSHROOM_FENCE_GATE);
         addDrop(ModBlocks.SAVORSHROOM_BUTTON);
         addDrop(ModBlocks.SAVORSHROOM_PRESSURE_PLATE);
+        addDrop(ModBlocks.SAVORSHROOM_DOOR, doorDrops(ModBlocks.SAVORSHROOM_DOOR));
+        addDrop(ModBlocks.SAVORSHROOM_TRAPDOOR);
 
         addDrop(ModBlocks.PETRIFIED_LOG);
         addDrop(ModBlocks.STRIPPED_PETRIFIED_LOG);
