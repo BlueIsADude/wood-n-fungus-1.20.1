@@ -21,12 +21,6 @@ public class WoodNFungus implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
-		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
-		ModBlockEntities.registerBlockEntities();
-		ModTrunkPlacerTypes.register();
-		ModFoliagePlacerTypes.register();
 
 		StrippableBlockRegistry.register(ModBlocks.PALM_LOG, ModBlocks.STRIPPED_PALM_LOG);
 		StrippableBlockRegistry.register(ModBlocks.PALM_WOOD, ModBlocks.STRIPPED_PALM_WOOD);
@@ -88,6 +82,13 @@ public class WoodNFungus implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_SLAB, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_FENCE, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_FENCE_GATE, 5, 20);
+
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlockEntities();
+		ModTrunkPlacerTypes.register();
+		ModFoliagePlacerTypes.register();
 
 		ModBoats.registerBoats();
 		ModWorldGeneration.generateModWorldGen();

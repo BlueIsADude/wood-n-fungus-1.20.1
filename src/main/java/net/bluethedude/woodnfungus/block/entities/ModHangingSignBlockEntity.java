@@ -5,8 +5,6 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.math.BlockPos;
 
 public class ModHangingSignBlockEntity extends ModSignBlockEntity {
-    private static final int MAX_TEXT_WIDTH = 60;
-    private static final int TEXT_LINE_HEIGHT = 9;
 
     public ModHangingSignBlockEntity(BlockPos blockPos, BlockState blockState) {
         super(blockPos, blockState);
