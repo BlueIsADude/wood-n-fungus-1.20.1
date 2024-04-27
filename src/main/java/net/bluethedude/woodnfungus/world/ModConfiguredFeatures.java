@@ -2,6 +2,8 @@ package net.bluethedude.woodnfungus.world;
 
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.ModBlocks;
+import net.bluethedude.woodnfungus.world.tree.custom.PalmFoliagePlacer;
+import net.bluethedude.woodnfungus.world.tree.custom.PalmTrunkPlacer;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -13,7 +15,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
-import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
@@ -39,14 +40,14 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.PETRIFIED_LOG.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.PETRIFIED_LOG.getDefaultState()));
 
-        register(context, PETRIFIED_KEY, Feature.ORE, new OreFeatureConfig(petrifiedWoodGen, 6));
+        register(context, PETRIFIED_KEY, Feature.ORE, new OreFeatureConfig(petrifiedWoodGen, 5));
 
         register(context, PALM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PALM_LOG),
-                new StraightTrunkPlacer(5, 4, 3),
+                new PalmTrunkPlacer(3, 2, 2),
 
                 BlockStateProvider.of(ModBlocks.PALM_LEAVES),
-                new AcaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1)),
+                new PalmFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 1),
 
                 new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.SAND)).build());
 

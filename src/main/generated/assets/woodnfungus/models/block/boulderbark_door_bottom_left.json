@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "woodnfungus:block/boulderbark_door_bottom",
+    "top": "woodnfungus:block/boulderbark_door_top"
+  }
+}
