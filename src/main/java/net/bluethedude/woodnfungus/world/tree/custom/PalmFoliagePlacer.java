@@ -34,20 +34,16 @@ public class PalmFoliagePlacer extends FoliagePlacer {
         generateSquare(world, placer, random, config, treeNode.getCenter().up(0), 0, 0, treeNode.isGiantTrunk());
         generateSquare(world, placer, random, config, treeNode.getCenter().north(1), 0, 0, treeNode.isGiantTrunk());
         generateSquare(world, placer, random, config, treeNode.getCenter().north(2), 0, -1, treeNode.isGiantTrunk());
-        generateSquare(world, placer, random, config, treeNode.getCenter().north(2), 0, -2, treeNode.isGiantTrunk());
-        generateSquare(world, placer, random, config, treeNode.getCenter().north(3), 0, -2, treeNode.isGiantTrunk());
+        generateSquare(world, placer, random, config, treeNode.getCenter().north(3), 0, -1, treeNode.isGiantTrunk());
         generateSquare(world, placer, random, config, treeNode.getCenter().south(1), 0, 0, treeNode.isGiantTrunk());
         generateSquare(world, placer, random, config, treeNode.getCenter().south(2), 0, -1, treeNode.isGiantTrunk());
-        generateSquare(world, placer, random, config, treeNode.getCenter().south(2), 0, -2, treeNode.isGiantTrunk());
-        generateSquare(world, placer, random, config, treeNode.getCenter().south(3), 0, -2, treeNode.isGiantTrunk());
+        generateSquare(world, placer, random, config, treeNode.getCenter().south(3), 0, -1, treeNode.isGiantTrunk());
         generateSquare(world, placer, random, config, treeNode.getCenter().east(1), 0, 0, treeNode.isGiantTrunk());
         generateSquare(world, placer, random, config, treeNode.getCenter().east(2), 0, -1, treeNode.isGiantTrunk());
-        generateSquare(world, placer, random, config, treeNode.getCenter().east(2), 0, -2, treeNode.isGiantTrunk());
-        generateSquare(world, placer, random, config, treeNode.getCenter().east(3), 0, -2, treeNode.isGiantTrunk());
+        generateSquare(world, placer, random, config, treeNode.getCenter().east(3), 0, -1, treeNode.isGiantTrunk());
         generateSquare(world, placer, random, config, treeNode.getCenter().west(1), 0, 0, treeNode.isGiantTrunk());
         generateSquare(world, placer, random, config, treeNode.getCenter().west(2), 0, -1, treeNode.isGiantTrunk());
-        generateSquare(world, placer, random, config, treeNode.getCenter().west(2), 0, -2, treeNode.isGiantTrunk());
-        generateSquare(world, placer, random, config, treeNode.getCenter().west(3), 0, -2, treeNode.isGiantTrunk());
+        generateSquare(world, placer, random, config, treeNode.getCenter().west(3), 0, -1, treeNode.isGiantTrunk());
 
     }
 

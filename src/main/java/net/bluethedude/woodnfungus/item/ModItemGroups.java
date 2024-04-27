@@ -99,6 +99,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SAVORSHROOM_PRESSURE_PLATE);
                         entries.add(ModBlocks.SAVORSHROOM_DOOR);
                         entries.add(ModBlocks.SAVORSHROOM_TRAPDOOR);
+                        entries.add(ModItems.SAVORSHROOM_SIGN);
+                        entries.add(ModItems.SAVORSHROOM_HANGING_SIGN);
 
                         entries.add(ModBlocks.PETRIFIED_LOG);
                         entries.add(ModBlocks.STRIPPED_PETRIFIED_LOG);

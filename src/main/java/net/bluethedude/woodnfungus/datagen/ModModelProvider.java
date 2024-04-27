@@ -80,6 +80,7 @@ public class ModModelProvider extends FabricModelProvider {
         savorshroomPool.pressurePlate(ModBlocks.SAVORSHROOM_PRESSURE_PLATE);
         savorshroomPool.fence(ModBlocks.SAVORSHROOM_FENCE);
         savorshroomPool.fenceGate(ModBlocks.SAVORSHROOM_FENCE_GATE);
+        boulderbarkPool.family(ModBlocks.SAVORSHROOM_FAMILY);
 
         blockStateModelGenerator.registerDoor(ModBlocks.SAVORSHROOM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.SAVORSHROOM_TRAPDOOR);

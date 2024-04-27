@@ -38,6 +38,11 @@ public class ModItems {
     public static final Item ROASTED_SAVORSHROOM_CHUNKS = registerItem("roasted_savorshroom_chunks", new Item(new FabricItemSettings().food(ModFoodComponents.SAVORSHROOM_CHUNKS)));
     public static final Item ROASTED_SAVORSHROOM_SCRAPS = registerItem("roasted_savorshroom_scraps", new Item(new FabricItemSettings().food(ModFoodComponents.SAVORSHROOM_SCRAPS)));
 
+    public static final Item SAVORSHROOM_SIGN = registerItem("savorshroom_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_SAVORSHROOM_SIGN, ModBlocks.WALL_SAVORSHROOM_SIGN));
+    public static final Item SAVORSHROOM_HANGING_SIGN = registerItem("savorshroom_hanging_sign",
+            new HangingSignItem(ModBlocks.HANGING_SAVORSHROOM_SIGN, ModBlocks.WALL_HANGING_SAVORSHROOM_SIGN, new FabricItemSettings().maxCount(16)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(WoodNFungus.MOD_ID, name), item);
     }

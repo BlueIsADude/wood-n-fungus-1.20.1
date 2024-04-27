@@ -234,6 +234,21 @@ public class ModBlocks {
     public static final Block SAVORSHROOM_TRAPDOOR = registerBlock("savorshroom_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).nonOpaque(), BlockSetType.WARPED));
 
+    public static final Identifier SAVORSHROOM_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "entity/signs/savorshroom");
+    public static final Identifier SAVORSHROOM_HANGING_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "entity/signs/hanging/savorshroom");
+    public static final Identifier SAVORSHROOM_HANGING_GUI_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/gui/hanging_signs/savorshroom");
+    public static final Block STANDING_SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_standing_sign"),
+            new TerraformSignBlock(SAVORSHROOM_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_SIGN)));
+    public static final Block WALL_SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_wall_sign"),
+            new TerraformWallSignBlock(SAVORSHROOM_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_WALL_SIGN)));
+    public static final Block HANGING_SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_hanging_sign"),
+            new TerraformHangingSignBlock(SAVORSHROOM_HANGING_SIGN_TEXTURE, SAVORSHROOM_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_HANGING_SIGN)));
+    public static final Block WALL_HANGING_SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_wall_hanging_sign"),
+            new TerraformWallHangingSignBlock(SAVORSHROOM_HANGING_SIGN_TEXTURE, SAVORSHROOM_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_WALL_HANGING_SIGN)));
+    public static final BlockFamily SAVORSHROOM_FAMILY = BlockFamilies.register(ModBlocks.SAVORSHROOM_PLANKS)
+            .sign(ModBlocks.STANDING_SAVORSHROOM_SIGN, ModBlocks.WALL_SAVORSHROOM_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
+
 
 
     public static final Block PETRIFIED_LOG = registerBlock("petrified_log",
