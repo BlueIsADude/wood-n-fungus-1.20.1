@@ -19,7 +19,7 @@
 			"net.bluethedude.woodnfungus.WoodNFungus"
 		],
 		"client": [
-			"net.bluethedude.woodnfungus.WoodNFungusClient"
+			"net.bluethedude.woodnfungus.client.WoodNFungusClient"
 		],
 		"fabric-datagen": [
 			"net.bluethedude.woodnfungus.WoodNFungusDataGenerator"

@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -30,7 +31,9 @@ public class ModModelProvider extends FabricModelProvider {
         palmPool.pressurePlate(ModBlocks.PALM_PRESSURE_PLATE);
         palmPool.fence(ModBlocks.PALM_FENCE);
         palmPool.fenceGate(ModBlocks.PALM_FENCE_GATE);
-        palmPool.family(ModBlocks.PALM_FAMILY);
+        palmPool.family(BlockFamilies.register(ModBlocks.PALM_PLANKS).sign(ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN).build());
+
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_PALM_LOG, ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PALM_TRAPDOOR);
@@ -98,7 +101,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.COCONUT_HELMET));
 
-        itemModelGenerator.register(ModItems.PALM_HANGING_SIGN, Models.GENERATED);
         itemModelGenerator.register(ModItems.PALM_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PALM_CHEST_BOAT, Models.GENERATED);
 

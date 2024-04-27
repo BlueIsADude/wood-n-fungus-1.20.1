@@ -1,6 +1,7 @@
 package net.bluethedude.woodnfungus;
 
 import net.bluethedude.woodnfungus.block.ModBlocks;
+import net.bluethedude.woodnfungus.block.entities.ModBlockEntities;
 import net.bluethedude.woodnfungus.entity.ModBoats;
 import net.bluethedude.woodnfungus.item.ModItemGroups;
 import net.bluethedude.woodnfungus.item.ModItems;
@@ -23,6 +24,7 @@ public class WoodNFungus implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlockEntities();
 		ModTrunkPlacerTypes.register();
 		ModFoliagePlacerTypes.register();
 

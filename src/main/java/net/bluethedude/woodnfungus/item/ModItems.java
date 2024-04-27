@@ -20,10 +20,10 @@ public class ModItems {
     public static final Item COCONUT_HELMET = registerItem("coconut_helmet",
             new CoconutHelmetItem(ModArmorMaterials.COCONUT, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
-    public static final Item PALM_SIGN = registerItem("palm_sign",
-            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_PALM_SIGN, ModBlocks.WALL_PALM_SIGN));
-    public static final Item PALM_HANGING_SIGN = registerItem("palm_hanging_sign",
-            new HangingSignItem(ModBlocks.HANGING_PALM_SIGN, ModBlocks.WALL_HANGING_PALM_SIGN, new FabricItemSettings().maxCount(16)));
+    public static final SignItem PALM_SIGN = (SignItem) registerItem("palm_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN));
+    public static final HangingSignItem PALM_HANGING_SIGN = (HangingSignItem) registerItem("palm_hanging_sign",
+            new HangingSignItem(ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
     public static final Item PALM_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.PALM_BOAT_ID, ModBoats.PALM_BOAT_KEY, false);
     public static final Item PALM_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.PALM_CHEST_BOAT_ID, ModBoats.PALM_BOAT_KEY, true);
 
