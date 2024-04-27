@@ -58,7 +58,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.BOULDERBARK_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
 
-                new TwoLayersFeatureSize(1, 2, 0)).build());
+                new TwoLayersFeatureSize(1, 2, 0)).dirtProvider(BlockStateProvider.of(Blocks.STONE)).build());
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(WoodNFungus.MOD_ID, name));
