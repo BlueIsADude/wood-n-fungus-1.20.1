@@ -138,6 +138,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BOULDERBARK_STAIRS)
                 .add(ModBlocks.SAVORSHROOM_STAIRS);
 
+        getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
+                .add(ModBlocks.PALM_SIGN)
+                .add(ModBlocks.BOULDERBARK_SIGN)
+                .add(ModBlocks.SAVORSHROOM_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
+                .add(ModBlocks.PALM_WALL_SIGN)
+                .add(ModBlocks.BOULDERBARK_WALL_SIGN)
+                .add(ModBlocks.SAVORSHROOM_WALL_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
+                .add(ModBlocks.PALM_HANGING_SIGN)
+                .add(ModBlocks.BOULDERBARK_HANGING_SIGN)
+                .add(ModBlocks.SAVORSHROOM_HANGING_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
+                .add(ModBlocks.PALM_WALL_HANGING_SIGN)
+                .add(ModBlocks.BOULDERBARK_WALL_HANGING_SIGN)
+                .add(ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN);
+
         getOrCreateTagBuilder(ModTags.Blocks.CANDLE_COCONUT_CAKES)
                 .add(ModBlocks.CANDLE_COCONUT_CAKE)
                 .add(ModBlocks.WHITE_CANDLE_COCONUT_CAKE)

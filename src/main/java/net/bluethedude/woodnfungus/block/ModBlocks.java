@@ -1,9 +1,5 @@
 package net.bluethedude.woodnfungus.block;
 
-import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
-import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
-import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
-import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.custom.*;
 import net.bluethedude.woodnfungus.util.ModWoodTypes;
@@ -12,8 +8,6 @@ import net.bluethedude.woodnfungus.world.tree.PalmSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.data.family.BlockFamilies;
-import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -61,13 +55,13 @@ public class ModBlocks {
     public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
 
-    public static final Block PALM_SIGN = Registry.register(Registries.BLOCK, new Identifier("palm_sign"),
+    public static final Block PALM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "palm_sign"),
             new ModSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), ModWoodTypes.PALM));
-    public static final Block PALM_WALL_SIGN = Registry.register(Registries.BLOCK, new Identifier("palm_wall_sign"),
+    public static final Block PALM_WALL_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "palm_wall_sign"),
             new ModWallSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN).dropsLike(ModBlocks.PALM_SIGN), ModWoodTypes.PALM));
-    public static final Block PALM_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier("palm_hanging_sign"),
+    public static final Block PALM_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "palm_hanging_sign"),
             new ModHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), ModWoodTypes.PALM));
-    public static final Block PALM_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier("palm_wall_hanging_sign"),
+    public static final Block PALM_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "palm_wall_hanging_sign"),
             new ModWallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN).dropsLike(ModBlocks.PALM_HANGING_SIGN), ModWoodTypes.PALM));
 
     public static final Block COCONUT_CAKE = registerBlock("coconut_cake",
@@ -178,20 +172,14 @@ public class ModBlocks {
     public static final Block BOULDERBARK_TRAPDOOR = registerBlock("boulderbark_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque().resistance(50000f), BlockSetType.OAK));
 
-    public static final Identifier BOULDERBARK_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "entity/signs/boulderbark");
-    public static final Identifier BOULDERBARK_HANGING_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "entity/signs/hanging/boulderbark");
-    public static final Identifier BOULDERBARK_HANGING_GUI_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/gui/hanging_signs/boulderbark");
-    public static final Block STANDING_BOULDERBARK_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "boulderbark_standing_sign"),
-            new TerraformSignBlock(BOULDERBARK_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN).resistance(50000f)));
-    public static final Block WALL_BOULDERBARK_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "boulderbark_wall_sign"),
-            new TerraformWallSignBlock(BOULDERBARK_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN).resistance(50000f)));
-    public static final Block HANGING_BOULDERBARK_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "boulderbark_hanging_sign"),
-            new TerraformHangingSignBlock(BOULDERBARK_HANGING_SIGN_TEXTURE, BOULDERBARK_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN).resistance(50000f)));
-    public static final Block WALL_HANGING_BOULDERBARK_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "boulderbark_wall_hanging_sign"),
-            new TerraformWallHangingSignBlock(BOULDERBARK_HANGING_SIGN_TEXTURE, BOULDERBARK_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN).resistance(50000f)));
-    public static final BlockFamily BOULDERBARK_FAMILY = BlockFamilies.register(ModBlocks.BOULDERBARK_PLANKS)
-            .sign(ModBlocks.STANDING_BOULDERBARK_SIGN, ModBlocks.WALL_BOULDERBARK_SIGN)
-            .group("wooden").unlockCriterionName("has_planks").build();
+    public static final Block BOULDERBARK_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "boulderbark_sign"),
+            new ModSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), ModWoodTypes.BOULDERBARK));
+    public static final Block BOULDERBARK_WALL_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "boulderbark_wall_sign"),
+            new ModWallSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN).dropsLike(ModBlocks.BOULDERBARK_SIGN), ModWoodTypes.BOULDERBARK));
+    public static final Block BOULDERBARK_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "boulderbark_hanging_sign"),
+            new ModHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), ModWoodTypes.BOULDERBARK));
+    public static final Block BOULDERBARK_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "boulderbark_wall_hanging_sign"),
+            new ModWallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN).dropsLike(ModBlocks.BOULDERBARK_HANGING_SIGN), ModWoodTypes.BOULDERBARK));
 
 
 
@@ -226,20 +214,14 @@ public class ModBlocks {
     public static final Block SAVORSHROOM_TRAPDOOR = registerBlock("savorshroom_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).nonOpaque(), BlockSetType.WARPED));
 
-    public static final Identifier SAVORSHROOM_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "entity/signs/savorshroom");
-    public static final Identifier SAVORSHROOM_HANGING_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "entity/signs/hanging/savorshroom");
-    public static final Identifier SAVORSHROOM_HANGING_GUI_SIGN_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/gui/hanging_signs/savorshroom");
-    public static final Block STANDING_SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_standing_sign"),
-            new TerraformSignBlock(SAVORSHROOM_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_SIGN)));
-    public static final Block WALL_SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_wall_sign"),
-            new TerraformWallSignBlock(SAVORSHROOM_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_WALL_SIGN)));
-    public static final Block HANGING_SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_hanging_sign"),
-            new TerraformHangingSignBlock(SAVORSHROOM_HANGING_SIGN_TEXTURE, SAVORSHROOM_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_HANGING_SIGN)));
-    public static final Block WALL_HANGING_SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_wall_hanging_sign"),
-            new TerraformWallHangingSignBlock(SAVORSHROOM_HANGING_SIGN_TEXTURE, SAVORSHROOM_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.WARPED_WALL_HANGING_SIGN)));
-    public static final BlockFamily SAVORSHROOM_FAMILY = BlockFamilies.register(ModBlocks.SAVORSHROOM_PLANKS)
-            .sign(ModBlocks.STANDING_SAVORSHROOM_SIGN, ModBlocks.WALL_SAVORSHROOM_SIGN)
-            .group("wooden").unlockCriterionName("has_planks").build();
+    public static final Block SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_sign"),
+            new ModSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), ModWoodTypes.SAVORSHROOM));
+    public static final Block SAVORSHROOM_WALL_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_wall_sign"),
+            new ModWallSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN).dropsLike(ModBlocks.SAVORSHROOM_SIGN), ModWoodTypes.SAVORSHROOM));
+    public static final Block SAVORSHROOM_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_hanging_sign"),
+            new ModHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), ModWoodTypes.SAVORSHROOM));
+    public static final Block SAVORSHROOM_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_wall_hanging_sign"),
+            new ModWallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN).dropsLike(ModBlocks.SAVORSHROOM_HANGING_SIGN), ModWoodTypes.SAVORSHROOM));
 
 
 

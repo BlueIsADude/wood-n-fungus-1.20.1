@@ -20,17 +20,19 @@ public class ModItems {
     public static final Item COCONUT_HELMET = registerItem("coconut_helmet",
             new CoconutHelmetItem(ModArmorMaterials.COCONUT, ArmorItem.Type.HELMET, new FabricItemSettings()));
 
-    public static final SignItem PALM_SIGN = (SignItem) registerItem("palm_sign",
+    public static final Item PALM_SIGN = registerItem("palm_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN));
-    public static final HangingSignItem PALM_HANGING_SIGN = (HangingSignItem) registerItem("palm_hanging_sign",
+    public static final Item PALM_HANGING_SIGN = registerItem("palm_hanging_sign",
             new HangingSignItem(ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
+
     public static final Item PALM_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.PALM_BOAT_ID, ModBoats.PALM_BOAT_KEY, false);
     public static final Item PALM_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.PALM_CHEST_BOAT_ID, ModBoats.PALM_BOAT_KEY, true);
 
     public static final Item BOULDERBARK_SIGN = registerItem("boulderbark_sign",
-            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_BOULDERBARK_SIGN, ModBlocks.WALL_BOULDERBARK_SIGN));
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.BOULDERBARK_SIGN, ModBlocks.BOULDERBARK_WALL_SIGN));
     public static final Item BOULDERBARK_HANGING_SIGN = registerItem("boulderbark_hanging_sign",
-            new HangingSignItem(ModBlocks.HANGING_BOULDERBARK_SIGN, ModBlocks.WALL_HANGING_BOULDERBARK_SIGN, new FabricItemSettings().maxCount(16)));
+            new HangingSignItem(ModBlocks.BOULDERBARK_HANGING_SIGN, ModBlocks.BOULDERBARK_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
+
     public static final Item BOULDERBARK_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.BOULDERBARK_BOAT_ID, ModBoats.BOULDERBARK_BOAT_KEY, false);
     public static final Item BOULDERBARK_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.BOULDERBARK_CHEST_BOAT_ID, ModBoats.BOULDERBARK_BOAT_KEY, true);
 
@@ -39,9 +41,9 @@ public class ModItems {
     public static final Item ROASTED_SAVORSHROOM_SCRAPS = registerItem("roasted_savorshroom_scraps", new Item(new FabricItemSettings().food(ModFoodComponents.SAVORSHROOM_SCRAPS)));
 
     public static final Item SAVORSHROOM_SIGN = registerItem("savorshroom_sign",
-            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_SAVORSHROOM_SIGN, ModBlocks.WALL_SAVORSHROOM_SIGN));
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.SAVORSHROOM_SIGN, ModBlocks.SAVORSHROOM_WALL_SIGN));
     public static final Item SAVORSHROOM_HANGING_SIGN = registerItem("savorshroom_hanging_sign",
-            new HangingSignItem(ModBlocks.HANGING_SAVORSHROOM_SIGN, ModBlocks.WALL_HANGING_SAVORSHROOM_SIGN, new FabricItemSettings().maxCount(16)));
+            new HangingSignItem(ModBlocks.SAVORSHROOM_HANGING_SIGN, ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(WoodNFungus.MOD_ID, name), item);

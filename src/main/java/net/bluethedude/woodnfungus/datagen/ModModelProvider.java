@@ -50,7 +50,9 @@ public class ModModelProvider extends FabricModelProvider {
         boulderbarkPool.pressurePlate(ModBlocks.BOULDERBARK_PRESSURE_PLATE);
         boulderbarkPool.fence(ModBlocks.BOULDERBARK_FENCE);
         boulderbarkPool.fenceGate(ModBlocks.BOULDERBARK_FENCE_GATE);
-        boulderbarkPool.family(ModBlocks.BOULDERBARK_FAMILY);
+        boulderbarkPool.family(BlockFamilies.register(ModBlocks.BOULDERBARK_PLANKS).sign(ModBlocks.BOULDERBARK_SIGN, ModBlocks.BOULDERBARK_WALL_SIGN).build());
+
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_BOULDERBARK_LOG, ModBlocks.BOULDERBARK_HANGING_SIGN, ModBlocks.BOULDERBARK_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.registerDoor(ModBlocks.BOULDERBARK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.BOULDERBARK_TRAPDOOR);
@@ -83,7 +85,9 @@ public class ModModelProvider extends FabricModelProvider {
         savorshroomPool.pressurePlate(ModBlocks.SAVORSHROOM_PRESSURE_PLATE);
         savorshroomPool.fence(ModBlocks.SAVORSHROOM_FENCE);
         savorshroomPool.fenceGate(ModBlocks.SAVORSHROOM_FENCE_GATE);
-        boulderbarkPool.family(ModBlocks.SAVORSHROOM_FAMILY);
+        savorshroomPool.family(BlockFamilies.register(ModBlocks.SAVORSHROOM_PLANKS).sign(ModBlocks.SAVORSHROOM_SIGN, ModBlocks.SAVORSHROOM_WALL_SIGN).build());
+
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_SAVORSHROOM_STEM, ModBlocks.SAVORSHROOM_HANGING_SIGN, ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.registerDoor(ModBlocks.SAVORSHROOM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.SAVORSHROOM_TRAPDOOR);
@@ -104,7 +108,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PALM_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PALM_CHEST_BOAT, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.BOULDERBARK_HANGING_SIGN, Models.GENERATED);
         itemModelGenerator.register(ModItems.BOULDERBARK_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BOULDERBARK_CHEST_BOAT, Models.GENERATED);
 

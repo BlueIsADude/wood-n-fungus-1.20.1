@@ -7,11 +7,6 @@
 		"FoliagePlacerTypeInvoker",
 		"CoconutMilkMixin"
 	],
-	"client": [
-		"signs.EntityModelLoaderMixin",
-		"signs.TexturedRenderLayersMixin",
-		"signs.HangingSignEditScreenMixin"
-	],
 	"injectors": {
 		"defaultRequire": 1
 	}

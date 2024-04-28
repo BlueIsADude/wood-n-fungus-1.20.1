@@ -1,15 +1,17 @@
 package net.bluethedude.woodnfungus.client;
 
 import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
-import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 import net.bluethedude.woodnfungus.block.ModBlocks;
+import net.bluethedude.woodnfungus.block.entities.ModBlockEntities;
 import net.bluethedude.woodnfungus.entity.ModBoats;
 import net.bluethedude.woodnfungus.util.ModWoodTypes;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
-import net.minecraft.client.util.SpriteIdentifier;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+import net.minecraft.client.render.block.entity.HangingSignBlockEntityRenderer;
+import net.minecraft.client.render.block.entity.SignBlockEntityRenderer;
 
 public class WoodNFungusClient implements ClientModInitializer {
     @Override
@@ -45,10 +47,12 @@ public class WoodNFungusClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAGENTA_BOULDERBARK_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_BOULDERBARK_LEAVES, RenderLayer.getCutout());
 
-        TexturedRenderLayers.SIGN_TYPE_TEXTURES.put(ModWoodTypes.PALM, TexturedRenderLayers.getSignTextureId(ModWoodTypes.PALM));
+        BlockEntityRendererFactories.register(ModBlockEntities.MOD_SIGN_BLOCK_ENTITY, SignBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.MOD_HANGING_SIGN_BLOCK_ENTITY, HangingSignBlockEntityRenderer::new);
 
-        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.BOULDERBARK_SIGN_TEXTURE));
-        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.BOULDERBARK_HANGING_SIGN_TEXTURE));
+        TexturedRenderLayers.SIGN_TYPE_TEXTURES.put(ModWoodTypes.PALM, TexturedRenderLayers.getSignTextureId(ModWoodTypes.PALM));
+        TexturedRenderLayers.SIGN_TYPE_TEXTURES.put(ModWoodTypes.BOULDERBARK, TexturedRenderLayers.getSignTextureId(ModWoodTypes.BOULDERBARK));
+        TexturedRenderLayers.SIGN_TYPE_TEXTURES.put(ModWoodTypes.SAVORSHROOM, TexturedRenderLayers.getSignTextureId(ModWoodTypes.SAVORSHROOM));
 
         TerraformBoatClientHelper.registerModelLayers(ModBoats.PALM_BOAT_ID, false);
         TerraformBoatClientHelper.registerModelLayers(ModBoats.BOULDERBARK_BOAT_ID, false);

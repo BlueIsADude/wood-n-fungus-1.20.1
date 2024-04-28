@@ -48,10 +48,8 @@
 	"block.woodnfungus.palm_door": "Palm Door",
 	"block.woodnfungus.palm_trapdoor": "Palm Trapdoor",
 
-	"block.woodnfungus.palm_standing_sign": "Palm Standing Sign",
-	"block.woodnfungus.palm_wall_sign": "Palm Wall Sign",
+	"block.woodnfungus.palm_sign": "Palm Sign",
 	"block.woodnfungus.palm_hanging_sign": "Palm Hanging Sign",
-	"block.woodnfungus.palm_wall_hanging_sign": "Palm Wall Hanging Sign",
 
 	"item.woodnfungus.boulderbark_boat": "Boulderbark Boat",
 	"item.woodnfungus.boulderbark_chest_boat": "Boulderbark Chest Boat",
@@ -74,10 +72,8 @@
 	"block.woodnfungus.boulderbark_door": "Boulderbark Door",
 	"block.woodnfungus.boulderbark_trapdoor": "Boulderbark Trapdoor",
 
-	"block.woodnfungus.boulderbark_standing_sign": "Boulderbark Standing Sign",
-	"block.woodnfungus.boulderbark_wall_sign": "Boulderbark Wall Sign",
+	"block.woodnfungus.boulderbark_sign": "Boulderbark Sign",
 	"block.woodnfungus.boulderbark_hanging_sign": "Boulderbark Hanging Sign",
-	"block.woodnfungus.boulderbark_wall_hanging_sign": "Boulderbark Wall Hanging Sign",
 
 	"block.woodnfungus.white_boulderbark_leaves": "White Boulderbark Leaves",
 	"block.woodnfungus.light_gray_boulderbark_leaves": "Light Gray Boulderbark Leaves",
@@ -115,6 +111,9 @@
 	"block.woodnfungus.savorshroom_pressure_plate": "Savorshroom Pressure Plate",
 	"block.woodnfungus.savorshroom_door": "Savorshroom Door",
 	"block.woodnfungus.savorshroom_trapdoor": "Savorshroom Trapdoor",
+
+	"block.woodnfungus.savorshroom_sign": "Savorshroom Sign",
+	"block.woodnfungus.savorshroom_hanging_sign": "Savorshroom Hanging Sign",
 
 	"block.woodnfungus.petrified_log": "Petrified Log",
 	"block.woodnfungus.stripped_petrified_log": "Stripped Petrified Log",
