@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "woodnfungus:palm_log",
+    "woodnfungus:palm_wood",
+    "woodnfungus:palm_core_log",
+    "woodnfungus:palm_core_wood",
+    "woodnfungus:palm_leaves",
+    "woodnfungus:boulderbark_log",
+    "woodnfungus:boulderbark_wood",
+    "woodnfungus:boulderbark_leaves",
+    "woodnfungus:savorshroom_stem",
+    "woodnfungus:savorshroom_hyphae",
+    "woodnfungus:savorshroom_block"
+  ]
+}

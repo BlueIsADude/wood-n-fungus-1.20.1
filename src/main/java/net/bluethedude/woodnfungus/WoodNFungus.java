@@ -5,19 +5,24 @@ import net.bluethedude.woodnfungus.block.entities.ModBlockEntities;
 import net.bluethedude.woodnfungus.entity.ModBoats;
 import net.bluethedude.woodnfungus.item.ModItemGroups;
 import net.bluethedude.woodnfungus.item.ModItems;
+import net.bluethedude.woodnfungus.mixin.TreeDecoratorTypeMixin;
 import net.bluethedude.woodnfungus.world.gen.ModWorldGeneration;
 import net.bluethedude.woodnfungus.world.tree.ModTrunkPlacerTypes;
 import net.bluethedude.woodnfungus.world.tree.ModFoliagePlacerTypes;
+import net.bluethedude.woodnfungus.world.tree.custom.PalmTreeDecorator;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class WoodNFungus implements ModInitializer {
 	public static final String MOD_ID = "woodnfungus";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+	public static final TreeDecoratorType<PalmTreeDecorator> PALM = TreeDecoratorTypeMixin.callRegister("woodnfungus:palm_tree_decorator", PalmTreeDecorator.CODEC);
 
 	@Override
 	public void onInitialize() {
