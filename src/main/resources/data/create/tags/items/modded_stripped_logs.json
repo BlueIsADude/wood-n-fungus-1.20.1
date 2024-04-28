@@ -1,8 +1,17 @@
 {
     "replace": false,
     "values": [
-	"woodnfungus:stripped_palm_log",
-	"woodnfungus:stripped_boulderbark_log",
-	"woodnfungus:stripped_savorshroom_stem"
+      {
+        "id": "woodnfungus:stripped_palm_log",
+        "required": false
+      },
+      {
+        "id": "woodnfungus:stripped_boulderbark_log",
+        "required": false
+      },
+      {
+        "id": "woodnfungus:stripped_savorshroom_stem",
+        "required": false
+      }
     ]
 }

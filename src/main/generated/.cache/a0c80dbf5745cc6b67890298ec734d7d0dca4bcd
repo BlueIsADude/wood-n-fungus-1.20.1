@@ -1,7 +1,7 @@
-// 1.20.1	2024-04-27T22:06:58.2401855	Wood n' Fungus/Tags for minecraft:block
+// 1.20.1	2024-04-28T12:14:33.2678366	Wood n' Fungus/Tags for minecraft:block
 b0d904c7c9d40b1b7952946aa23fedea7ba94345 data\minecraft\tags\blocks\buttons.json
-05f46db7602020a67008551e88c61bf270718572 data\minecraft\tags\blocks\slabs.json
 8fb390609d5eccb324c3f9397b00f245d0bf54b8 data\minecraft\tags\blocks\doors.json
+05f46db7602020a67008551e88c61bf270718572 data\minecraft\tags\blocks\slabs.json
 ab5e3f19781cf3180e44972a15c19b060a1b7ed3 data\minecraft\tags\blocks\logs_that_burn.json
 b0d904c7c9d40b1b7952946aa23fedea7ba94345 data\minecraft\tags\blocks\wooden_buttons.json
 01ee81e56d7f3398851572d5a66752215029694a data\minecraft\tags\blocks\stairs.json

@@ -37,7 +37,20 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.BOULDERBARK_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_BOULDERBARK_LOG.asItem())
                 .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD.asItem());
-        
+
+        getOrCreateTagBuilder(ItemTags.COMPLETES_FIND_TREE_TUTORIAL)
+                .add(ModBlocks.PALM_LOG.asItem())
+                .add(ModBlocks.PALM_WOOD.asItem())
+                .add(ModBlocks.PALM_CORE_LOG.asItem())
+                .add(ModBlocks.PALM_CORE_WOOD.asItem())
+                .add(ModBlocks.PALM_LEAVES.asItem())
+                .add(ModBlocks.BOULDERBARK_LOG.asItem())
+                .add(ModBlocks.BOULDERBARK_WOOD.asItem())
+                .add(ModBlocks.BOULDERBARK_LEAVES.asItem())
+                .add(ModBlocks.SAVORSHROOM_STEM.asItem())
+                .add(ModBlocks.SAVORSHROOM_HYPHAE.asItem())
+                .add(ModBlocks.SAVORSHROOM_BLOCK.asItem());
+
         getOrCreateTagBuilder(ModTags.Items.SAVORSHROOM_CHUNK_COOKABLE)
                 .add(ModBlocks.SAVORSHROOM_BLOCK.asItem())
                 .add(ModBlocks.SAVORSHROOM_STEM.asItem())

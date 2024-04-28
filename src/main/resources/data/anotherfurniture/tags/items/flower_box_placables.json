@@ -1,0 +1,76 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "woodnfungus:palm_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:white_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:light_gray_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:gray_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:black_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:brown_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:red_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:orange_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:yellow_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:lime_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:green_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:cyan_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:light_blue_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:blue_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:purple_boulderbark_leaves",
+      "required": false
+    },    {
+      "id": "woodnfungus:magenta_boulderbark_leaves",
+      "required": false
+    },
+    {
+      "id": "woodnfungus:pink_boulderbark_leaves",
+      "required": false
+    }
+  ]
+}

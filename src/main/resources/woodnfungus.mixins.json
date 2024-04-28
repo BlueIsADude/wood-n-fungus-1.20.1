@@ -5,6 +5,7 @@
 	"mixins": [
 		"TrunkPlacerTypeInvoker",
 		"FoliagePlacerTypeInvoker",
+		"TreeDecoratorTypeMixin",
 		"CoconutMilkMixin"
 	],
 	"injectors": {
