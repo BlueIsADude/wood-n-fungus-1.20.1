@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-28T14:17:21.3170291	Wood n' Fungus/Tags for minecraft:block
+// 1.20.1	2024-04-29T18:44:21.5704835	Wood n' Fungus/Tags for minecraft:block
 b0d904c7c9d40b1b7952946aa23fedea7ba94345 data\minecraft\tags\blocks\buttons.json
 05f46db7602020a67008551e88c61bf270718572 data\minecraft\tags\blocks\slabs.json
 8fb390609d5eccb324c3f9397b00f245d0bf54b8 data\minecraft\tags\blocks\doors.json
@@ -12,6 +12,7 @@ d19fda91d7ce61730889d1edf4dd6df8594c3983 data\minecraft\tags\blocks\leaves.json
 1831b7ae2585641621159baca1d747dcac1cea4c data\woodnfungus\tags\blocks\candle_coconut_cakes.json
 c70d05b92569efb475fa8e1a42ff321d504effe9 data\minecraft\tags\blocks\logs.json
 77e464419adfd3e0325abf0ba6fa5d34fe164c3a data\minecraft\tags\blocks\wooden_trapdoors.json
+99edc97cde5b5c25041cf513926b5aac6ef62b9c data\woodnfungus\tags\blocks\grows_coconut.json
 8e7cd90846d3847c94bfc936cee4f7f2ea80a6cc data\minecraft\tags\blocks\wall_signs.json
 065bc25c5655d30060d57cc1a495fb548e536f35 data\minecraft\tags\blocks\pressure_plates.json
 d5d8aaa0fb14c124ad79d8019cdf2a9dc7d2bd2f data\minecraft\tags\blocks\wall_hanging_signs.json
@@ -20,6 +21,6 @@ d5d8aaa0fb14c124ad79d8019cdf2a9dc7d2bd2f data\minecraft\tags\blocks\wall_hanging
 97c4a63a291e931ab93ba044aec1b0612fc84630 data\minecraft\tags\blocks\ceiling_hanging_signs.json
 a8b093383244b9dbcc79865ec05940b9a7457959 data\minecraft\tags\blocks\standing_signs.json
 065bc25c5655d30060d57cc1a495fb548e536f35 data\minecraft\tags\blocks\wooden_pressure_plates.json
-8fb390609d5eccb324c3f9397b00f245d0bf54b8 data\minecraft\tags\blocks\wooden_doors.json
 8e217fbc0bfca202967b01ad330cefed04de832a data\minecraft\tags\blocks\fence_gates.json
+8fb390609d5eccb324c3f9397b00f245d0bf54b8 data\minecraft\tags\blocks\wooden_doors.json
 77e464419adfd3e0325abf0ba6fa5d34fe164c3a data\minecraft\tags\blocks\trapdoors.json

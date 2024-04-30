@@ -36,7 +36,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_PALM_LOG, ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.PALM_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.PALM_TRAPDOOR);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.BOULDERBARK_LOG).log(ModBlocks.BOULDERBARK_LOG).wood(ModBlocks.BOULDERBARK_WOOD);
@@ -90,10 +90,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_SAVORSHROOM_STEM, ModBlocks.SAVORSHROOM_HANGING_SIGN, ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.registerDoor(ModBlocks.SAVORSHROOM_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.SAVORSHROOM_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.SAVORSHROOM_TRAPDOOR);
 
-        blockStateModelGenerator.registerLog(ModBlocks.PETRIFIED_LOG).log(ModBlocks.PETRIFIED_LOG).wood(ModBlocks.PETRIFIED_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PETRIFIED_LOG).log(ModBlocks.STRIPPED_PETRIFIED_LOG).wood(ModBlocks.STRIPPED_PETRIFIED_WOOD);
     }
 
     @Override

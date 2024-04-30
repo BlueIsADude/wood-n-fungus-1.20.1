@@ -225,17 +225,6 @@ public class ModBlocks {
 
 
 
-    public static final Block PETRIFIED_LOG = registerBlock("petrified_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
-    public static final Block PETRIFIED_WOOD = registerBlock("petrified_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
-    public static final Block STRIPPED_PETRIFIED_LOG = registerBlock("stripped_petrified_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
-    public static final Block STRIPPED_PETRIFIED_WOOD = registerBlock("stripped_petrified_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
-
-
-
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, name), block);

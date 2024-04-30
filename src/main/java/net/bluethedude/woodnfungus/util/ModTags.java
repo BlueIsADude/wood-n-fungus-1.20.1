@@ -7,6 +7,8 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
+import javax.swing.text.html.HTML;
+
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> BOULDERBARK_PLANTABLE =
@@ -15,6 +17,8 @@ public class ModTags {
                 createTag("boulderbark_plantable");
         public static final TagKey<Block> CANDLE_COCONUT_CAKES =
                 createTag("candle_coconut_cakes");
+        public static final TagKey<Block> GROWS_COCONUT =
+                createTag("grows_coconut");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(WoodNFungus.MOD_ID, name));

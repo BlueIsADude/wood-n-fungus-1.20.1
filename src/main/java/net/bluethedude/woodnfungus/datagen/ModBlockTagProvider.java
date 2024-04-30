@@ -177,6 +177,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MAGENTA_CANDLE_COCONUT_CAKE)
                 .add(ModBlocks.PINK_CANDLE_COCONUT_CAKE);
 
+        getOrCreateTagBuilder(ModTags.Blocks.GROWS_COCONUT)
+                .add(ModBlocks.PALM_CORE_LOG)
+                .add(ModBlocks.PALM_CORE_WOOD);
+
         getOrCreateTagBuilder(ModTags.Blocks.BOULDERBARK_PLANTABLE)
                 .add(Blocks.STONE)
                 .add(Blocks.DEEPSLATE)

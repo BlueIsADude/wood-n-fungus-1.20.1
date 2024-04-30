@@ -12,8 +12,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.PALM_LOG);
+        addDrop(ModBlocks.PALM_CORE_LOG, ModBlocks.PALM_LOG.asItem());
         addDrop(ModBlocks.STRIPPED_PALM_LOG);
         addDrop(ModBlocks.PALM_WOOD);
+        addDrop(ModBlocks.PALM_CORE_WOOD, ModBlocks.PALM_WOOD.asItem());
         addDrop(ModBlocks.STRIPPED_PALM_WOOD);
         addDrop(ModBlocks.PALM_PLANKS);
         addDrop(ModBlocks.PALM_STAIRS);
@@ -76,10 +78,5 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SAVORSHROOM_PRESSURE_PLATE);
         addDrop(ModBlocks.SAVORSHROOM_DOOR, doorDrops(ModBlocks.SAVORSHROOM_DOOR));
         addDrop(ModBlocks.SAVORSHROOM_TRAPDOOR);
-
-        addDrop(ModBlocks.PETRIFIED_LOG);
-        addDrop(ModBlocks.STRIPPED_PETRIFIED_LOG);
-        addDrop(ModBlocks.PETRIFIED_WOOD);
-        addDrop(ModBlocks.STRIPPED_PETRIFIED_WOOD);
     }
 }

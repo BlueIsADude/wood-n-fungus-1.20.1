@@ -35,15 +35,6 @@ public class ModConfiguredFeatures {
 
     public static void boostrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
-        RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-        RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-
-        List<OreFeatureConfig.Target> petrifiedWoodGen =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.PETRIFIED_LOG.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.PETRIFIED_LOG.getDefaultState()));
-
-        register(context, PETRIFIED_KEY, Feature.ORE, new OreFeatureConfig(petrifiedWoodGen, 5));
-
         register(context, PALM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
 
                 BlockStateProvider.of(ModBlocks.PALM_LOG),
