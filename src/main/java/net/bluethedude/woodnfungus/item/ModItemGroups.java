@@ -102,10 +102,6 @@ public class ModItemGroups {
                         entries.add(ModItems.SAVORSHROOM_SIGN);
                         entries.add(ModItems.SAVORSHROOM_HANGING_SIGN);
 
-                        entries.add(ModBlocks.PETRIFIED_LOG);
-                        entries.add(ModBlocks.STRIPPED_PETRIFIED_LOG);
-                        entries.add(ModBlocks.PETRIFIED_WOOD);
-                        entries.add(ModBlocks.STRIPPED_PETRIFIED_WOOD);
                     }).build());
     public static void registerItemGroups() {
         WoodNFungus.LOGGER.info("Registering Item Groups for " + WoodNFungus.MOD_ID);

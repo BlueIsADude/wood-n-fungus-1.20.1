@@ -112,5 +112,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ROASTED_SAVORSHROOM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ROASTED_SAVORSHROOM_CHUNKS, Models.GENERATED);
         itemModelGenerator.register(ModItems.ROASTED_SAVORSHROOM_SCRAPS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BLOPPO, Models.GENERATED);
     }
 }

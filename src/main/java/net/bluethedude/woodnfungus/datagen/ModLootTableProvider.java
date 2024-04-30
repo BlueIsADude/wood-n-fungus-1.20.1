@@ -12,10 +12,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.PALM_LOG);
-        addDrop(ModBlocks.PALM_CORE_LOG, ModBlocks.PALM_LOG.asItem());
+        addDrop(ModBlocks.PALM_CORE_LOG, ModBlocks.PALM_LOG);
         addDrop(ModBlocks.STRIPPED_PALM_LOG);
         addDrop(ModBlocks.PALM_WOOD);
-        addDrop(ModBlocks.PALM_CORE_WOOD, ModBlocks.PALM_WOOD.asItem());
+        addDrop(ModBlocks.PALM_CORE_WOOD, ModBlocks.PALM_WOOD);
         addDrop(ModBlocks.STRIPPED_PALM_WOOD);
         addDrop(ModBlocks.PALM_PLANKS);
         addDrop(ModBlocks.PALM_STAIRS);
@@ -29,7 +29,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PALM_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_PALM_SAPLING);
 
-        addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, 0.0005f));
+        addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, SAPLING_DROP_CHANCE));
 
         addDrop(ModBlocks.BOULDERBARK_LOG);
         addDrop(ModBlocks.STRIPPED_BOULDERBARK_LOG);
@@ -47,7 +47,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BOULDERBARK_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_BOULDERBARK_SAPLING);
 
-        addDrop(ModBlocks.BOULDERBARK_LEAVES, leavesDrops(ModBlocks.BOULDERBARK_LEAVES, ModBlocks.BOULDERBARK_SAPLING, 0.0005f));
+        addDrop(ModBlocks.BOULDERBARK_LEAVES, leavesDrops(ModBlocks.BOULDERBARK_LEAVES, ModBlocks.BOULDERBARK_SAPLING, 0.0001f));
         addDrop(ModBlocks.WHITE_BOULDERBARK_LEAVES);
         addDrop(ModBlocks.LIGHT_GRAY_BOULDERBARK_LEAVES);
         addDrop(ModBlocks.GRAY_BOULDERBARK_LEAVES);

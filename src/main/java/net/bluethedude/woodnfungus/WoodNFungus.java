@@ -6,6 +6,7 @@ import net.bluethedude.woodnfungus.entity.ModBoats;
 import net.bluethedude.woodnfungus.item.ModItemGroups;
 import net.bluethedude.woodnfungus.item.ModItems;
 import net.bluethedude.woodnfungus.mixin.TreeDecoratorTypeMixin;
+import net.bluethedude.woodnfungus.util.ModLootTableModifiers;
 import net.bluethedude.woodnfungus.world.gen.ModWorldGeneration;
 import net.bluethedude.woodnfungus.world.tree.ModTrunkPlacerTypes;
 import net.bluethedude.woodnfungus.world.tree.ModFoliagePlacerTypes;
@@ -33,8 +34,6 @@ public class WoodNFungus implements ModInitializer {
 		StrippableBlockRegistry.register(ModBlocks.PALM_CORE_WOOD, ModBlocks.STRIPPED_PALM_WOOD);
 		StrippableBlockRegistry.register(ModBlocks.BOULDERBARK_LOG, ModBlocks.STRIPPED_BOULDERBARK_LOG);
 		StrippableBlockRegistry.register(ModBlocks.BOULDERBARK_WOOD, ModBlocks.STRIPPED_BOULDERBARK_WOOD);
-		StrippableBlockRegistry.register(ModBlocks.PETRIFIED_LOG, ModBlocks.STRIPPED_PETRIFIED_LOG);
-		StrippableBlockRegistry.register(ModBlocks.PETRIFIED_WOOD, ModBlocks.STRIPPED_PETRIFIED_WOOD);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_LOG, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_PALM_LOG, 5, 5);
@@ -96,6 +95,7 @@ public class WoodNFungus implements ModInitializer {
 		ModFoliagePlacerTypes.register();
 
 		ModBoats.registerBoats();
+		ModLootTableModifiers.modifyLootTables();
 		ModWorldGeneration.generateModWorldGen();
 	}
 }

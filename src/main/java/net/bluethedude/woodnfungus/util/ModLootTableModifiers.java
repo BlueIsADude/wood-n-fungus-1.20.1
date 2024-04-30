@@ -1,0 +1,74 @@
+package net.bluethedude.woodnfungus.util;
+
+import net.bluethedude.woodnfungus.block.ModBlocks;
+import net.bluethedude.woodnfungus.item.ModItems;
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.util.Identifier;
+
+public class ModLootTableModifiers {
+
+    private static final Identifier BONUS_CHEST_ID = new Identifier("minecraft", "chests/spawn_bonus_chest");
+    private static final Identifier WOODLAND_MANSION_ID = new Identifier("minecraft", "chests/woodland_mansion");
+    private static final Identifier SHIPWRECK_SUPPLY_ID = new Identifier("minecraft", "chests/shipwreck_supply");
+
+    public static void modifyLootTables() {
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+
+            if (BONUS_CHEST_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(4))
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .with(ItemEntry.builder(ModBlocks.PALM_LOG))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (WOODLAND_MANSION_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .with(ItemEntry.builder(ModBlocks.BOULDERBARK_SAPLING))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f, 6.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+
+            }
+            if (SHIPWRECK_SUPPLY_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(2))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.COCONUT))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+
+            }
+            if (SHIPWRECK_SUPPLY_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.COCONUT_MILK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+
+            }
+            if (SHIPWRECK_SUPPLY_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(3))
+                        .conditionally(RandomChanceLootCondition.builder(0.4f))
+                        .with(ItemEntry.builder(ModItems.COCONUT_SHELL))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+
+            }
+        });
+    }
+}
