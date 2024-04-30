@@ -18,13 +18,6 @@ public class PalmTreeDecorator extends TreeDecorator {
     }
     @Override
     public void generate(Generator generator) {
-        generator.getLogPositions().forEach(pos -> {
-            Random random = generator.getRandom();
-            int chance = random.nextInt(2);
 
-            if(!generator.isAir(pos.up()) && chance == 0) {
-                generator.replace(pos.offset(Direction.UP, 1), ModBlocks.PALM_CORE_LOG.getDefaultState());
-            }
-        });
     }
 }

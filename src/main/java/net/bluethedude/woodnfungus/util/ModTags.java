@@ -7,8 +7,6 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
-import javax.swing.text.html.HTML;
-
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> BOULDERBARK_PLANTABLE =
