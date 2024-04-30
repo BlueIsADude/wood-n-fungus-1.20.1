@@ -2,9 +2,6 @@ package net.bluethedude.woodnfungus.world.tree.custom;
 
 import com.mojang.serialization.Codec;
 import net.bluethedude.woodnfungus.WoodNFungus;
-import net.bluethedude.woodnfungus.block.ModBlocks;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.world.gen.treedecorator.TreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 
