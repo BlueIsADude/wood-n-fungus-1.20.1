@@ -96,6 +96,8 @@
 	"item.woodnfungus.roasted_savorshroom_chunks": "Roasted Savorshroom Chunks",
 	"item.woodnfungus.roasted_savorshroom_scraps": "Roasted Savorshroom Scraps",
 
+	"block.woodnfungus.savorshroom": "Savorshroom",
+	"block.woodnfungus.potted_savorshroom": "Potted Savorshroom",
 	"block.woodnfungus.savorshroom_stem": "Savorshroom Stem",
 	"block.woodnfungus.stripped_savorshroom_stem": "Stripped Savorshroom Stem",
 	"block.woodnfungus.savorshroom_hyphae": "Savorshroom Hyphae",
@@ -114,11 +116,6 @@
 
 	"block.woodnfungus.savorshroom_sign": "Savorshroom Sign",
 	"block.woodnfungus.savorshroom_hanging_sign": "Savorshroom Hanging Sign",
-
-	"block.woodnfungus.petrified_log": "Petrified Log",
-	"block.woodnfungus.stripped_petrified_log": "Stripped Petrified Log",
-	"block.woodnfungus.petrified_wood": "Petrified Wood",
-	"block.woodnfungus.stripped_petrified_wood": "Stripped Petrified Wood",
 
 	"tooltip.woodnfungus.coconut_helmet": "§6Applies Absorption II every 20 seconds.",
 

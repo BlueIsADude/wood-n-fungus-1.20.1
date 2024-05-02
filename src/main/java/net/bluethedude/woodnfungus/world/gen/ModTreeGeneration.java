@@ -8,7 +8,7 @@ import net.minecraft.world.gen.GenerationStep;
 
 public class ModTreeGeneration {
     public static void generateTrees() {
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.STONY_SHORE, BiomeKeys.STONY_PEAKS),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.STONY_SHORE),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BOULDERBARK_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH),

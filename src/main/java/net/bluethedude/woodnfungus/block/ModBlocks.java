@@ -3,6 +3,7 @@ package net.bluethedude.woodnfungus.block;
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.custom.*;
 import net.bluethedude.woodnfungus.util.ModWoodTypes;
+import net.bluethedude.woodnfungus.world.ModConfiguredFeatures;
 import net.bluethedude.woodnfungus.world.tree.BoulderbarkSaplingGenerator;
 import net.bluethedude.woodnfungus.world.tree.PalmSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -155,6 +156,10 @@ public class ModBlocks {
 
     public static final Block SAVORSHROOM_BLOCK = registerBlock("savorshroom_block",
             new MushroomBlock(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK)));
+    public static final Block SAVORSHROOM = registerBlock("savorshroom",
+            new MushroomPlantBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).mapColor(MapColor.LIME), ModConfiguredFeatures.HUGE_SAVORSHROOM_KEY));
+    public static final Block POTTED_SAVORSHROOM = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "potted_savorshroom"),
+            new FlowerPotBlock(SAVORSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_RED_MUSHROOM).mapColor(MapColor.LIME).nonOpaque()));
 
     public static final Block SAVORSHROOM_PLANKS = registerBlock("savorshroom_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS)));

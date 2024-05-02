@@ -1,7 +1,7 @@
-// 1.20.1	2024-05-02T12:48:01.638553	Wood n' Fungus/Tags for minecraft:block
+// 1.20.1	2024-05-02T17:16:28.7666717	Wood n' Fungus/Tags for minecraft:block
 b0d904c7c9d40b1b7952946aa23fedea7ba94345 data\minecraft\tags\blocks\buttons.json
-05f46db7602020a67008551e88c61bf270718572 data\minecraft\tags\blocks\slabs.json
 8fb390609d5eccb324c3f9397b00f245d0bf54b8 data\minecraft\tags\blocks\doors.json
+05f46db7602020a67008551e88c61bf270718572 data\minecraft\tags\blocks\slabs.json
 ab5e3f19781cf3180e44972a15c19b060a1b7ed3 data\minecraft\tags\blocks\logs_that_burn.json
 b0d904c7c9d40b1b7952946aa23fedea7ba94345 data\minecraft\tags\blocks\wooden_buttons.json
 01ee81e56d7f3398851572d5a66752215029694a data\minecraft\tags\blocks\stairs.json
@@ -9,8 +9,8 @@ b0d904c7c9d40b1b7952946aa23fedea7ba94345 data\minecraft\tags\blocks\wooden_butto
 d19fda91d7ce61730889d1edf4dd6df8594c3983 data\minecraft\tags\blocks\leaves.json
 3bb40b56d0cdb2abaae7e0f56f2559cc5f2c3626 data\minecraft\tags\blocks\planks.json
 05f46db7602020a67008551e88c61bf270718572 data\minecraft\tags\blocks\wooden_slabs.json
-77e464419adfd3e0325abf0ba6fa5d34fe164c3a data\minecraft\tags\blocks\wooden_trapdoors.json
 c70d05b92569efb475fa8e1a42ff321d504effe9 data\minecraft\tags\blocks\logs.json
+77e464419adfd3e0325abf0ba6fa5d34fe164c3a data\minecraft\tags\blocks\wooden_trapdoors.json
 99edc97cde5b5c25041cf513926b5aac6ef62b9c data\woodnfungus\tags\blocks\grows_coconut.json
 8e7cd90846d3847c94bfc936cee4f7f2ea80a6cc data\minecraft\tags\blocks\wall_signs.json
 065bc25c5655d30060d57cc1a495fb548e536f35 data\minecraft\tags\blocks\pressure_plates.json

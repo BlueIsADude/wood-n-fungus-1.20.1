@@ -78,6 +78,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.SAVORSHROOM_STEM).log(ModBlocks.SAVORSHROOM_STEM).wood(ModBlocks.SAVORSHROOM_HYPHAE);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_SAVORSHROOM_STEM).log(ModBlocks.STRIPPED_SAVORSHROOM_STEM).wood(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE);
         BlockStateModelGenerator.BlockTexturePool savorshroomPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SAVORSHROOM_PLANKS);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SAVORSHROOM, ModBlocks.POTTED_SAVORSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         savorshroomPool.stairs(ModBlocks.SAVORSHROOM_STAIRS);
         savorshroomPool.slab(ModBlocks.SAVORSHROOM_SLAB);

@@ -13,9 +13,9 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
 
     public static final ItemGroup WOOD_N_FUNGUS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(WoodNFungus.MOD_ID, "boulderbark_sapling"),
+            new Identifier(WoodNFungus.MOD_ID, "savorshroom"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.woodnfungusgroup"))
-                    .icon(() -> new ItemStack(ModBlocks.BOULDERBARK_SAPLING)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocks.SAVORSHROOM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.COCONUT);
                         entries.add(ModItems.COCONUT_MILK);
                         entries.add(ModItems.COCONUT_SHELL);
@@ -84,6 +84,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ROASTED_SAVORSHROOM_CHUNKS);
                         entries.add(ModItems.ROASTED_SAVORSHROOM_SCRAPS);
 
+                        entries.add(ModBlocks.SAVORSHROOM);
                         entries.add(ModBlocks.SAVORSHROOM_BLOCK);
                         entries.add(ModBlocks.SAVORSHROOM_STEM);
                         entries.add(ModBlocks.STRIPPED_SAVORSHROOM_STEM);

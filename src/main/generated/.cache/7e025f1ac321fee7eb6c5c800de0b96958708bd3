@@ -1,6 +1,6 @@
-// 1.20.1	2024-05-02T12:48:01.6395523	Wood n' Fungus/Block Loot Tables
+// 1.20.1	2024-05-02T17:16:28.7676713	Wood n' Fungus/Block Loot Tables
 46e0f37b9c2eb74a721871eb7eb49bd9d3d313ff data\woodnfungus\loot_tables\blocks\savorshroom_pressure_plate.json
-b19a083caad67a9cd878811b1618074282a1a6a5 data\woodnfungus\loot_tables\blocks\savorshroom_block.json
+67021faf204ddc01befd44e120b9e599cf5e4d46 data\woodnfungus\loot_tables\blocks\savorshroom_block.json
 2080583f358bab3ea66b93645474f83f4a7f95cb data\woodnfungus\loot_tables\blocks\savorshroom_stairs.json
 20e1b16d9736ed98adca9b32611593ce437082d1 data\woodnfungus\loot_tables\blocks\pink_boulderbark_leaves.json
 c020227c5fec181ca9a388ab24a30c9fa7acc38d data\woodnfungus\loot_tables\blocks\light_gray_boulderbark_leaves.json
@@ -32,6 +32,7 @@ cf9223de722eda936479534c867e66bf10c9ab77 data\woodnfungus\loot_tables\blocks\sav
 2e38d9a1f29c5c8f393d3759d205d37b58117a37 data\woodnfungus\loot_tables\blocks\boulderbark_slab.json
 f9ae2ffaf5e3feb1bfc07bf64a9e9a9cb6f82b54 data\woodnfungus\loot_tables\blocks\savorshroom_door.json
 5a7a5015a02251bb101550a3b176439a34526813 data\woodnfungus\loot_tables\blocks\palm_fence_gate.json
+38d680e10712abcd01e93ed0e24924c319b3ded6 data\woodnfungus\loot_tables\blocks\savorshroom.json
 993d9b991f2bb7faa5fa5c2092c14081ac3c610f data\woodnfungus\loot_tables\blocks\boulderbark_fence_gate.json
 c3b6b6007251b2b08a18a3ef34a3c0eaba5e1314 data\woodnfungus\loot_tables\blocks\light_blue_boulderbark_leaves.json
 eede5e2cddf39a732b6878185af1a721c38b9b51 data\woodnfungus\loot_tables\blocks\savorshroom_planks.json
@@ -47,6 +48,7 @@ aa5c062b5b2fa2316a55f82a9c6211bde7894dfa data\woodnfungus\loot_tables\blocks\pal
 13aa5e8b59ce60792dcdf2dd7f30cff167fc825a data\woodnfungus\loot_tables\blocks\savorshroom_slab.json
 b51eb206e59f7e656cb725bf912b904165bc5af7 data\woodnfungus\loot_tables\blocks\palm_button.json
 865a10d96181faf28a807fa982327aff9c9769ac data\woodnfungus\loot_tables\blocks\palm_trapdoor.json
+305b85d254725828af3fc89123fe3b5c03d02153 data\woodnfungus\loot_tables\blocks\potted_savorshroom.json
 85a62063eb9e02397c190147122f784b9609c8e4 data\woodnfungus\loot_tables\blocks\red_boulderbark_leaves.json
 49180a9112ac74b62477e01f68dfeef90f88f38c data\woodnfungus\loot_tables\blocks\boulderbark_stairs.json
 36264ec8e31e182cf2a5dac11c51566120ec766d data\woodnfungus\loot_tables\blocks\boulderbark_leaves.json

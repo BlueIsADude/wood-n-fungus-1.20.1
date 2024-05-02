@@ -6,6 +6,7 @@ import net.bluethedude.woodnfungus.world.tree.custom.PalmFoliagePlacer;
 import net.bluethedude.woodnfungus.world.tree.custom.PalmTreeDecorator;
 import net.bluethedude.woodnfungus.world.tree.custom.PalmTrunkPlacer;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.MushroomBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -23,8 +24,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PALM_KEY = registerKey("palm");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BOULDERBARK_KEY = registerKey("boulderbark");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SMALL_SAVORSHROOM_KEY = registerKey("small_savorshroom");
     public static final RegistryKey<ConfiguredFeature<?, ?>> HUGE_SAVORSHROOM_KEY = registerKey("huge_savorshroom");
-
 
 
     public static void boostrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -47,6 +48,13 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
 
                 new TwoLayersFeatureSize(1, 2, 0)).dirtProvider(BlockStateProvider.of(Blocks.STONE)).build());
+
+        register(context, SMALL_SAVORSHROOM_KEY, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.SAVORSHROOM))));
+
+        register(context, HUGE_SAVORSHROOM_KEY, Feature.HUGE_RED_MUSHROOM,
+                new HugeMushroomFeatureConfig(BlockStateProvider.of(ModBlocks.SAVORSHROOM_BLOCK.getDefaultState()),
+                        BlockStateProvider.of(ModBlocks.SAVORSHROOM_STEM.getDefaultState()), 2));
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(WoodNFungus.MOD_ID, name));
