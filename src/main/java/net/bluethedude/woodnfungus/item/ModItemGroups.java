@@ -20,7 +20,6 @@ public class ModItemGroups {
                         entries.add(ModItems.COCONUT_MILK);
                         entries.add(ModItems.COCONUT_SHELL);
                         entries.add(ModItems.COCONUT_HELMET);
-                        entries.add(ModBlocks.COCONUT_CAKE.asItem());
 
                         entries.add(ModBlocks.PALM_SAPLING);
                         entries.add(ModBlocks.PALM_LEAVES);

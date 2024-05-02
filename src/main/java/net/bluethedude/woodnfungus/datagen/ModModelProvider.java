@@ -99,7 +99,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COCONUT, Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT_MILK, Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT_SHELL, Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.COCONUT_CAKE.asItem(), Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.COCONUT_HELMET));
 
