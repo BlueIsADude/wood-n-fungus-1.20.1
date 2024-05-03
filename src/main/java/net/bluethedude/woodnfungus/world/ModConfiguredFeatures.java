@@ -6,7 +6,6 @@ import net.bluethedude.woodnfungus.world.tree.custom.PalmFoliagePlacer;
 import net.bluethedude.woodnfungus.world.tree.custom.PalmTreeDecorator;
 import net.bluethedude.woodnfungus.world.tree.custom.PalmTrunkPlacer;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.MushroomBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
