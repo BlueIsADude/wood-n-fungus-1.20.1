@@ -47,6 +47,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MAGENTA_BOULDERBARK_LEAVES)
                 .add(ModBlocks.PINK_BOULDERBARK_LEAVES);
 
+        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(ModBlocks.PALM_SAPLING)
+                .add(ModBlocks.BOULDERBARK_SAPLING);
+
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PALM_LOG)
                 .add(ModBlocks.STRIPPED_PALM_LOG)
