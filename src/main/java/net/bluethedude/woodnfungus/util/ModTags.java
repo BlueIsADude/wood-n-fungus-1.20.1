@@ -13,8 +13,6 @@ public class ModTags {
                 createTag("boulderbark_plantable");
         public static final TagKey<Block> PALM_PLANTABLE =
                 createTag("boulderbark_plantable");
-        public static final TagKey<Block> CANDLE_COCONUT_CAKES =
-                createTag("candle_coconut_cakes");
         public static final TagKey<Block> GROWS_COCONUT =
                 createTag("grows_coconut");
 
@@ -24,6 +22,12 @@ public class ModTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> PALM_LOGS =
+                createTag("palm_logs");
+        public static final TagKey<Item> BOULDERBARK_LOGS =
+                createTag("boulderbark_logs");
+        public static final TagKey<Item> SAVORSHROOM_STEMS =
+                createTag("savorshroom_logs");
         public static final TagKey<Item> SAVORSHROOM_CHUNK_COOKABLE =
                 createTag("savorshroom_chunk_cookable");
         public static final TagKey<Item> SAVORSHROOM_SCRAP_COOKABLE =

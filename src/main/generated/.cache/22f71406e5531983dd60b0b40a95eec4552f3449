@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-02T17:16:28.76967	Wood n' Fungus/World Gen
+// 1.20.1	2024-05-02T22:26:26.7937832	Wood n' Fungus/World Gen
 62ffeb5bd08c81d76b04e61f359e94eb3ffa20bd data\woodnfungus\worldgen\configured_feature\palm.json
 3ec00465a1aa21a460c6f543feb20547fa4dc224 data\woodnfungus\worldgen\configured_feature\boulderbark.json
 5c9ff96735e49653519d3b1f0bec044301f32c83 data\woodnfungus\worldgen\placed_feature\palm_tree_placed.json
@@ -6,4 +6,4 @@
 fa6e9ddefc89ae584d03b9f0e9d1ca0a9124fd63 data\woodnfungus\worldgen\placed_feature\boulderbark_tree_placed.json
 07599f22a741cbf786696211d9cbf9ab80d79c89 data\woodnfungus\worldgen\biome\boulderbark_caves.json
 512548585ff88a0c983c1989e966a731252aa2cb data\woodnfungus\worldgen\configured_feature\small_savorshroom.json
-d4d7cec0b8707437e825b72b2c69d26e27892dbb data\woodnfungus\worldgen\placed_feature\savorshroom_placed.json
+bf9e22f223613ea847faeecce0526897e0b8e01f data\woodnfungus\worldgen\placed_feature\savorshroom_placed.json

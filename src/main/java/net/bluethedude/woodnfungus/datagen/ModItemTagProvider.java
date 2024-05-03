@@ -27,16 +27,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.SAVORSHROOM_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
-                .add(ModBlocks.PALM_LOG.asItem())
-                .add(ModBlocks.STRIPPED_PALM_LOG.asItem())
-                .add(ModBlocks.PALM_CORE_LOG.asItem())
-                .add(ModBlocks.PALM_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_PALM_WOOD.asItem())
-                .add(ModBlocks.PALM_CORE_WOOD.asItem())
-                .add(ModBlocks.BOULDERBARK_LOG.asItem())
-                .add(ModBlocks.BOULDERBARK_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_BOULDERBARK_LOG.asItem())
-                .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD.asItem());
+                .addTag(ModTags.Items.PALM_LOGS)
+                .addTag(ModTags.Items.BOULDERBARK_LOGS)
+                .addTag(ModTags.Items.SAVORSHROOM_STEMS);
 
         getOrCreateTagBuilder(ItemTags.COMPLETES_FIND_TREE_TUTORIAL)
                 .add(ModBlocks.PALM_LOG.asItem())
@@ -50,6 +43,26 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.SAVORSHROOM_STEM.asItem())
                 .add(ModBlocks.SAVORSHROOM_HYPHAE.asItem())
                 .add(ModBlocks.SAVORSHROOM_BLOCK.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.PALM_LOGS)
+                .add(ModBlocks.PALM_LOG.asItem())
+                .add(ModBlocks.STRIPPED_PALM_LOG.asItem())
+                .add(ModBlocks.PALM_CORE_LOG.asItem())
+                .add(ModBlocks.PALM_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_PALM_WOOD.asItem())
+                .add(ModBlocks.PALM_CORE_WOOD.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.BOULDERBARK_LOGS)
+                .add(ModBlocks.BOULDERBARK_LOG.asItem())
+                .add(ModBlocks.STRIPPED_BOULDERBARK_LOG.asItem())
+                .add(ModBlocks.BOULDERBARK_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.SAVORSHROOM_STEMS)
+                .add(ModBlocks.SAVORSHROOM_STEM.asItem())
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_STEM.asItem())
+                .add(ModBlocks.SAVORSHROOM_HYPHAE.asItem())
+                .add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE.asItem());
 
         getOrCreateTagBuilder(ModTags.Items.SAVORSHROOM_CHUNK_COOKABLE)
                 .add(ModBlocks.SAVORSHROOM_BLOCK.asItem())

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "woodnfungus:boulderbark_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "woodnfungus:boulderbark_planks"
+  }
+}

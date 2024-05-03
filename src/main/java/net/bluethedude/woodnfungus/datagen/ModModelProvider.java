@@ -7,7 +7,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
-import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -27,16 +26,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         palmPool.stairs(ModBlocks.PALM_STAIRS);
         palmPool.slab(ModBlocks.PALM_SLAB);
-        palmPool.button(ModBlocks.PALM_BUTTON);
-        palmPool.pressurePlate(ModBlocks.PALM_PRESSURE_PLATE);
         palmPool.fence(ModBlocks.PALM_FENCE);
         palmPool.fenceGate(ModBlocks.PALM_FENCE_GATE);
-        palmPool.family(BlockFamilies.register(ModBlocks.PALM_PLANKS).sign(ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN).build());
-
-        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_PALM_LOG, ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN);
-
+        palmPool.button(ModBlocks.PALM_BUTTON);
+        palmPool.pressurePlate(ModBlocks.PALM_PRESSURE_PLATE);
         blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.PALM_TRAPDOOR);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_PALM_LOG, ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.BOULDERBARK_LOG).log(ModBlocks.BOULDERBARK_LOG).wood(ModBlocks.BOULDERBARK_WOOD);
@@ -46,16 +42,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         boulderbarkPool.stairs(ModBlocks.BOULDERBARK_STAIRS);
         boulderbarkPool.slab(ModBlocks.BOULDERBARK_SLAB);
-        boulderbarkPool.button(ModBlocks.BOULDERBARK_BUTTON);
-        boulderbarkPool.pressurePlate(ModBlocks.BOULDERBARK_PRESSURE_PLATE);
         boulderbarkPool.fence(ModBlocks.BOULDERBARK_FENCE);
         boulderbarkPool.fenceGate(ModBlocks.BOULDERBARK_FENCE_GATE);
-        boulderbarkPool.family(BlockFamilies.register(ModBlocks.BOULDERBARK_PLANKS).sign(ModBlocks.BOULDERBARK_SIGN, ModBlocks.BOULDERBARK_WALL_SIGN).build());
-
-        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_BOULDERBARK_LOG, ModBlocks.BOULDERBARK_HANGING_SIGN, ModBlocks.BOULDERBARK_WALL_HANGING_SIGN);
-
+        boulderbarkPool.button(ModBlocks.BOULDERBARK_BUTTON);
+        boulderbarkPool.pressurePlate(ModBlocks.BOULDERBARK_PRESSURE_PLATE);
         blockStateModelGenerator.registerDoor(ModBlocks.BOULDERBARK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.BOULDERBARK_TRAPDOOR);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_BOULDERBARK_LOG, ModBlocks.BOULDERBARK_HANGING_SIGN, ModBlocks.BOULDERBARK_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_GRAY_BOULDERBARK_LEAVES);
@@ -82,16 +75,14 @@ public class ModModelProvider extends FabricModelProvider {
 
         savorshroomPool.stairs(ModBlocks.SAVORSHROOM_STAIRS);
         savorshroomPool.slab(ModBlocks.SAVORSHROOM_SLAB);
-        savorshroomPool.button(ModBlocks.SAVORSHROOM_BUTTON);
-        savorshroomPool.pressurePlate(ModBlocks.SAVORSHROOM_PRESSURE_PLATE);
         savorshroomPool.fence(ModBlocks.SAVORSHROOM_FENCE);
         savorshroomPool.fenceGate(ModBlocks.SAVORSHROOM_FENCE_GATE);
-        savorshroomPool.family(BlockFamilies.register(ModBlocks.SAVORSHROOM_PLANKS).sign(ModBlocks.SAVORSHROOM_SIGN, ModBlocks.SAVORSHROOM_WALL_SIGN).build());
-
-        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_SAVORSHROOM_STEM, ModBlocks.SAVORSHROOM_HANGING_SIGN, ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN);
-
+        savorshroomPool.button(ModBlocks.SAVORSHROOM_BUTTON);
+        savorshroomPool.pressurePlate(ModBlocks.SAVORSHROOM_PRESSURE_PLATE);
         blockStateModelGenerator.registerDoor(ModBlocks.SAVORSHROOM_DOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.SAVORSHROOM_TRAPDOOR);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_SAVORSHROOM_STEM, ModBlocks.SAVORSHROOM_HANGING_SIGN, ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN);
+
 
     }
 
