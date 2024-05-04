@@ -32,10 +32,9 @@
 	"block.woodnfungus.potted_palm_sapling": "Potted Palm Sapling",
 	"block.woodnfungus.palm_log": "Palm Log",
 	"block.woodnfungus.stripped_palm_log": "Stripped Palm Log",
-	"block.woodnfungus.palm_core_log": "Palm Core Log",
 	"block.woodnfungus.palm_wood": "Palm Wood",
 	"block.woodnfungus.stripped_palm_wood": "Stripped Palm Wood",
-	"block.woodnfungus.palm_core_wood": "Palm Core Wood",
+	"block.woodnfungus.palm_core": "Palm Core",
 	"block.woodnfungus.palm_leaves": "Palm Leaves",
 
 	"block.woodnfungus.palm_planks": "Palm Planks",

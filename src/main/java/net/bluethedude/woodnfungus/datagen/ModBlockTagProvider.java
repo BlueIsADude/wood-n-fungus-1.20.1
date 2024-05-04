@@ -21,10 +21,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.LOGS)
                 .add(ModBlocks.PALM_LOG)
                 .add(ModBlocks.STRIPPED_PALM_LOG)
-                .add(ModBlocks.PALM_CORE_LOG)
+                .add(ModBlocks.PALM_WOOD)
+                .add(ModBlocks.STRIPPED_PALM_WOOD)
+                .add(ModBlocks.PALM_CORE)
                 .add(ModBlocks.BOULDERBARK_LOG)
                 .add(ModBlocks.STRIPPED_BOULDERBARK_LOG)
+                .add(ModBlocks.BOULDERBARK_WOOD)
+                .add(ModBlocks.STRIPPED_BOULDERBARK_WOOD)
                 .add(ModBlocks.SAVORSHROOM_STEM)
+                .add(ModBlocks.SAVORSHROOM_HYPHAE)
                 .add(ModBlocks.STRIPPED_SAVORSHROOM_STEM)
                 .add(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE);
 
@@ -54,10 +59,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PALM_LOG)
                 .add(ModBlocks.STRIPPED_PALM_LOG)
-                .add(ModBlocks.PALM_CORE_LOG)
                 .add(ModBlocks.PALM_WOOD)
                 .add(ModBlocks.STRIPPED_PALM_WOOD)
-                .add(ModBlocks.PALM_CORE_WOOD)
+                .add(ModBlocks.PALM_CORE)
                 .add(ModBlocks.BOULDERBARK_LOG)
                 .add(ModBlocks.BOULDERBARK_WOOD)
                 .add(ModBlocks.STRIPPED_BOULDERBARK_LOG)
@@ -162,10 +166,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BOULDERBARK_WALL_HANGING_SIGN)
                 .add(ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN);
 
-        getOrCreateTagBuilder(ModTags.Blocks.GROWS_COCONUT)
-                .add(ModBlocks.PALM_CORE_LOG)
-                .add(ModBlocks.PALM_CORE_WOOD);
-
         getOrCreateTagBuilder(ModTags.Blocks.BOULDERBARK_PLANTABLE)
                 .add(Blocks.STONE)
                 .add(Blocks.DEEPSLATE)
@@ -174,7 +174,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.GRANITE);
 
         getOrCreateTagBuilder(ModTags.Blocks.PALM_PLANTABLE)
-                .add(Blocks.SAND);
+                .add(Blocks.SAND)
+                .add(Blocks.SUSPICIOUS_SAND);
 
 
     }

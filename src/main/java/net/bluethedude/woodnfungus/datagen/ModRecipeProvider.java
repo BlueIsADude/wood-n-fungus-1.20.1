@@ -62,7 +62,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPlanksRecipe(exporter, ModBlocks.PALM_PLANKS, ModTags.Items.PALM_LOGS, 4);
         offerBarkBlockRecipe(exporter, ModBlocks.PALM_WOOD, ModBlocks.PALM_LOG);
         offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_PALM_WOOD, ModBlocks.STRIPPED_PALM_LOG);
-        offerBarkBlockRecipe(exporter, ModBlocks.PALM_CORE_WOOD, ModBlocks.PALM_CORE_LOG);
         offerBoatRecipe(exporter, ModItems.PALM_BOAT, ModBlocks.PALM_PLANKS);
         offerHangingSignRecipe(exporter, ModBlocks.PALM_HANGING_SIGN, ModBlocks.STRIPPED_PALM_LOG);
 

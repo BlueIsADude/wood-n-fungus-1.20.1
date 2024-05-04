@@ -43,7 +43,7 @@ public class ModLootTableModifiers {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(2))
                         .conditionally(RandomChanceLootCondition.builder(0.5f))
-                        .with(ItemEntry.builder(ModItems.COCONUT))
+                        .with(ItemEntry.builder(ModBlocks.COCONUT))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());

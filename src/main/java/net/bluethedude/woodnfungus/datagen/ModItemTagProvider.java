@@ -34,8 +34,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.COMPLETES_FIND_TREE_TUTORIAL)
                 .add(ModBlocks.PALM_LOG.asItem())
                 .add(ModBlocks.PALM_WOOD.asItem())
-                .add(ModBlocks.PALM_CORE_LOG.asItem())
-                .add(ModBlocks.PALM_CORE_WOOD.asItem())
+                .add(ModBlocks.PALM_CORE.asItem())
                 .add(ModBlocks.PALM_LEAVES.asItem())
                 .add(ModBlocks.BOULDERBARK_LOG.asItem())
                 .add(ModBlocks.BOULDERBARK_WOOD.asItem())
@@ -47,10 +46,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.PALM_LOGS)
                 .add(ModBlocks.PALM_LOG.asItem())
                 .add(ModBlocks.STRIPPED_PALM_LOG.asItem())
-                .add(ModBlocks.PALM_CORE_LOG.asItem())
                 .add(ModBlocks.PALM_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_PALM_WOOD.asItem())
-                .add(ModBlocks.PALM_CORE_WOOD.asItem());
+                .add(ModBlocks.PALM_CORE.asItem());
 
         getOrCreateTagBuilder(ModTags.Items.BOULDERBARK_LOGS)
                 .add(ModBlocks.BOULDERBARK_LOG.asItem())

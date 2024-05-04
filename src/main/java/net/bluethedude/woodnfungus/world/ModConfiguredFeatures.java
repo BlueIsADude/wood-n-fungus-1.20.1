@@ -32,7 +32,7 @@ public class ModConfiguredFeatures {
         register(context, PALM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
 
                 BlockStateProvider.of(ModBlocks.PALM_LOG),
-                new PalmTrunkPlacer(3, 2, 2),
+                new PalmTrunkPlacer(3, 3, 2),
 
                 BlockStateProvider.of(ModBlocks.PALM_LEAVES),
                 new PalmFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 1),
@@ -41,12 +41,12 @@ public class ModConfiguredFeatures {
 
         register(context, BOULDERBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.BOULDERBARK_LOG),
-                new StraightTrunkPlacer(3, 2, 1),
+                new StraightTrunkPlacer(1, 2, 0),
 
                 BlockStateProvider.of(ModBlocks.BOULDERBARK_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
 
-                new TwoLayersFeatureSize(1, 2, 0)).dirtProvider(BlockStateProvider.of(Blocks.STONE)).build());
+                new TwoLayersFeatureSize(1, 1, 0)).dirtProvider(BlockStateProvider.of(Blocks.STONE)).build());
 
         register(context, SMALL_SAVORSHROOM_KEY, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.SAVORSHROOM))));

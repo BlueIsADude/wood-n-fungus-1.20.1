@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=south": { "model": "woodnfungus:block/coconut" },
+    "facing=west": { "model": "woodnfungus:block/coconut", "y": 90 },
+    "facing=north": { "model": "woodnfungus:block/coconut", "y": 180 },
+    "facing=east": { "model": "woodnfungus:block/coconut", "y": 270 }
+  }
+}

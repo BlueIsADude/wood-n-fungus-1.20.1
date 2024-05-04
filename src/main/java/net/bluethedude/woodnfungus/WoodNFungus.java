@@ -30,17 +30,14 @@ public class WoodNFungus implements ModInitializer {
 
 		StrippableBlockRegistry.register(ModBlocks.PALM_LOG, ModBlocks.STRIPPED_PALM_LOG);
 		StrippableBlockRegistry.register(ModBlocks.PALM_WOOD, ModBlocks.STRIPPED_PALM_WOOD);
-		StrippableBlockRegistry.register(ModBlocks.PALM_CORE_LOG, ModBlocks.STRIPPED_PALM_LOG);
-		StrippableBlockRegistry.register(ModBlocks.PALM_CORE_WOOD, ModBlocks.STRIPPED_PALM_WOOD);
 		StrippableBlockRegistry.register(ModBlocks.BOULDERBARK_LOG, ModBlocks.STRIPPED_BOULDERBARK_LOG);
 		StrippableBlockRegistry.register(ModBlocks.BOULDERBARK_WOOD, ModBlocks.STRIPPED_BOULDERBARK_WOOD);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_LOG, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_PALM_LOG, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_CORE_LOG, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_PALM_WOOD, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_CORE_WOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_CORE, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_LEAVES, 30, 60);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_PLANKS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_STAIRS, 5, 20);

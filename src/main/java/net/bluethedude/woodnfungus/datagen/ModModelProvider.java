@@ -20,7 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALM_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG).log(ModBlocks.PALM_LOG).wood(ModBlocks.PALM_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PALM_LOG).log(ModBlocks.STRIPPED_PALM_LOG).wood(ModBlocks.STRIPPED_PALM_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.PALM_CORE_LOG).log(ModBlocks.PALM_CORE_LOG).wood(ModBlocks.PALM_CORE_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALM_CORE);
         BlockStateModelGenerator.BlockTexturePool palmPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PALM_SAPLING, ModBlocks.POTTED_PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
@@ -33,6 +33,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.PALM_TRAPDOOR);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_PALM_LOG, ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.PALM_PLANKS, ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.BOULDERBARK_LOG).log(ModBlocks.BOULDERBARK_LOG).wood(ModBlocks.BOULDERBARK_WOOD);
@@ -49,6 +50,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.BOULDERBARK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.BOULDERBARK_TRAPDOOR);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_BOULDERBARK_LOG, ModBlocks.BOULDERBARK_HANGING_SIGN, ModBlocks.BOULDERBARK_WALL_HANGING_SIGN);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.BOULDERBARK_PLANKS, ModBlocks.BOULDERBARK_SIGN, ModBlocks.BOULDERBARK_WALL_SIGN);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_GRAY_BOULDERBARK_LEAVES);
@@ -82,13 +84,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.SAVORSHROOM_DOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.SAVORSHROOM_TRAPDOOR);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_SAVORSHROOM_STEM, ModBlocks.SAVORSHROOM_HANGING_SIGN, ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.SAVORSHROOM_PLANKS, ModBlocks.SAVORSHROOM_SIGN, ModBlocks.SAVORSHROOM_WALL_SIGN);
 
 
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.COCONUT, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.COCONUT.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT_MILK, Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT_SHELL, Models.GENERATED);
 

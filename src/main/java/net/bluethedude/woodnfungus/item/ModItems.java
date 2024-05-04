@@ -13,7 +13,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item COCONUT = registerItem("coconut", new Item(new FabricItemSettings()));
     public static final Item COCONUT_MILK = registerItem("coconut_milk",
             new CoconutMilkItem(new FabricItemSettings().recipeRemainder(ModItems.COCONUT_SHELL).maxCount(16)));
     public static final Item COCONUT_SHELL = registerItem("coconut_shell", new Item(new FabricItemSettings()));

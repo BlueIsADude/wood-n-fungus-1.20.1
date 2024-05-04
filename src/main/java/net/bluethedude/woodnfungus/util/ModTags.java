@@ -12,9 +12,7 @@ public class ModTags {
         public static final TagKey<Block> BOULDERBARK_PLANTABLE =
                 createTag("boulderbark_plantable");
         public static final TagKey<Block> PALM_PLANTABLE =
-                createTag("boulderbark_plantable");
-        public static final TagKey<Block> GROWS_COCONUT =
-                createTag("grows_coconut");
+                createTag("palm_plantable");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(WoodNFungus.MOD_ID, name));

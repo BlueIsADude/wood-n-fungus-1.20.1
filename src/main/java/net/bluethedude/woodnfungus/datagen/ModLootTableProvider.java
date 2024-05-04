@@ -11,12 +11,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        addDrop(ModBlocks.COCONUT);
+
         addDrop(ModBlocks.PALM_LOG);
-        addDrop(ModBlocks.PALM_CORE_LOG, ModBlocks.PALM_LOG);
         addDrop(ModBlocks.STRIPPED_PALM_LOG);
         addDrop(ModBlocks.PALM_WOOD);
-        addDrop(ModBlocks.PALM_CORE_WOOD, ModBlocks.PALM_WOOD);
         addDrop(ModBlocks.STRIPPED_PALM_WOOD);
+        addDrop(ModBlocks.PALM_CORE, ModBlocks.PALM_LOG);
         addDrop(ModBlocks.PALM_PLANKS);
         addDrop(ModBlocks.PALM_STAIRS);
         addDrop(ModBlocks.PALM_SLAB, slabDrops(ModBlocks.PALM_SLAB));
