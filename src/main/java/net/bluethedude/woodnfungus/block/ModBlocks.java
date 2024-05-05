@@ -2,6 +2,7 @@ package net.bluethedude.woodnfungus.block;
 
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.custom.*;
+import net.bluethedude.woodnfungus.util.ModBlockSetTypes;
 import net.bluethedude.woodnfungus.util.ModWoodTypes;
 import net.bluethedude.woodnfungus.world.ModConfiguredFeatures;
 import net.bluethedude.woodnfungus.world.tree.BoulderbarkSaplingGenerator;
@@ -46,15 +47,15 @@ public class ModBlocks {
     public static final Block PALM_FENCE = registerBlock("palm_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW)));
     public static final Block PALM_FENCE_GATE = registerBlock("palm_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW), WoodType.OAK));
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW), ModWoodTypes.PALM));
     public static final Block PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW), BlockSetType.OAK));
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW), ModBlockSetTypes.PALM));
     public static final Block PALM_BUTTON = registerBlock("palm_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW), BlockSetType.OAK, 15, true));
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW), ModBlockSetTypes.PALM, 15, true));
     public static final Block PALM_DOOR = registerBlock("palm_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW).nonOpaque(), BlockSetType.OAK));
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW).nonOpaque(), ModBlockSetTypes.PALM));
     public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW).nonOpaque(), BlockSetType.OAK));
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.YELLOW).nonOpaque(), ModBlockSetTypes.PALM));
 
     public static final Block PALM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "palm_sign"),
             new ModSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN).mapColor(MapColor.YELLOW), ModWoodTypes.PALM));
@@ -125,15 +126,15 @@ public class ModBlocks {
     public static final Block BOULDERBARK_FENCE = registerBlock("boulderbark_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE)));
     public static final Block BOULDERBARK_FENCE_GATE = registerBlock("boulderbark_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), WoodType.OAK));
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), ModWoodTypes.BOULDERBARK));
     public static final Block BOULDERBARK_PRESSURE_PLATE = registerBlock("boulderbark_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), BlockSetType.OAK));
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), ModBlockSetTypes.BOULDERBARK));
     public static final Block BOULDERBARK_BUTTON = registerBlock("boulderbark_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), BlockSetType.OAK, 15, true));
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), ModBlockSetTypes.BOULDERBARK, 15, true));
     public static final Block BOULDERBARK_DOOR = registerBlock("boulderbark_door",
-            new DoorBlock((FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque()).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), BlockSetType.OAK));
+            new DoorBlock((FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque()).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), ModBlockSetTypes.BOULDERBARK));
     public static final Block BOULDERBARK_TRAPDOOR = registerBlock("boulderbark_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque().requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), BlockSetType.OAK));
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque().requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), ModBlockSetTypes.BOULDERBARK));
 
     public static final Block BOULDERBARK_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "boulderbark_sign"),
             new ModSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN).requiresTool().resistance(50000f).mapColor(MapColor.TERRACOTTA_BLUE), ModWoodTypes.BOULDERBARK));
@@ -171,15 +172,15 @@ public class ModBlocks {
     public static final Block SAVORSHROOM_FENCE = registerBlock("savorshroom_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME)));
     public static final Block SAVORSHROOM_FENCE_GATE = registerBlock("savorshroom_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME), WoodType.WARPED));
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME), ModWoodTypes.SAVORSHROOM));
     public static final Block SAVORSHROOM_PRESSURE_PLATE = registerBlock("savorshroom_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME), BlockSetType.WARPED));
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME), ModBlockSetTypes.SAVORSHROOM));
     public static final Block SAVORSHROOM_BUTTON = registerBlock("savorshroom_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME), BlockSetType.WARPED, 15, true));
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME), ModBlockSetTypes.SAVORSHROOM, 15, true));
     public static final Block SAVORSHROOM_DOOR = registerBlock("savorshroom_door",
-            new DoorBlock((FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME).nonOpaque()), BlockSetType.WARPED));
+            new DoorBlock((FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME).nonOpaque()), ModBlockSetTypes.SAVORSHROOM));
     public static final Block SAVORSHROOM_TRAPDOOR = registerBlock("savorshroom_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME).nonOpaque(), BlockSetType.WARPED));
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.LIME).nonOpaque(), ModBlockSetTypes.SAVORSHROOM));
 
     public static final Block SAVORSHROOM_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_sign"),
             new ModSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN).mapColor(MapColor.LIME), ModWoodTypes.SAVORSHROOM));
