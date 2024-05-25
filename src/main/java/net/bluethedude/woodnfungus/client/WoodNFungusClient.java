@@ -3,10 +3,16 @@ package net.bluethedude.woodnfungus.client;
 import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import net.bluethedude.woodnfungus.block.ModBlocks;
 import net.bluethedude.woodnfungus.block.entities.ModBlockEntities;
+import net.bluethedude.woodnfungus.block.entities.ModEntities;
+import net.bluethedude.woodnfungus.block.entities.client.ModModelLayers;
+import net.bluethedude.woodnfungus.block.entities.client.MusherModel;
+import net.bluethedude.woodnfungus.block.entities.client.MusherRenderer;
 import net.bluethedude.woodnfungus.entity.ModBoats;
 import net.bluethedude.woodnfungus.util.ModWoodTypes;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
@@ -58,5 +64,8 @@ public class WoodNFungusClient implements ClientModInitializer {
 
         TerraformBoatClientHelper.registerModelLayers(ModBoats.PALM_BOAT_ID, false);
         TerraformBoatClientHelper.registerModelLayers(ModBoats.BOULDERBARK_BOAT_ID, false);
+
+        EntityRendererRegistry.register(ModEntities.MUSHER, MusherRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.MUSHER, MusherModel::getTexturedModelData);
     }
 }

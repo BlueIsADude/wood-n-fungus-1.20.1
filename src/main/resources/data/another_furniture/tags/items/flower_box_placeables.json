@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "woodnfungus:savorshroom",
+    "woodnfungus:palm_sapling",
+    "woodnfungus:boulderbark_sapling",
+    "woodnfungus:palm_leaves",
+    "woodnfungus:boulderbark_leaves",
+    "woodnfungus:white_boulderbark_leaves",
+    "woodnfungus:light_gray_boulderbark_leaves",
+    "woodnfungus:gray_boulderbark_leaves",
+    "woodnfungus:black_boulderbark_leaves",
+    "woodnfungus:brown_boulderbark_leaves",
+    "woodnfungus:red_boulderbark_leaves",
+    "woodnfungus:orange_boulderbark_leaves",
+    "woodnfungus:yellow_boulderbark_leaves",
+    "woodnfungus:lime_boulderbark_leaves",
+    "woodnfungus:green_boulderbark_leaves",
+    "woodnfungus:cyan_boulderbark_leaves",
+    "woodnfungus:light_blue_boulderbark_leaves",
+    "woodnfungus:blue_boulderbark_leaves",
+    "woodnfungus:purple_boulderbark_leaves",
+    "woodnfungus:magenta_boulderbark_leaves",
+    "woodnfungus:pink_boulderbark_leaves"
+  ]
+}

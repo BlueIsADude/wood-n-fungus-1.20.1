@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(TreeDecoratorType.class)
-public interface TreeDecoratorTypeMixin {
+public interface TreeDecoratorTypeInvoker {
     @Invoker
     static <P extends TreeDecorator> TreeDecoratorType<P> callRegister(String id, Codec<P> codec) {
         throw new IllegalStateException();

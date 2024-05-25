@@ -101,6 +101,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SAVORSHROOM_SIGN);
                         entries.add(ModItems.SAVORSHROOM_HANGING_SIGN);
 
+                        entries.add(ModItems.MUSHER_SPAWN_EGG);
+
                     }).build());
     public static void registerItemGroups() {
         WoodNFungus.LOGGER.info("Registering Item Groups for " + WoodNFungus.MOD_ID);

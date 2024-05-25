@@ -2,10 +2,12 @@ package net.bluethedude.woodnfungus;
 
 import net.bluethedude.woodnfungus.block.ModBlocks;
 import net.bluethedude.woodnfungus.block.entities.ModBlockEntities;
+import net.bluethedude.woodnfungus.block.entities.ModEntities;
+import net.bluethedude.woodnfungus.block.entities.custom.MusherEntity;
 import net.bluethedude.woodnfungus.entity.ModBoats;
 import net.bluethedude.woodnfungus.item.ModItemGroups;
 import net.bluethedude.woodnfungus.item.ModItems;
-import net.bluethedude.woodnfungus.mixin.TreeDecoratorTypeMixin;
+import net.bluethedude.woodnfungus.mixin.TreeDecoratorTypeInvoker;
 import net.bluethedude.woodnfungus.util.ModLootTableModifiers;
 import net.bluethedude.woodnfungus.world.gen.ModWorldGeneration;
 import net.bluethedude.woodnfungus.world.tree.ModTrunkPlacerTypes;
@@ -13,6 +15,7 @@ import net.bluethedude.woodnfungus.world.tree.ModFoliagePlacerTypes;
 import net.bluethedude.woodnfungus.world.tree.custom.PalmTreeDecorator;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
@@ -23,7 +26,7 @@ public class WoodNFungus implements ModInitializer {
 	public static final String MOD_ID = "woodnfungus";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	public static final TreeDecoratorType<PalmTreeDecorator> PALM = TreeDecoratorTypeMixin.callRegister("woodnfungus:palm_tree_decorator", PalmTreeDecorator.CODEC);
+	public static final TreeDecoratorType<PalmTreeDecorator> PALM = TreeDecoratorTypeInvoker.callRegister("woodnfungus:palm_tree_decorator", PalmTreeDecorator.CODEC);
 
 	@Override
 	public void onInitialize() {
@@ -83,6 +86,8 @@ public class WoodNFungus implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_SLAB, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_FENCE, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_FENCE_GATE, 5, 20);
+
+		FabricDefaultAttributeRegistry.register(ModEntities.MUSHER, MusherEntity.createMusherAttributes());
 
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();

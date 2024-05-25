@@ -1,7 +1,7 @@
 {
 	"itemGroup.woodnfungusgroup": "Wood n' Fungus",
 
-	"item.woodnfungus.coconut": "Coconut",
+	"block.woodnfungus.coconut": "Coconut",
 	"item.woodnfungus.coconut_milk": "Coconut Milk",
 	"item.woodnfungus.coconut_shell": "Coconut Shell",
 	"item.woodnfungus.coconut_helmet": "Coconut Helmet",
@@ -117,6 +117,9 @@
 	"block.woodnfungus.savorshroom_hanging_sign": "Savorshroom Hanging Sign",
 
 	"tooltip.woodnfungus.coconut_helmet": "§6Applies Absorption II every 20 seconds.",
+
+	"entity.woodnfungus.musher": "Musher",
+	"item.woodnfungus.musher_spawn_egg": "Musher Spawn Egg",
 
 	"item.woodnfungus.bloppo": "Bloppo"
 }

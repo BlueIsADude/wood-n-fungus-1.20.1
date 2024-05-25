@@ -3,6 +3,7 @@ package net.bluethedude.woodnfungus.item;
 import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.ModBlocks;
+import net.bluethedude.woodnfungus.block.entities.ModEntities;
 import net.bluethedude.woodnfungus.entity.ModBoats;
 import net.bluethedude.woodnfungus.item.custom.CoconutHelmetItem;
 import net.bluethedude.woodnfungus.item.custom.CoconutMilkItem;
@@ -44,6 +45,8 @@ public class ModItems {
     public static final Item SAVORSHROOM_HANGING_SIGN = registerItem("savorshroom_hanging_sign",
             new HangingSignItem(ModBlocks.SAVORSHROOM_HANGING_SIGN, ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
 
+    public static final Item MUSHER_SPAWN_EGG = registerItem("musher_spawn_egg",
+            new SpawnEggItem(ModEntities.MUSHER, 0xfcd3a9, 0xd5264e, new FabricItemSettings()));
     public static final Item BLOPPO = registerItem("bloppo", new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
