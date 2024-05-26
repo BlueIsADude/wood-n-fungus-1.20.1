@@ -7,6 +7,9 @@ import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.Angerable;
 import net.minecraft.entity.mob.CreeperEntity;
 import net.minecraft.entity.mob.HostileEntity;
@@ -26,7 +29,7 @@ import java.util.UUID;
 
 public class MusherEntity extends CreeperEntity implements Angerable {
     private static final UniformIntProvider ANGER_TIME_RANGE;
-    private int angerTime;
+    private static final TrackedData<Integer> ANGER_TIME;
     @Nullable
     private UUID angryAt;
     private static final UniformIntProvider ANGER_PASSING_COOLDOWN_RANGE;
@@ -108,6 +111,11 @@ public class MusherEntity extends CreeperEntity implements Angerable {
         return SoundEvents.ENTITY_CREEPER_DEATH;
     }
 
+    protected void initDataTracker() {
+        super.initDataTracker();
+        this.dataTracker.startTracking(ANGER_TIME, 0);
+    }
+
     protected void mobTick() {
         this.tickAngerLogic((ServerWorld)this.getWorld(), true);
         if (this.getTarget() != null) {
@@ -151,11 +159,11 @@ public class MusherEntity extends CreeperEntity implements Angerable {
     }
 
     public void setAngerTime(int angerTime) {
-        this.angerTime = angerTime;
+        this.dataTracker.set(ANGER_TIME, angerTime);
     }
 
     public int getAngerTime() {
-        return this.angerTime;
+        return this.dataTracker.get(ANGER_TIME);
     }
 
     public void setAngryAt(@Nullable UUID angryAt) {
@@ -172,6 +180,7 @@ public class MusherEntity extends CreeperEntity implements Angerable {
     }
 
     static {
+        ANGER_TIME = DataTracker.registerData(MusherEntity.class, TrackedDataHandlerRegistry.INTEGER);
         ANGER_TIME_RANGE = TimeHelper.betweenSeconds(20, 39);
         ANGER_PASSING_COOLDOWN_RANGE = TimeHelper.betweenSeconds(4, 6);
     }
