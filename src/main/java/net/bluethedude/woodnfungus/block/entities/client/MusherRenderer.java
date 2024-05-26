@@ -7,17 +7,39 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.MathHelper;
 
 public class MusherRenderer extends MobEntityRenderer<MusherEntity, MusherModel<MusherEntity>> {
-    private static final Identifier TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/entity/musher.png");
+    private static final Identifier TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/entity/musher/musher.png");
+    private static final Identifier ANGRY_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/entity/musher/musher_angry.png");
 
     public MusherRenderer(EntityRendererFactory.Context context) {
-        super(context, new MusherModel<>(context.getPart(ModModelLayers.MUSHER)), 0.8f);
+        super(context, new MusherModel<>(context.getPart(ModModelLayers.MUSHER)), 0.6f);
+    }
+
+    protected void scale(MusherEntity musherEntity, MatrixStack matrixStack, float f) {
+        float g = musherEntity.getClientFuseTime(f);
+        float h = 1.0F + MathHelper.sin(g * 100.0F) * g * 0.01F;
+        g = MathHelper.clamp(g, 0.0F, 1.0F);
+        g *= g;
+        g *= g;
+        float i = (1.0F + g * 0.4F) * h;
+        float j = (1.0F + g * 0.1F) / h;
+        matrixStack.scale(i, j, i);
+    }
+
+    protected float getAnimationCounter(MusherEntity musherEntity, float f) {
+        float g = musherEntity.getClientFuseTime(f);
+        return (int)(g * 10.0F) % 2 == 0 ? 0.0F : MathHelper.clamp(g, 0.5F, 1.0F);
     }
 
     @Override
-    public Identifier getTexture(MusherEntity entity) {
-        return TEXTURE;
+    public Identifier getTexture(MusherEntity musherEntity) {
+        if (musherEntity.hasAngerTime()) {
+            return ANGRY_TEXTURE;
+        } else {
+            return TEXTURE;
+        }
     }
 
     @Override
