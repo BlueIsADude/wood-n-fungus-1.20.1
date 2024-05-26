@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
 public class MusherRenderer extends MobEntityRenderer<MusherEntity, MusherModel<MusherEntity>> {
-    private static final Identifier TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/entity/musher/musher.png");
+    private static final Identifier CALM_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/entity/musher/musher.png");
     private static final Identifier ANGRY_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/entity/musher/musher_angry.png");
 
     public MusherRenderer(EntityRendererFactory.Context context) {
@@ -35,11 +35,7 @@ public class MusherRenderer extends MobEntityRenderer<MusherEntity, MusherModel<
 
     @Override
     public Identifier getTexture(MusherEntity musherEntity) {
-        if (musherEntity.hasAngerTime()) {
-            return ANGRY_TEXTURE;
-        } else {
-            return TEXTURE;
-        }
+            return musherEntity.hasAngerTime() ? ANGRY_TEXTURE : CALM_TEXTURE;
     }
 
     @Override
