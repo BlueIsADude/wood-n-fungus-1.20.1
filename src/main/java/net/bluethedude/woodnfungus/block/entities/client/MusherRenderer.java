@@ -2,6 +2,8 @@ package net.bluethedude.woodnfungus.block.entities.client;
 
 import net.bluethedude.woodnfungus.WoodNFungus;
 import net.bluethedude.woodnfungus.block.entities.custom.MusherEntity;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
@@ -9,6 +11,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
+@Environment(EnvType.CLIENT)
 public class MusherRenderer extends MobEntityRenderer<MusherEntity, MusherModel<MusherEntity>> {
     private static final Identifier CALM_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/entity/musher/musher.png");
     private static final Identifier ANGRY_TEXTURE = new Identifier(WoodNFungus.MOD_ID, "textures/entity/musher/musher_angry.png");
