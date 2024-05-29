@@ -16,6 +16,12 @@ public class ModItemGroups {
             new Identifier(WoodNFungus.MOD_ID, "savorshroom"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.woodnfungusgroup"))
                     .icon(() -> new ItemStack(ModBlocks.SAVORSHROOM)).entries((displayContext, entries) -> {
+
+                        entries.add(ModItems.PETRIFIED_SEEDS);
+                        entries.add(ModItems.AMBER_FUNGUS);
+                        entries.add(ModItems.PLANT_VIAL);
+                        entries.add(ModItems.SPORE_VIAL);
+
                         entries.add(ModBlocks.COCONUT);
                         entries.add(ModItems.COCONUT_MILK);
                         entries.add(ModItems.COCONUT_SHELL);

@@ -95,6 +95,12 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
+        itemModelGenerator.register(ModItems.PETRIFIED_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AMBER_FUNGUS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLANT_VIAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPORE_VIAL, Models.GENERATED);
+
         itemModelGenerator.register(ModBlocks.COCONUT.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT_MILK, Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT_SHELL, Models.GENERATED);

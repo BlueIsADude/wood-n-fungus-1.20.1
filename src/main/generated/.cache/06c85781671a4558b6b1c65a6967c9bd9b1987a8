@@ -1,9 +1,9 @@
-// 1.20.1	2024-05-25T15:32:51.577818	Wood n' Fungus/Tags for minecraft:item
+// 1.20.1	2024-05-28T14:50:53.1151189	Wood n' Fungus/Tags for minecraft:item
 f2d52b3e728b6a11fcfbb5472d696a7b552009ae data\woodnfungus\tags\items\palm_logs.json
 65efdb7665451ff0d055633a9b5cf3a86c3dd68d data\minecraft\tags\items\logs_that_burn.json
 fe80f778536deb6b337eaf188f8b495af8b24fec data\woodnfungus\tags\items\savorshroom_logs.json
-4d556b7948d28ad03bd086543f582c5165e8db42 data\woodnfungus\tags\items\boulderbark_logs.json
 16d004a61f123aecde4f814789b44d2aab579c07 data\minecraft\tags\items\trimmable_armor.json
+4d556b7948d28ad03bd086543f582c5165e8db42 data\woodnfungus\tags\items\boulderbark_logs.json
 e9ba9a922fe1cd2aefe6284b30ef77cbf93a9906 data\woodnfungus\tags\items\savorshroom_chunk_cookable.json
 b6f3f40ea39b862118d2329c0443b1fcb4fd0730 data\woodnfungus\tags\items\savorshroom_scrap_cookable.json
 3bb40b56d0cdb2abaae7e0f56f2559cc5f2c3626 data\minecraft\tags\items\planks.json

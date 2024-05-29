@@ -1,6 +1,11 @@
 {
 	"itemGroup.woodnfungusgroup": "Wood n' Fungus",
 
+	"item.woodnfungus.petrified_seeds": "Petrified Seeds",
+	"item.woodnfungus.amber_fungus": "Amber Fungus",
+	"item.woodnfungus.plant_vial": "Plant Vial",
+	"item.woodnfungus.spore_vial": "Spore Vial",
+
 	"block.woodnfungus.coconut": "Coconut",
 	"item.woodnfungus.coconut_milk": "Coconut Milk",
 	"item.woodnfungus.coconut_shell": "Coconut Shell",

@@ -6,7 +6,9 @@
 		"TrunkPlacerTypeInvoker",
 		"FoliagePlacerTypeInvoker",
       	"TreeDecoratorTypeInvoker",
-		"CoconutMilkMixin"
+		"CoconutMilkMixin",
+		"BrewingRecipeRegistryMixin",
+		"BrewingStandBlockEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -14,6 +14,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
+
+    public static final Item PETRIFIED_SEEDS = registerItem("petrified_seeds", new Item(new FabricItemSettings()));
+    public static final Item AMBER_FUNGUS = registerItem("amber_fungus", new Item(new FabricItemSettings()));
+    public static final Item PLANT_VIAL = registerItem("plant_vial",
+            new Item(new FabricItemSettings().recipeRemainder(Items.GLASS_BOTTLE)));
+    public static final Item SPORE_VIAL = registerItem("spore_vial",
+            new Item(new FabricItemSettings().recipeRemainder(Items.GLASS_BOTTLE)));
+
     public static final Item COCONUT_MILK = registerItem("coconut_milk",
             new CoconutMilkItem(new FabricItemSettings().recipeRemainder(ModItems.COCONUT_SHELL).maxCount(16)));
     public static final Item COCONUT_SHELL = registerItem("coconut_shell", new Item(new FabricItemSettings()));

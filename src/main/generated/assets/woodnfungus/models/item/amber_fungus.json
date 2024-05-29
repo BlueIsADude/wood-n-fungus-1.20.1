@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "woodnfungus:item/amber_fungus"
+  }
+}

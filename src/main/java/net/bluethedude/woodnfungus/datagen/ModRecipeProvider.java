@@ -11,6 +11,7 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.function.Consumer;
 
@@ -23,6 +24,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BOULDERBARK_SAPLING)
+                .pattern(" S ")
+                .pattern("RVR")
+                .pattern(" O ")
+                .input('S', Items.ECHO_SHARD)
+                .input('R', ItemTags.STONE_CRAFTING_MATERIALS)
+                .input('V', ModItems.PLANT_VIAL)
+                .input('O', Blocks.OAK_SAPLING)
+                .criterion(hasItem(ModItems.PLANT_VIAL), conditionsFromItem(ModItems.PLANT_VIAL))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, Blocks.CAKE)
                 .pattern("MMM")

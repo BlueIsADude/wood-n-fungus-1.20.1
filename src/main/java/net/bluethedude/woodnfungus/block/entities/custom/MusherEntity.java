@@ -4,6 +4,7 @@ import net.bluethedude.woodnfungus.block.ModBlocks;
 import net.bluethedude.woodnfungus.item.ModItems;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
+import net.minecraft.entity.ai.pathing.PathNodeType;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
@@ -13,6 +14,7 @@ import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.Angerable;
 import net.minecraft.entity.mob.CreeperEntity;
 import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
@@ -21,6 +23,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.TimeHelper;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -40,6 +43,8 @@ public class MusherEntity extends CreeperEntity implements Angerable {
 
     public MusherEntity(EntityType<? extends CreeperEntity> entityType, World world) {
         super(entityType, world);
+        this.setPathfindingPenalty(PathNodeType.POWDER_SNOW, -1.0F);
+        this.setPathfindingPenalty(PathNodeType.DANGER_POWDER_SNOW, -1.0F);
     }
 
     private void updateAnimations() {
@@ -75,25 +80,23 @@ public class MusherEntity extends CreeperEntity implements Angerable {
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(2, new CreeperIgniteGoal(this));
-        this.goalSelector.add(3, new FleeEntityGoal<>(this, OcelotEntity.class, 6.0F, 1.0, 1.2));
-        this.goalSelector.add(3, new FleeEntityGoal<>(this, CatEntity.class, 6.0F, 1.0, 1.2));
-        this.goalSelector.add(4, new MeleeAttackGoal(this, 1.0, false));
-        this.goalSelector.add(5, new TemptGoal(this, 1.25D, Ingredient.ofItems(
+        this.goalSelector.add(3, new FleeEntityGoal<>(this, WolfEntity.class, 6.0F, 1.0, 1.2));
+        this.goalSelector.add(3, new TemptGoal(this, 1.0D, Ingredient.ofItems(
                 ModBlocks.SAVORSHROOM.asItem(),
                 ModItems.ROASTED_SAVORSHROOM,
                 ModItems.ROASTED_SAVORSHROOM_CHUNKS,
                 ModItems.ROASTED_SAVORSHROOM_SCRAPS), false));
-        this.goalSelector.add(7, new WanderAroundFarGoal(this, 0.8));
-        this.goalSelector.add(8, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
-        this.goalSelector.add(9, new LookAroundGoal(this));
+        this.goalSelector.add(4, new MeleeAttackGoal(this, 1.0, false));
+        this.goalSelector.add(5, new WanderAroundFarGoal(this, 0.8));
+        this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
+        this.goalSelector.add(6, new LookAroundGoal(this));
 
-        this.targetSelector.add(1, (new RevengeGoal(this)).setGroupRevenge());
+        this.targetSelector.add(1, new RevengeGoal(this));
         this.targetSelector.add(2, new UniversalAngerGoal<>(this, false));
     }
 
     public static DefaultAttributeContainer.Builder createMusherAttributes() {
-        return HostileEntity.createHostileAttributes()
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25);
+        return MobEntity.createMobAttributes().add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25).add(EntityAttributes.GENERIC_MAX_HEALTH, 20.0).add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 2.0);
     }
 
     public int getSafeFallDistance() {
@@ -181,7 +184,17 @@ public class MusherEntity extends CreeperEntity implements Angerable {
 
     static {
         ANGER_TIME = DataTracker.registerData(MusherEntity.class, TrackedDataHandlerRegistry.INTEGER);
-        ANGER_TIME_RANGE = TimeHelper.betweenSeconds(20, 39);
-        ANGER_PASSING_COOLDOWN_RANGE = TimeHelper.betweenSeconds(4, 6);
+        ANGER_TIME_RANGE = TimeHelper.betweenSeconds(10, 28);
+        ANGER_PASSING_COOLDOWN_RANGE = TimeHelper.betweenSeconds(3, 6);
     }
+
+    public boolean canBeLeashedBy(PlayerEntity player) {
+        return !this.hasAngerTime() && super.canBeLeashedBy(player);
+    }
+
+    public Vec3d getLeashOffset() {
+        return new Vec3d(0.0, 0.6F * this.getStandingEyeHeight(), this.getWidth() * 0.4F);
+    }
+
+
 }
