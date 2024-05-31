@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "woodnfungus:block/splitpine_planks"
+  }
+}

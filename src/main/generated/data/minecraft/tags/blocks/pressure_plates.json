@@ -2,7 +2,12 @@
   "replace": false,
   "values": [
     "woodnfungus:palm_pressure_plate",
+    "woodnfungus:red_sandalwood_pressure_plate",
     "woodnfungus:boulderbark_pressure_plate",
-    "woodnfungus:savorshroom_pressure_plate"
+    "woodnfungus:splitpine_pressure_plate",
+    "woodnfungus:blue_meanie_pressure_plate",
+    "woodnfungus:devils_tooth_pressure_plate",
+    "woodnfungus:savorshroom_pressure_plate",
+    "woodnfungus:witchstool_pressure_plate"
   ]
 }

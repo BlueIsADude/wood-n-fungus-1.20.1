@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "woodnfungus:block/devils_tooth_planks"
+  }
+}

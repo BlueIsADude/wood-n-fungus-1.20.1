@@ -2,7 +2,12 @@
   "replace": false,
   "values": [
     "woodnfungus:palm_fence_gate",
+    "woodnfungus:red_sandalwood_fence_gate",
     "woodnfungus:boulderbark_fence_gate",
-    "woodnfungus:savorshroom_fence_gate"
+    "woodnfungus:splitpine_fence_gate",
+    "woodnfungus:blue_meanie_fence_gate",
+    "woodnfungus:devils_tooth_fence_gate",
+    "woodnfungus:savorshroom_fence_gate",
+    "woodnfungus:witchstool_fence_gate"
   ]
 }

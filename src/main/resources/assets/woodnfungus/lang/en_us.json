@@ -11,28 +11,8 @@
 	"item.woodnfungus.coconut_shell": "Coconut Shell",
 	"item.woodnfungus.coconut_helmet": "Coconut Helmet",
 
-	"block.woodnfungus.coconut_cake": "Coconut Cake",
-	"block.woodnfungus.candle_coconut_cake": "Candle Coconut Cake",
-	"block.woodnfungus.white_candle_coconut_cake": "White Candle Coconut Cake",
-	"block.woodnfungus.light_gray_candle_coconut_cake": "Light Gray Candle Coconut Cake",
-	"block.woodnfungus.gray_candle_coconut_cake": "Gray Candle Coconut Cake",
-	"block.woodnfungus.black_candle_coconut_cake": "Black Candle Coconut Cake",
-	"block.woodnfungus.brown_candle_coconut_cake": "Brown Candle Coconut Cake",
-	"block.woodnfungus.red_candle_coconut_cake": "Red Candle Coconut Cake",
-	"block.woodnfungus.orange_candle_coconut_cake": "Orange Candle Coconut Cake",
-	"block.woodnfungus.yellow_candle_coconut_cake": "Yellow Candle Coconut Cake",
-	"block.woodnfungus.lime_candle_coconut_cake": "Lime Candle Coconut Cake",
-	"block.woodnfungus.green_candle_coconut_cake": "Green Candle Coconut Cake",
-	"block.woodnfungus.cyan_candle_coconut_cake": "Cyan Candle Coconut Cake",
-	"block.woodnfungus.light_blue_candle_coconut_cake": "Light Blue Candle Coconut Cake",
-	"block.woodnfungus.blue_candle_coconut_cake": "Blue Candle Coconut Cake",
-	"block.woodnfungus.purple_candle_coconut_cake": "Purple Candle Coconut Cake",
-	"block.woodnfungus.magenta_candle_coconut_cake": "Magenta Candle Coconut Cake",
-	"block.woodnfungus.pink_candle_coconut_cake": "Pink Candle Coconut Cake",
-
 	"item.woodnfungus.palm_boat": "Palm Boat",
 	"item.woodnfungus.palm_chest_boat": "Palm Chest Boat",
-
 	"block.woodnfungus.palm_sapling": "Palm Sapling",
 	"block.woodnfungus.potted_palm_sapling": "Potted Palm Sapling",
 	"block.woodnfungus.palm_log": "Palm Log",
@@ -41,7 +21,6 @@
 	"block.woodnfungus.stripped_palm_wood": "Stripped Palm Wood",
 	"block.woodnfungus.palm_core": "Palm Core",
 	"block.woodnfungus.palm_leaves": "Palm Leaves",
-
 	"block.woodnfungus.palm_planks": "Palm Planks",
 	"block.woodnfungus.palm_stairs": "Palm Stairs",
 	"block.woodnfungus.palm_slab": "Palm Slab",
@@ -51,13 +30,19 @@
 	"block.woodnfungus.palm_pressure_plate": "Palm Pressure Plate",
 	"block.woodnfungus.palm_door": "Palm Door",
 	"block.woodnfungus.palm_trapdoor": "Palm Trapdoor",
-
 	"block.woodnfungus.palm_sign": "Palm Sign",
 	"block.woodnfungus.palm_hanging_sign": "Palm Hanging Sign",
 
+	"block.woodnfungus.red_sandalwood_planks": "Red Sandalwood Planks",
+	"block.woodnfungus.red_sandalwood_stairs": "Red Sandalwood Stairs",
+	"block.woodnfungus.red_sandalwood_slab": "Red Sandalwood Slab",
+	"block.woodnfungus.red_sandalwood_fence": "Red Sandalwood Fence",
+	"block.woodnfungus.red_sandalwood_fence_gate": "Red Sandalwood Fence Gate",
+	"block.woodnfungus.red_sandalwood_button": "Red Sandalwood Button",
+	"block.woodnfungus.red_sandalwood_pressure_plate": "Red Sandalwood Pressure Plate",
+
 	"item.woodnfungus.boulderbark_boat": "Boulderbark Boat",
 	"item.woodnfungus.boulderbark_chest_boat": "Boulderbark Chest Boat",
-
 	"block.woodnfungus.boulderbark_sapling": "Boulderbark Sapling",
 	"block.woodnfungus.potted_boulderbark_sapling": "Potted Boulderbark Sapling",
 	"block.woodnfungus.boulderbark_log": "Boulderbark Log",
@@ -65,7 +50,6 @@
 	"block.woodnfungus.boulderbark_wood": "Boulderbark Wood",
 	"block.woodnfungus.stripped_boulderbark_wood": "Stripped Boulderbark Wood",
 	"block.woodnfungus.boulderbark_leaves": "Boulderbark Leaves",
-
 	"block.woodnfungus.boulderbark_planks": "Boulderbark Planks",
 	"block.woodnfungus.boulderbark_stairs": "Boulderbark Stairs",
 	"block.woodnfungus.boulderbark_slab": "Boulderbark Slab",
@@ -75,7 +59,6 @@
 	"block.woodnfungus.boulderbark_pressure_plate": "Boulderbark Pressure Plate",
 	"block.woodnfungus.boulderbark_door": "Boulderbark Door",
 	"block.woodnfungus.boulderbark_trapdoor": "Boulderbark Trapdoor",
-
 	"block.woodnfungus.boulderbark_sign": "Boulderbark Sign",
 	"block.woodnfungus.boulderbark_hanging_sign": "Boulderbark Hanging Sign",
 
@@ -96,6 +79,30 @@
 	"block.woodnfungus.magenta_boulderbark_leaves": "Magenta Boulderbark Leaves",
 	"block.woodnfungus.pink_boulderbark_leaves": "Pink Boulderbark Leaves",
 
+	"block.woodnfungus.splitpine_planks": "Splitpine Planks",
+	"block.woodnfungus.splitpine_stairs": "Splitpine Stairs",
+	"block.woodnfungus.splitpine_slab": "Splitpine Slab",
+	"block.woodnfungus.splitpine_fence": "Splitpine Fence",
+	"block.woodnfungus.splitpine_fence_gate": "Splitpine Fence Gate",
+	"block.woodnfungus.splitpine_button": "Splitpine Button",
+	"block.woodnfungus.splitpine_pressure_plate": "Splitpine Pressure Plate",
+
+	"block.woodnfungus.blue_meanie_planks": "Blue Meanie Planks",
+	"block.woodnfungus.blue_meanie_stairs": "Blue Meanie Stairs",
+	"block.woodnfungus.blue_meanie_slab": "Blue Meanie Slab",
+	"block.woodnfungus.blue_meanie_fence": "Blue Meanie Fence",
+	"block.woodnfungus.blue_meanie_fence_gate": "Blue Meanie Fence Gate",
+	"block.woodnfungus.blue_meanie_button": "Blue Meanie Button",
+	"block.woodnfungus.blue_meanie_pressure_plate": "Blue Meanie Pressure Plate",
+
+	"block.woodnfungus.devils_tooth_planks": "Devil's Tooth Planks",
+	"block.woodnfungus.devils_tooth_stairs": "Devil's Tooth Stairs",
+	"block.woodnfungus.devils_tooth_slab": "Devil's Tooth Slab",
+	"block.woodnfungus.devils_tooth_fence": "Devil's Tooth Fence",
+	"block.woodnfungus.devils_tooth_fence_gate": "Devil's Tooth Fence Gate",
+	"block.woodnfungus.devils_tooth_button": "Devil's Tooth Button",
+	"block.woodnfungus.devils_tooth_pressure_plate": "Devil's Tooth Pressure Plate",
+
 	"item.woodnfungus.roasted_savorshroom": "Roasted Savorshroom",
 	"item.woodnfungus.roasted_savorshroom_chunks": "Roasted Savorshroom Chunks",
 	"item.woodnfungus.roasted_savorshroom_scraps": "Roasted Savorshroom Scraps",
@@ -107,7 +114,6 @@
 	"block.woodnfungus.savorshroom_hyphae": "Savorshroom Hyphae",
 	"block.woodnfungus.stripped_savorshroom_hyphae": "Stripped Savorshroom Hyphae",
 	"block.woodnfungus.savorshroom_block": "Savorshroom Block",
-
 	"block.woodnfungus.savorshroom_planks": "Savorshroom Planks",
 	"block.woodnfungus.savorshroom_stairs": "Savorshroom Stairs",
 	"block.woodnfungus.savorshroom_slab": "Savorshroom Slab",
@@ -117,9 +123,16 @@
 	"block.woodnfungus.savorshroom_pressure_plate": "Savorshroom Pressure Plate",
 	"block.woodnfungus.savorshroom_door": "Savorshroom Door",
 	"block.woodnfungus.savorshroom_trapdoor": "Savorshroom Trapdoor",
-
 	"block.woodnfungus.savorshroom_sign": "Savorshroom Sign",
 	"block.woodnfungus.savorshroom_hanging_sign": "Savorshroom Hanging Sign",
+
+	"block.woodnfungus.witchstool_planks": "Witchstool Planks",
+	"block.woodnfungus.witchstool_stairs": "Witchstool Stairs",
+	"block.woodnfungus.witchstool_slab": "Witchstool Slab",
+	"block.woodnfungus.witchstool_fence": "Witchstool Fence",
+	"block.woodnfungus.witchstool_fence_gate": "Witchstool Fence Gate",
+	"block.woodnfungus.witchstool_button": "Witchstool Button",
+	"block.woodnfungus.witchstool_pressure_plate": "Witchstool Pressure Plate",
 
 	"tooltip.woodnfungus.coconut_helmet": "§6Applies Absorption II every 20 seconds.",
 

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "woodnfungus:block/splitpine_planks",
+    "side": "woodnfungus:block/splitpine_planks",
+    "top": "woodnfungus:block/splitpine_planks"
+  }
+}

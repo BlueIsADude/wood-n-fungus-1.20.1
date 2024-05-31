@@ -2,7 +2,12 @@
   "replace": false,
   "values": [
     "woodnfungus:palm_button",
+    "woodnfungus:red_sandalwood_button",
     "woodnfungus:boulderbark_button",
-    "woodnfungus:savorshroom_button"
+    "woodnfungus:splitpine_button",
+    "woodnfungus:blue_meanie_button",
+    "woodnfungus:devils_tooth_button",
+    "woodnfungus:savorshroom_button",
+    "woodnfungus:witchstool_button"
   ]
 }

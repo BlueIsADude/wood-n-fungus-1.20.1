@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "woodnfungus:block/blue_meanie_pressure_plate"
+    },
+    "powered=true": {
+      "model": "woodnfungus:block/blue_meanie_pressure_plate_down"
+    }
+  }
+}

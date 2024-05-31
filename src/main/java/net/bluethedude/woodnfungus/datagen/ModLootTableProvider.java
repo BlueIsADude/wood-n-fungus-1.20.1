@@ -29,8 +29,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PALM_TRAPDOOR);
         addDrop(ModBlocks.PALM_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_PALM_SAPLING);
-
         addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, SAPLING_DROP_CHANCE));
+
+        addDrop(ModBlocks.RED_SANDALWOOD_PLANKS);
+        addDrop(ModBlocks.RED_SANDALWOOD_STAIRS);
+        addDrop(ModBlocks.RED_SANDALWOOD_SLAB, slabDrops(ModBlocks.RED_SANDALWOOD_SLAB));
+        addDrop(ModBlocks.RED_SANDALWOOD_FENCE);
+        addDrop(ModBlocks.RED_SANDALWOOD_FENCE_GATE);
+        addDrop(ModBlocks.RED_SANDALWOOD_BUTTON);
+        addDrop(ModBlocks.RED_SANDALWOOD_PRESSURE_PLATE);
 
         addDrop(ModBlocks.BOULDERBARK_LOG);
         addDrop(ModBlocks.STRIPPED_BOULDERBARK_LOG);
@@ -47,7 +54,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BOULDERBARK_TRAPDOOR);
         addDrop(ModBlocks.BOULDERBARK_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_BOULDERBARK_SAPLING);
-
         addDrop(ModBlocks.BOULDERBARK_LEAVES, leavesDrops(ModBlocks.BOULDERBARK_LEAVES, ModBlocks.BOULDERBARK_SAPLING, 0.0001f));
         addDrop(ModBlocks.WHITE_BOULDERBARK_LEAVES);
         addDrop(ModBlocks.LIGHT_GRAY_BOULDERBARK_LEAVES);
@@ -65,6 +71,30 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAGENTA_BOULDERBARK_LEAVES);
         addDrop(ModBlocks.PINK_BOULDERBARK_LEAVES);
 
+        addDrop(ModBlocks.SPLITPINE_PLANKS);
+        addDrop(ModBlocks.SPLITPINE_STAIRS);
+        addDrop(ModBlocks.SPLITPINE_SLAB, slabDrops(ModBlocks.SPLITPINE_SLAB));
+        addDrop(ModBlocks.SPLITPINE_FENCE);
+        addDrop(ModBlocks.SPLITPINE_FENCE_GATE);
+        addDrop(ModBlocks.SPLITPINE_BUTTON);
+        addDrop(ModBlocks.SPLITPINE_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.BLUE_MEANIE_PLANKS);
+        addDrop(ModBlocks.BLUE_MEANIE_STAIRS);
+        addDrop(ModBlocks.BLUE_MEANIE_SLAB, slabDrops(ModBlocks.BLUE_MEANIE_SLAB));
+        addDrop(ModBlocks.BLUE_MEANIE_FENCE);
+        addDrop(ModBlocks.BLUE_MEANIE_FENCE_GATE);
+        addDrop(ModBlocks.BLUE_MEANIE_BUTTON);
+        addDrop(ModBlocks.BLUE_MEANIE_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.DEVILS_TOOTH_PLANKS);
+        addDrop(ModBlocks.DEVILS_TOOTH_STAIRS);
+        addDrop(ModBlocks.DEVILS_TOOTH_SLAB, slabDrops(ModBlocks.DEVILS_TOOTH_SLAB));
+        addDrop(ModBlocks.DEVILS_TOOTH_FENCE);
+        addDrop(ModBlocks.DEVILS_TOOTH_FENCE_GATE);
+        addDrop(ModBlocks.DEVILS_TOOTH_BUTTON);
+        addDrop(ModBlocks.DEVILS_TOOTH_PRESSURE_PLATE);
+
         addDrop(ModBlocks.SAVORSHROOM_BLOCK, mushroomBlockDrops(ModBlocks.SAVORSHROOM_BLOCK, ModBlocks.SAVORSHROOM));
         addDrop(ModBlocks.SAVORSHROOM_STEM);
         addDrop(ModBlocks.STRIPPED_SAVORSHROOM_STEM);
@@ -81,5 +111,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SAVORSHROOM_TRAPDOOR);
         addDrop(ModBlocks.SAVORSHROOM);
         addPottedPlantDrops(ModBlocks.POTTED_SAVORSHROOM);
+
+        addDrop(ModBlocks.WITCHSTOOL_PLANKS);
+        addDrop(ModBlocks.WITCHSTOOL_STAIRS);
+        addDrop(ModBlocks.WITCHSTOOL_SLAB, slabDrops(ModBlocks.WITCHSTOOL_SLAB));
+        addDrop(ModBlocks.WITCHSTOOL_FENCE);
+        addDrop(ModBlocks.WITCHSTOOL_FENCE_GATE);
+        addDrop(ModBlocks.WITCHSTOOL_BUTTON);
+        addDrop(ModBlocks.WITCHSTOOL_PRESSURE_PLATE);
     }
 }

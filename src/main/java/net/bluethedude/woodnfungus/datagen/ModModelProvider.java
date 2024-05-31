@@ -25,8 +25,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG).log(ModBlocks.PALM_LOG).wood(ModBlocks.PALM_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PALM_LOG).log(ModBlocks.STRIPPED_PALM_LOG).wood(ModBlocks.STRIPPED_PALM_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALM_CORE);
-        BlockStateModelGenerator.BlockTexturePool palmPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PALM_SAPLING, ModBlocks.POTTED_PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool palmPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS);
 
         palmPool.stairs(ModBlocks.PALM_STAIRS);
         palmPool.slab(ModBlocks.PALM_SLAB);
@@ -39,11 +40,23 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_PALM_LOG, ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN);
         blockStateModelGenerator.registerHangingSign(ModBlocks.PALM_PLANKS, ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN);
 
+
+        BlockStateModelGenerator.BlockTexturePool redSandalwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RED_SANDALWOOD_PLANKS);
+
+        redSandalwoodPool.stairs(ModBlocks.RED_SANDALWOOD_STAIRS);
+        redSandalwoodPool.slab(ModBlocks.RED_SANDALWOOD_SLAB);
+        redSandalwoodPool.fence(ModBlocks.RED_SANDALWOOD_FENCE);
+        redSandalwoodPool.fenceGate(ModBlocks.RED_SANDALWOOD_FENCE_GATE);
+        redSandalwoodPool.button(ModBlocks.RED_SANDALWOOD_BUTTON);
+        redSandalwoodPool.pressurePlate(ModBlocks.RED_SANDALWOOD_PRESSURE_PLATE);
+
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.BOULDERBARK_LOG).log(ModBlocks.BOULDERBARK_LOG).wood(ModBlocks.BOULDERBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BOULDERBARK_LOG).log(ModBlocks.STRIPPED_BOULDERBARK_LOG).wood(ModBlocks.STRIPPED_BOULDERBARK_WOOD);
-        BlockStateModelGenerator.BlockTexturePool boulderbarkPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BOULDERBARK_PLANKS);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BOULDERBARK_SAPLING, ModBlocks.POTTED_BOULDERBARK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool boulderbarkPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BOULDERBARK_PLANKS);
 
         boulderbarkPool.stairs(ModBlocks.BOULDERBARK_STAIRS);
         boulderbarkPool.slab(ModBlocks.BOULDERBARK_SLAB);
@@ -73,11 +86,43 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGENTA_BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_BOULDERBARK_LEAVES);
 
+
+        BlockStateModelGenerator.BlockTexturePool splitpinePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SPLITPINE_PLANKS);
+
+        splitpinePool.stairs(ModBlocks.SPLITPINE_STAIRS);
+        splitpinePool.slab(ModBlocks.SPLITPINE_SLAB);
+        splitpinePool.fence(ModBlocks.SPLITPINE_FENCE);
+        splitpinePool.fenceGate(ModBlocks.SPLITPINE_FENCE_GATE);
+        splitpinePool.button(ModBlocks.SPLITPINE_BUTTON);
+        splitpinePool.pressurePlate(ModBlocks.SPLITPINE_PRESSURE_PLATE);
+
+
+        BlockStateModelGenerator.BlockTexturePool blueMeaniePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUE_MEANIE_PLANKS);
+
+        blueMeaniePool.stairs(ModBlocks.BLUE_MEANIE_STAIRS);
+        blueMeaniePool.slab(ModBlocks.BLUE_MEANIE_SLAB);
+        blueMeaniePool.fence(ModBlocks.BLUE_MEANIE_FENCE);
+        blueMeaniePool.fenceGate(ModBlocks.BLUE_MEANIE_FENCE_GATE);
+        blueMeaniePool.button(ModBlocks.BLUE_MEANIE_BUTTON);
+        blueMeaniePool.pressurePlate(ModBlocks.BLUE_MEANIE_PRESSURE_PLATE);
+
+
+        BlockStateModelGenerator.BlockTexturePool devilsToothPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEVILS_TOOTH_PLANKS);
+
+        devilsToothPool.stairs(ModBlocks.DEVILS_TOOTH_STAIRS);
+        devilsToothPool.slab(ModBlocks.DEVILS_TOOTH_SLAB);
+        devilsToothPool.fence(ModBlocks.DEVILS_TOOTH_FENCE);
+        devilsToothPool.fenceGate(ModBlocks.DEVILS_TOOTH_FENCE_GATE);
+        devilsToothPool.button(ModBlocks.DEVILS_TOOTH_BUTTON);
+        devilsToothPool.pressurePlate(ModBlocks.DEVILS_TOOTH_PRESSURE_PLATE);
+
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAVORSHROOM_BLOCK);
         blockStateModelGenerator.registerLog(ModBlocks.SAVORSHROOM_STEM).log(ModBlocks.SAVORSHROOM_STEM).wood(ModBlocks.SAVORSHROOM_HYPHAE);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_SAVORSHROOM_STEM).log(ModBlocks.STRIPPED_SAVORSHROOM_STEM).wood(ModBlocks.STRIPPED_SAVORSHROOM_HYPHAE);
-        BlockStateModelGenerator.BlockTexturePool savorshroomPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SAVORSHROOM_PLANKS);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SAVORSHROOM, ModBlocks.POTTED_SAVORSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool savorshroomPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SAVORSHROOM_PLANKS);
 
         savorshroomPool.stairs(ModBlocks.SAVORSHROOM_STAIRS);
         savorshroomPool.slab(ModBlocks.SAVORSHROOM_SLAB);
@@ -89,6 +134,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.SAVORSHROOM_TRAPDOOR);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_SAVORSHROOM_STEM, ModBlocks.SAVORSHROOM_HANGING_SIGN, ModBlocks.SAVORSHROOM_WALL_HANGING_SIGN);
         blockStateModelGenerator.registerHangingSign(ModBlocks.SAVORSHROOM_PLANKS, ModBlocks.SAVORSHROOM_SIGN, ModBlocks.SAVORSHROOM_WALL_SIGN);
+
+
+        BlockStateModelGenerator.BlockTexturePool witchstoolPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WITCHSTOOL_PLANKS);
+
+        witchstoolPool.stairs(ModBlocks.WITCHSTOOL_STAIRS);
+        witchstoolPool.slab(ModBlocks.WITCHSTOOL_SLAB);
+        witchstoolPool.fence(ModBlocks.WITCHSTOOL_FENCE);
+        witchstoolPool.fenceGate(ModBlocks.WITCHSTOOL_FENCE_GATE);
+        witchstoolPool.button(ModBlocks.WITCHSTOOL_BUTTON);
+        witchstoolPool.pressurePlate(ModBlocks.WITCHSTOOL_PRESSURE_PLATE);
 
 
     }

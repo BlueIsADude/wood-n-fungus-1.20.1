@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "woodnfungus:block/witchstool_slab"
+    },
+    "type=double": {
+      "model": "woodnfungus:block/witchstool_planks"
+    },
+    "type=top": {
+      "model": "woodnfungus:block/witchstool_slab_top"
+    }
+  }
+}

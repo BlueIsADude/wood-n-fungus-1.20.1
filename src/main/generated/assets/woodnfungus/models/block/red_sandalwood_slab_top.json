@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "woodnfungus:block/red_sandalwood_planks",
+    "side": "woodnfungus:block/red_sandalwood_planks",
+    "top": "woodnfungus:block/red_sandalwood_planks"
+  }
+}
