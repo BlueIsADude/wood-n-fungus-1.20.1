@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "woodnfungus:block/stained_devils_tooth_planks"
+  }
+}

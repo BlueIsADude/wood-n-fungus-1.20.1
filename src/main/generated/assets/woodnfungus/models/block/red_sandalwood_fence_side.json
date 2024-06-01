@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/fence_side",
-  "textures": {
-    "texture": "woodnfungus:block/red_sandalwood_planks"
-  }
-}

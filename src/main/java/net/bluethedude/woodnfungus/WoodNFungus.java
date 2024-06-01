@@ -48,11 +48,11 @@ public class WoodNFungus implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_FENCE, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_FENCE_GATE, 5, 20);
 
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_SANDALWOOD_PLANKS, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_SANDALWOOD_STAIRS, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_SANDALWOOD_SLAB, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_SANDALWOOD_FENCE, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_SANDALWOOD_FENCE_GATE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LIGNUM_VITAE_PLANKS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LIGNUM_VITAE_STAIRS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LIGNUM_VITAE_SLAB, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LIGNUM_VITAE_FENCE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LIGNUM_VITAE_FENCE_GATE, 5, 20);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BOULDERBARK_LOG, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_BOULDERBARK_LOG, 5, 5);
@@ -99,6 +99,11 @@ public class WoodNFungus implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEVILS_TOOTH_SLAB, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEVILS_TOOTH_FENCE, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEVILS_TOOTH_FENCE_GATE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STAINED_DEVILS_TOOTH_PLANKS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STAINED_DEVILS_TOOTH_STAIRS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STAINED_DEVILS_TOOTH_SLAB, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STAINED_DEVILS_TOOTH_FENCE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STAINED_DEVILS_TOOTH_FENCE_GATE, 5, 20);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SAVORSHROOM_STEM, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_SAVORSHROOM_STEM, 5, 5);

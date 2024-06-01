@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "woodnfungus:block/lignum_vitae_planks"
+  }
+}

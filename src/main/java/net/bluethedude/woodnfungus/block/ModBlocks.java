@@ -68,20 +68,20 @@ public class ModBlocks {
 
 
 
-    public static final Block RED_SANDALWOOD_PLANKS = registerBlock("red_sandalwood_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.RED)));
-    public static final Block RED_SANDALWOOD_STAIRS = registerBlock("red_sandalwood_stairs",
-            new StairsBlock(ModBlocks.RED_SANDALWOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.RED)));
-    public static final Block RED_SANDALWOOD_SLAB = registerBlock("red_sandalwood_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.RED)));
-    public static final Block RED_SANDALWOOD_FENCE = registerBlock("red_sandalwood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.RED)));
-    public static final Block RED_SANDALWOOD_FENCE_GATE = registerBlock("red_sandalwood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.RED), ModWoodTypes.RED_SANDALWOOD));
-    public static final Block RED_SANDALWOOD_PRESSURE_PLATE = registerBlock("red_sandalwood_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.RED), ModBlockSetTypes.RED_SANDALWOOD));
-    public static final Block RED_SANDALWOOD_BUTTON = registerBlock("red_sandalwood_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.RED), ModBlockSetTypes.RED_SANDALWOOD, 15, true));
+    public static final Block LIGNUM_VITAE_PLANKS = registerBlock("lignum_vitae_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block LIGNUM_VITAE_STAIRS = registerBlock("lignum_vitae_stairs",
+            new StairsBlock(ModBlocks.LIGNUM_VITAE_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block LIGNUM_VITAE_SLAB = registerBlock("lignum_vitae_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block LIGNUM_VITAE_FENCE = registerBlock("lignum_vitae_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block LIGNUM_VITAE_FENCE_GATE = registerBlock("lignum_vitae_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME), ModWoodTypes.LIGNUM_VITAE));
+    public static final Block LIGNUM_VITAE_PRESSURE_PLATE = registerBlock("lignum_vitae_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME), ModBlockSetTypes.LIGNUM_VITAE));
+    public static final Block LIGNUM_VITAE_BUTTON = registerBlock("lignum_vitae_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME), ModBlockSetTypes.LIGNUM_VITAE, 15, true));
 
 
 
@@ -212,6 +212,22 @@ public class ModBlocks {
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.OFF_WHITE), ModBlockSetTypes.DEVILS_TOOTH));
     public static final Block DEVILS_TOOTH_BUTTON = registerBlock("devils_tooth_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.OFF_WHITE), ModBlockSetTypes.DEVILS_TOOTH, 15, true));
+
+    public static final Block STAINED_DEVILS_TOOTH_PLANKS = registerBlock("stained_devils_tooth_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BRIGHT_RED)));
+    public static final Block STAINED_DEVILS_TOOTH_STAIRS = registerBlock("stained_devils_tooth_stairs",
+            new StairsBlock(ModBlocks.STAINED_DEVILS_TOOTH_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BRIGHT_RED)));
+    public static final Block STAINED_DEVILS_TOOTH_SLAB = registerBlock("stained_devils_tooth_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BRIGHT_RED)));
+    public static final Block STAINED_DEVILS_TOOTH_FENCE = registerBlock("stained_devils_tooth_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BRIGHT_RED)));
+    public static final Block STAINED_DEVILS_TOOTH_FENCE_GATE = registerBlock("stained_devils_tooth_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BRIGHT_RED), ModWoodTypes.DEVILS_TOOTH));
+    public static final Block STAINED_DEVILS_TOOTH_PRESSURE_PLATE = registerBlock("stained_devils_tooth_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BRIGHT_RED), ModBlockSetTypes.DEVILS_TOOTH));
+    public static final Block STAINED_DEVILS_TOOTH_BUTTON = registerBlock("stained_devils_tooth_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BRIGHT_RED), ModBlockSetTypes.DEVILS_TOOTH, 15, true));
+
 
 
 

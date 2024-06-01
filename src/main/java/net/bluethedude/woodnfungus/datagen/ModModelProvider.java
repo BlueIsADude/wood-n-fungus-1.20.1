@@ -41,14 +41,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(ModBlocks.PALM_PLANKS, ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN);
 
 
-        BlockStateModelGenerator.BlockTexturePool redSandalwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RED_SANDALWOOD_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool lignumVitaePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGNUM_VITAE_PLANKS);
 
-        redSandalwoodPool.stairs(ModBlocks.RED_SANDALWOOD_STAIRS);
-        redSandalwoodPool.slab(ModBlocks.RED_SANDALWOOD_SLAB);
-        redSandalwoodPool.fence(ModBlocks.RED_SANDALWOOD_FENCE);
-        redSandalwoodPool.fenceGate(ModBlocks.RED_SANDALWOOD_FENCE_GATE);
-        redSandalwoodPool.button(ModBlocks.RED_SANDALWOOD_BUTTON);
-        redSandalwoodPool.pressurePlate(ModBlocks.RED_SANDALWOOD_PRESSURE_PLATE);
+        lignumVitaePool.stairs(ModBlocks.LIGNUM_VITAE_STAIRS);
+        lignumVitaePool.slab(ModBlocks.LIGNUM_VITAE_SLAB);
+        lignumVitaePool.fence(ModBlocks.LIGNUM_VITAE_FENCE);
+        lignumVitaePool.fenceGate(ModBlocks.LIGNUM_VITAE_FENCE_GATE);
+        lignumVitaePool.button(ModBlocks.LIGNUM_VITAE_BUTTON);
+        lignumVitaePool.pressurePlate(ModBlocks.LIGNUM_VITAE_PRESSURE_PLATE);
 
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BOULDERBARK_LEAVES);
@@ -115,6 +115,15 @@ public class ModModelProvider extends FabricModelProvider {
         devilsToothPool.fenceGate(ModBlocks.DEVILS_TOOTH_FENCE_GATE);
         devilsToothPool.button(ModBlocks.DEVILS_TOOTH_BUTTON);
         devilsToothPool.pressurePlate(ModBlocks.DEVILS_TOOTH_PRESSURE_PLATE);
+
+        BlockStateModelGenerator.BlockTexturePool stainedDevilsToothPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STAINED_DEVILS_TOOTH_PLANKS);
+
+        stainedDevilsToothPool.stairs(ModBlocks.STAINED_DEVILS_TOOTH_STAIRS);
+        stainedDevilsToothPool.slab(ModBlocks.STAINED_DEVILS_TOOTH_SLAB);
+        stainedDevilsToothPool.fence(ModBlocks.STAINED_DEVILS_TOOTH_FENCE);
+        stainedDevilsToothPool.fenceGate(ModBlocks.STAINED_DEVILS_TOOTH_FENCE_GATE);
+        stainedDevilsToothPool.button(ModBlocks.STAINED_DEVILS_TOOTH_BUTTON);
+        stainedDevilsToothPool.pressurePlate(ModBlocks.STAINED_DEVILS_TOOTH_PRESSURE_PLATE);
 
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAVORSHROOM_BLOCK);

@@ -31,13 +31,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addPottedPlantDrops(ModBlocks.POTTED_PALM_SAPLING);
         addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, SAPLING_DROP_CHANCE));
 
-        addDrop(ModBlocks.RED_SANDALWOOD_PLANKS);
-        addDrop(ModBlocks.RED_SANDALWOOD_STAIRS);
-        addDrop(ModBlocks.RED_SANDALWOOD_SLAB, slabDrops(ModBlocks.RED_SANDALWOOD_SLAB));
-        addDrop(ModBlocks.RED_SANDALWOOD_FENCE);
-        addDrop(ModBlocks.RED_SANDALWOOD_FENCE_GATE);
-        addDrop(ModBlocks.RED_SANDALWOOD_BUTTON);
-        addDrop(ModBlocks.RED_SANDALWOOD_PRESSURE_PLATE);
+        addDrop(ModBlocks.LIGNUM_VITAE_PLANKS);
+        addDrop(ModBlocks.LIGNUM_VITAE_STAIRS);
+        addDrop(ModBlocks.LIGNUM_VITAE_SLAB, slabDrops(ModBlocks.LIGNUM_VITAE_SLAB));
+        addDrop(ModBlocks.LIGNUM_VITAE_FENCE);
+        addDrop(ModBlocks.LIGNUM_VITAE_FENCE_GATE);
+        addDrop(ModBlocks.LIGNUM_VITAE_BUTTON);
+        addDrop(ModBlocks.LIGNUM_VITAE_PRESSURE_PLATE);
 
         addDrop(ModBlocks.BOULDERBARK_LOG);
         addDrop(ModBlocks.STRIPPED_BOULDERBARK_LOG);
@@ -94,6 +94,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEVILS_TOOTH_FENCE_GATE);
         addDrop(ModBlocks.DEVILS_TOOTH_BUTTON);
         addDrop(ModBlocks.DEVILS_TOOTH_PRESSURE_PLATE);
+        addDrop(ModBlocks.STAINED_DEVILS_TOOTH_PLANKS);
+        addDrop(ModBlocks.STAINED_DEVILS_TOOTH_STAIRS);
+        addDrop(ModBlocks.STAINED_DEVILS_TOOTH_SLAB, slabDrops(ModBlocks.STAINED_DEVILS_TOOTH_SLAB));
+        addDrop(ModBlocks.STAINED_DEVILS_TOOTH_FENCE);
+        addDrop(ModBlocks.STAINED_DEVILS_TOOTH_FENCE_GATE);
+        addDrop(ModBlocks.STAINED_DEVILS_TOOTH_BUTTON);
+        addDrop(ModBlocks.STAINED_DEVILS_TOOTH_PRESSURE_PLATE);
 
         addDrop(ModBlocks.SAVORSHROOM_BLOCK, mushroomBlockDrops(ModBlocks.SAVORSHROOM_BLOCK, ModBlocks.SAVORSHROOM));
         addDrop(ModBlocks.SAVORSHROOM_STEM);

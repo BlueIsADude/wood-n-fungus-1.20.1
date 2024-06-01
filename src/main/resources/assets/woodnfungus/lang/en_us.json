@@ -33,13 +33,13 @@
 	"block.woodnfungus.palm_sign": "Palm Sign",
 	"block.woodnfungus.palm_hanging_sign": "Palm Hanging Sign",
 
-	"block.woodnfungus.red_sandalwood_planks": "Red Sandalwood Planks",
-	"block.woodnfungus.red_sandalwood_stairs": "Red Sandalwood Stairs",
-	"block.woodnfungus.red_sandalwood_slab": "Red Sandalwood Slab",
-	"block.woodnfungus.red_sandalwood_fence": "Red Sandalwood Fence",
-	"block.woodnfungus.red_sandalwood_fence_gate": "Red Sandalwood Fence Gate",
-	"block.woodnfungus.red_sandalwood_button": "Red Sandalwood Button",
-	"block.woodnfungus.red_sandalwood_pressure_plate": "Red Sandalwood Pressure Plate",
+	"block.woodnfungus.lignum_vitae_planks": "Lignum Vitae Planks",
+	"block.woodnfungus.lignum_vitae_stairs": "Lignum Vitae Stairs",
+	"block.woodnfungus.lignum_vitae_slab": "Lignum Vitae Slab",
+	"block.woodnfungus.lignum_vitae_fence": "Lignum Vitae Fence",
+	"block.woodnfungus.lignum_vitae_fence_gate": "Lignum Vitae Fence Gate",
+	"block.woodnfungus.lignum_vitae_button": "Lignum Vitae Button",
+	"block.woodnfungus.lignum_vitae_pressure_plate": "Lignum Vitae Pressure Plate",
 
 	"item.woodnfungus.boulderbark_boat": "Boulderbark Boat",
 	"item.woodnfungus.boulderbark_chest_boat": "Boulderbark Chest Boat",
@@ -102,6 +102,13 @@
 	"block.woodnfungus.devils_tooth_fence_gate": "Devil's Tooth Fence Gate",
 	"block.woodnfungus.devils_tooth_button": "Devil's Tooth Button",
 	"block.woodnfungus.devils_tooth_pressure_plate": "Devil's Tooth Pressure Plate",
+	"block.woodnfungus.stained_devils_tooth_planks": "Stained Devil's Tooth Planks",
+	"block.woodnfungus.stained_devils_tooth_stairs": "Stained Devil's Tooth Stairs",
+	"block.woodnfungus.stained_devils_tooth_slab": "Stained Devil's Tooth Slab",
+	"block.woodnfungus.stained_devils_tooth_fence": "Stained Devil's Tooth Fence",
+	"block.woodnfungus.stained_devils_tooth_fence_gate": "Stained Devil's Tooth Fence Gate",
+	"block.woodnfungus.stained_devils_tooth_button": "Stained Devil's Tooth Button",
+	"block.woodnfungus.stained_devils_tooth_pressure_plate": "Stained Devil's Tooth Pressure Plate",
 
 	"item.woodnfungus.roasted_savorshroom": "Roasted Savorshroom",
 	"item.woodnfungus.roasted_savorshroom_chunks": "Roasted Savorshroom Chunks",
@@ -134,7 +141,7 @@
 	"block.woodnfungus.witchstool_button": "Witchstool Button",
 	"block.woodnfungus.witchstool_pressure_plate": "Witchstool Pressure Plate",
 
-	"tooltip.woodnfungus.coconut_helmet": "§6Applies Absorption II every 20 seconds.",
+	"tooltip.woodnfungus.coconut_helmet": "§6Helmet Effect\n§7 - §8Applies Absorption II to the wearer every 20 seconds, instead of providing armor.",
 
 	"entity.woodnfungus.musher": "Musher",
 	"item.woodnfungus.musher_spawn_egg": "Musher Spawn Egg",

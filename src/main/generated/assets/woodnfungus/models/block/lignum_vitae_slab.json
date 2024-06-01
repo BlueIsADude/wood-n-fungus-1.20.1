@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "woodnfungus:block/lignum_vitae_planks",
+    "side": "woodnfungus:block/lignum_vitae_planks",
+    "top": "woodnfungus:block/lignum_vitae_planks"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "woodnfungus:block/stained_devils_tooth_planks",
+    "side": "woodnfungus:block/stained_devils_tooth_planks",
+    "top": "woodnfungus:block/stained_devils_tooth_planks"
+  }
+}

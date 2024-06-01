@@ -48,13 +48,13 @@ public class ModItemGroups {
                         entries.add(ModItems.PALM_BOAT);
                         entries.add(ModItems.PALM_CHEST_BOAT);
 
-                        entries.add(ModBlocks.RED_SANDALWOOD_PLANKS);
-                        entries.add(ModBlocks.RED_SANDALWOOD_STAIRS);
-                        entries.add(ModBlocks.RED_SANDALWOOD_SLAB);
-                        entries.add(ModBlocks.RED_SANDALWOOD_FENCE);
-                        entries.add(ModBlocks.RED_SANDALWOOD_FENCE_GATE);
-                        entries.add(ModBlocks.RED_SANDALWOOD_BUTTON);
-                        entries.add(ModBlocks.RED_SANDALWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.LIGNUM_VITAE_PLANKS);
+                        entries.add(ModBlocks.LIGNUM_VITAE_STAIRS);
+                        entries.add(ModBlocks.LIGNUM_VITAE_SLAB);
+                        entries.add(ModBlocks.LIGNUM_VITAE_FENCE);
+                        entries.add(ModBlocks.LIGNUM_VITAE_FENCE_GATE);
+                        entries.add(ModBlocks.LIGNUM_VITAE_BUTTON);
+                        entries.add(ModBlocks.LIGNUM_VITAE_PRESSURE_PLATE);
 
                         entries.add(ModBlocks.BOULDERBARK_SAPLING);
                         entries.add(ModBlocks.BOULDERBARK_LEAVES);
@@ -108,6 +108,21 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLUE_MEANIE_FENCE_GATE);
                         entries.add(ModBlocks.BLUE_MEANIE_BUTTON);
                         entries.add(ModBlocks.BLUE_MEANIE_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.DEVILS_TOOTH_PLANKS);
+                        entries.add(ModBlocks.DEVILS_TOOTH_STAIRS);
+                        entries.add(ModBlocks.DEVILS_TOOTH_SLAB);
+                        entries.add(ModBlocks.DEVILS_TOOTH_FENCE);
+                        entries.add(ModBlocks.DEVILS_TOOTH_FENCE_GATE);
+                        entries.add(ModBlocks.DEVILS_TOOTH_BUTTON);
+                        entries.add(ModBlocks.DEVILS_TOOTH_PRESSURE_PLATE);
+                        entries.add(ModBlocks.STAINED_DEVILS_TOOTH_PLANKS);
+                        entries.add(ModBlocks.STAINED_DEVILS_TOOTH_STAIRS);
+                        entries.add(ModBlocks.STAINED_DEVILS_TOOTH_SLAB);
+                        entries.add(ModBlocks.STAINED_DEVILS_TOOTH_FENCE);
+                        entries.add(ModBlocks.STAINED_DEVILS_TOOTH_FENCE_GATE);
+                        entries.add(ModBlocks.STAINED_DEVILS_TOOTH_BUTTON);
+                        entries.add(ModBlocks.STAINED_DEVILS_TOOTH_PRESSURE_PLATE);
 
                         entries.add(ModItems.ROASTED_SAVORSHROOM);
                         entries.add(ModItems.ROASTED_SAVORSHROOM_CHUNKS);
