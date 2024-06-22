@@ -68,23 +68,6 @@ public class ModBlocks {
 
 
 
-    public static final Block LIGNUM_VITAE_PLANKS = registerBlock("lignum_vitae_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME)));
-    public static final Block LIGNUM_VITAE_STAIRS = registerBlock("lignum_vitae_stairs",
-            new StairsBlock(ModBlocks.LIGNUM_VITAE_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME)));
-    public static final Block LIGNUM_VITAE_SLAB = registerBlock("lignum_vitae_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME)));
-    public static final Block LIGNUM_VITAE_FENCE = registerBlock("lignum_vitae_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME)));
-    public static final Block LIGNUM_VITAE_FENCE_GATE = registerBlock("lignum_vitae_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME), ModWoodTypes.LIGNUM_VITAE));
-    public static final Block LIGNUM_VITAE_PRESSURE_PLATE = registerBlock("lignum_vitae_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME), ModBlockSetTypes.LIGNUM_VITAE));
-    public static final Block LIGNUM_VITAE_BUTTON = registerBlock("lignum_vitae_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_LIME), ModBlockSetTypes.LIGNUM_VITAE, 15, true));
-
-
-
     public static final Block BOULDERBARK_LOG = registerBlock("boulderbark_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).requiresTool().resistance(50000f).mapColor(MapColor.BLACK)));
     public static final Block BOULDERBARK_WOOD = registerBlock("boulderbark_wood",
@@ -164,40 +147,6 @@ public class ModBlocks {
 
 
 
-    public static final Block SPLITPINE_PLANKS = registerBlock("splitpine_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block SPLITPINE_STAIRS = registerBlock("splitpine_stairs",
-            new StairsBlock(ModBlocks.SPLITPINE_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block SPLITPINE_SLAB = registerBlock("splitpine_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block SPLITPINE_FENCE = registerBlock("splitpine_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block SPLITPINE_FENCE_GATE = registerBlock("splitpine_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.LIGHT_BLUE), ModWoodTypes.SPLITPINE));
-    public static final Block SPLITPINE_PRESSURE_PLATE = registerBlock("splitpine_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.LIGHT_BLUE), ModBlockSetTypes.SPLITPINE));
-    public static final Block SPLITPINE_BUTTON = registerBlock("splitpine_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.LIGHT_BLUE), ModBlockSetTypes.SPLITPINE, 15, true));
-
-
-
-    public static final Block BLUE_MEANIE_PLANKS = registerBlock("blue_meanie_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BLUE)));
-    public static final Block BLUE_MEANIE_STAIRS = registerBlock("blue_meanie_stairs",
-            new StairsBlock(ModBlocks.BLUE_MEANIE_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BLUE)));
-    public static final Block BLUE_MEANIE_SLAB = registerBlock("blue_meanie_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BLUE)));
-    public static final Block BLUE_MEANIE_FENCE = registerBlock("blue_meanie_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BLUE)));
-    public static final Block BLUE_MEANIE_FENCE_GATE = registerBlock("blue_meanie_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BLUE), ModWoodTypes.BLUE_MEANIE));
-    public static final Block BLUE_MEANIE_PRESSURE_PLATE = registerBlock("blue_meanie_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BLUE), ModBlockSetTypes.BLUE_MEANIE));
-    public static final Block BLUE_MEANIE_BUTTON = registerBlock("blue_meanie_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BLUE), ModBlockSetTypes.BLUE_MEANIE, 15, true));
-
-
-
     public static final Block DEVILS_TOOTH_PLANKS = registerBlock("devils_tooth_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.OFF_WHITE)));
     public static final Block DEVILS_TOOTH_STAIRS = registerBlock("devils_tooth_stairs",
@@ -227,7 +176,6 @@ public class ModBlocks {
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BRIGHT_RED), ModBlockSetTypes.DEVILS_TOOTH));
     public static final Block STAINED_DEVILS_TOOTH_BUTTON = registerBlock("stained_devils_tooth_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.BRIGHT_RED), ModBlockSetTypes.DEVILS_TOOTH, 15, true));
-
 
 
 
@@ -274,23 +222,6 @@ public class ModBlocks {
             new ModHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN).mapColor(MapColor.LIME), ModWoodTypes.SAVORSHROOM));
     public static final Block SAVORSHROOM_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier(WoodNFungus.MOD_ID, "savorshroom_wall_hanging_sign"),
             new ModWallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN).mapColor(MapColor.LIME).dropsLike(ModBlocks.SAVORSHROOM_HANGING_SIGN), ModWoodTypes.SAVORSHROOM));
-
-
-
-    public static final Block WITCHSTOOL_PLANKS = registerBlock("witchstool_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.PALE_PURPLE)));
-    public static final Block WITCHSTOOL_STAIRS = registerBlock("witchstool_stairs",
-            new StairsBlock(ModBlocks.BLUE_MEANIE_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.PALE_PURPLE)));
-    public static final Block WITCHSTOOL_SLAB = registerBlock("witchstool_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.PALE_PURPLE)));
-    public static final Block WITCHSTOOL_FENCE = registerBlock("witchstool_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.PALE_PURPLE)));
-    public static final Block WITCHSTOOL_FENCE_GATE = registerBlock("witchstool_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.PALE_PURPLE), ModWoodTypes.WITCHSTOOL));
-    public static final Block WITCHSTOOL_PRESSURE_PLATE = registerBlock("witchstool_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.PALE_PURPLE), ModBlockSetTypes.WITCHSTOOL));
-    public static final Block WITCHSTOOL_BUTTON = registerBlock("witchstool_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_PLANKS).mapColor(MapColor.PALE_PURPLE), ModBlockSetTypes.WITCHSTOOL, 15, true));
 
 
 

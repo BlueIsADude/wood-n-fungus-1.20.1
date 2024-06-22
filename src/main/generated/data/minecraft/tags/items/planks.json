@@ -2,13 +2,9 @@
   "replace": false,
   "values": [
     "woodnfungus:palm_planks",
-    "woodnfungus:lignum_vitae_planks",
     "woodnfungus:boulderbark_planks",
-    "woodnfungus:splitpine_planks",
-    "woodnfungus:blue_meanie_planks",
     "woodnfungus:devils_tooth_planks",
     "woodnfungus:stained_devils_tooth_planks",
-    "woodnfungus:savorshroom_planks",
-    "woodnfungus:witchstool_planks"
+    "woodnfungus:savorshroom_planks"
   ]
 }

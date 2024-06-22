@@ -23,14 +23,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.PALM_PLANKS.asItem())
-                .add(ModBlocks.LIGNUM_VITAE_PLANKS.asItem())
                 .add(ModBlocks.BOULDERBARK_PLANKS.asItem())
-                .add(ModBlocks.SPLITPINE_PLANKS.asItem())
-                .add(ModBlocks.BLUE_MEANIE_PLANKS.asItem())
                 .add(ModBlocks.DEVILS_TOOTH_PLANKS.asItem())
                 .add(ModBlocks.STAINED_DEVILS_TOOTH_PLANKS.asItem())
-                .add(ModBlocks.SAVORSHROOM_PLANKS.asItem())
-                .add(ModBlocks.WITCHSTOOL_PLANKS.asItem());
+                .add(ModBlocks.SAVORSHROOM_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
                 .addTag(ModTags.Items.PALM_LOGS)

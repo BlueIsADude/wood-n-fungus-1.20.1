@@ -24,8 +24,10 @@ public class ModTags {
                 createTag("palm_logs");
         public static final TagKey<Item> BOULDERBARK_LOGS =
                 createTag("boulderbark_logs");
+        public static final TagKey<Item> DEVILS_TOOTH_STEMS =
+                createTag("devils_tooth_stems");
         public static final TagKey<Item> SAVORSHROOM_STEMS =
-                createTag("savorshroom_logs");
+                createTag("savorshroom_stems");
         public static final TagKey<Item> SAVORSHROOM_CHUNK_COOKABLE =
                 createTag("savorshroom_chunk_cookable");
         public static final TagKey<Item> SAVORSHROOM_SCRAP_COOKABLE =

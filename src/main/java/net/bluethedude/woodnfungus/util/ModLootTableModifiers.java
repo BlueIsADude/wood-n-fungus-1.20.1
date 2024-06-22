@@ -15,7 +15,6 @@ public class ModLootTableModifiers {
 
     private static final Identifier BONUS_CHEST_ID = new Identifier("minecraft", "chests/spawn_bonus_chest");
     private static final Identifier DESERT_PYRAMID_ID = new Identifier("minecraft", "chests/desert_pyramid");
-    private static final Identifier ICE_BOX_ID = new Identifier("minecraft", "chests/ancient_city_ice_box");
     private static final Identifier MINESHAFT_ID = new Identifier("minecraft", "chests/abandoned_mineshaft");
     private static final Identifier SHIPWRECK_SUPPLY_ID = new Identifier("minecraft", "chests/shipwreck_supply");
     private static final Identifier WOODLAND_MANSION_ID = new Identifier("minecraft", "chests/woodland_mansion");
@@ -51,26 +50,6 @@ public class ModLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(0.3f))
                         .with(ItemEntry.builder(ModItems.AMBER_FUNGUS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
-
-                tableBuilder.pool(poolBuilder.build());
-            }
-
-
-            if (ICE_BOX_ID.equals(id)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.2f))
-                        .with(ItemEntry.builder(ModItems.PLANT_VIAL))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)).build());
-
-                tableBuilder.pool(poolBuilder.build());
-            }
-            if (ICE_BOX_ID.equals(id)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.2f))
-                        .with(ItemEntry.builder(ModItems.SPORE_VIAL))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }

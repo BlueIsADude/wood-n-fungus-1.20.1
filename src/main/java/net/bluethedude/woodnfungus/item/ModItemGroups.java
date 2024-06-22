@@ -19,8 +19,6 @@ public class ModItemGroups {
 
                         entries.add(ModItems.PETRIFIED_SEEDS);
                         entries.add(ModItems.AMBER_FUNGUS);
-                        entries.add(ModItems.PLANT_VIAL);
-                        entries.add(ModItems.SPORE_VIAL);
 
                         entries.add(ModBlocks.COCONUT);
                         entries.add(ModItems.COCONUT_MILK);
@@ -47,14 +45,6 @@ public class ModItemGroups {
                         entries.add(ModItems.PALM_HANGING_SIGN);
                         entries.add(ModItems.PALM_BOAT);
                         entries.add(ModItems.PALM_CHEST_BOAT);
-
-                        entries.add(ModBlocks.LIGNUM_VITAE_PLANKS);
-                        entries.add(ModBlocks.LIGNUM_VITAE_STAIRS);
-                        entries.add(ModBlocks.LIGNUM_VITAE_SLAB);
-                        entries.add(ModBlocks.LIGNUM_VITAE_FENCE);
-                        entries.add(ModBlocks.LIGNUM_VITAE_FENCE_GATE);
-                        entries.add(ModBlocks.LIGNUM_VITAE_BUTTON);
-                        entries.add(ModBlocks.LIGNUM_VITAE_PRESSURE_PLATE);
 
                         entries.add(ModBlocks.BOULDERBARK_SAPLING);
                         entries.add(ModBlocks.BOULDERBARK_LEAVES);
@@ -93,22 +83,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MAGENTA_BOULDERBARK_LEAVES);
                         entries.add(ModBlocks.PINK_BOULDERBARK_LEAVES);
 
-                        entries.add(ModBlocks.SPLITPINE_PLANKS);
-                        entries.add(ModBlocks.SPLITPINE_STAIRS);
-                        entries.add(ModBlocks.SPLITPINE_SLAB);
-                        entries.add(ModBlocks.SPLITPINE_FENCE);
-                        entries.add(ModBlocks.SPLITPINE_FENCE_GATE);
-                        entries.add(ModBlocks.SPLITPINE_BUTTON);
-                        entries.add(ModBlocks.SPLITPINE_PRESSURE_PLATE);
-
-                        entries.add(ModBlocks.BLUE_MEANIE_PLANKS);
-                        entries.add(ModBlocks.BLUE_MEANIE_STAIRS);
-                        entries.add(ModBlocks.BLUE_MEANIE_SLAB);
-                        entries.add(ModBlocks.BLUE_MEANIE_FENCE);
-                        entries.add(ModBlocks.BLUE_MEANIE_FENCE_GATE);
-                        entries.add(ModBlocks.BLUE_MEANIE_BUTTON);
-                        entries.add(ModBlocks.BLUE_MEANIE_PRESSURE_PLATE);
-
                         entries.add(ModBlocks.DEVILS_TOOTH_PLANKS);
                         entries.add(ModBlocks.DEVILS_TOOTH_STAIRS);
                         entries.add(ModBlocks.DEVILS_TOOTH_SLAB);
@@ -145,14 +119,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SAVORSHROOM_TRAPDOOR);
                         entries.add(ModItems.SAVORSHROOM_SIGN);
                         entries.add(ModItems.SAVORSHROOM_HANGING_SIGN);
-
-                        entries.add(ModBlocks.WITCHSTOOL_PLANKS);
-                        entries.add(ModBlocks.WITCHSTOOL_STAIRS);
-                        entries.add(ModBlocks.WITCHSTOOL_SLAB);
-                        entries.add(ModBlocks.WITCHSTOOL_FENCE);
-                        entries.add(ModBlocks.WITCHSTOOL_FENCE_GATE);
-                        entries.add(ModBlocks.WITCHSTOOL_BUTTON);
-                        entries.add(ModBlocks.WITCHSTOOL_PRESSURE_PLATE);
 
                         entries.add(ModItems.MUSHER_SPAWN_EGG);
 

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/button_pressed",
-  "textures": {
-    "texture": "woodnfungus:block/blue_meanie_planks"
-  }
-}

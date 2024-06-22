@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "woodnfungus:block/splitpine_planks",
-    "side": "woodnfungus:block/splitpine_planks",
-    "top": "woodnfungus:block/splitpine_planks"
-  }
-}

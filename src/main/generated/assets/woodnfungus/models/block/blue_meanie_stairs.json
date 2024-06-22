@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "woodnfungus:block/blue_meanie_planks",
-    "side": "woodnfungus:block/blue_meanie_planks",
-    "top": "woodnfungus:block/blue_meanie_planks"
-  }
-}

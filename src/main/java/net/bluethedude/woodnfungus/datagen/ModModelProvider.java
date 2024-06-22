@@ -41,16 +41,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(ModBlocks.PALM_PLANKS, ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN);
 
 
-        BlockStateModelGenerator.BlockTexturePool lignumVitaePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGNUM_VITAE_PLANKS);
-
-        lignumVitaePool.stairs(ModBlocks.LIGNUM_VITAE_STAIRS);
-        lignumVitaePool.slab(ModBlocks.LIGNUM_VITAE_SLAB);
-        lignumVitaePool.fence(ModBlocks.LIGNUM_VITAE_FENCE);
-        lignumVitaePool.fenceGate(ModBlocks.LIGNUM_VITAE_FENCE_GATE);
-        lignumVitaePool.button(ModBlocks.LIGNUM_VITAE_BUTTON);
-        lignumVitaePool.pressurePlate(ModBlocks.LIGNUM_VITAE_PRESSURE_PLATE);
-
-
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.BOULDERBARK_LOG).log(ModBlocks.BOULDERBARK_LOG).wood(ModBlocks.BOULDERBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BOULDERBARK_LOG).log(ModBlocks.STRIPPED_BOULDERBARK_LOG).wood(ModBlocks.STRIPPED_BOULDERBARK_WOOD);
@@ -85,26 +75,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURPLE_BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGENTA_BOULDERBARK_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_BOULDERBARK_LEAVES);
-
-
-        BlockStateModelGenerator.BlockTexturePool splitpinePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SPLITPINE_PLANKS);
-
-        splitpinePool.stairs(ModBlocks.SPLITPINE_STAIRS);
-        splitpinePool.slab(ModBlocks.SPLITPINE_SLAB);
-        splitpinePool.fence(ModBlocks.SPLITPINE_FENCE);
-        splitpinePool.fenceGate(ModBlocks.SPLITPINE_FENCE_GATE);
-        splitpinePool.button(ModBlocks.SPLITPINE_BUTTON);
-        splitpinePool.pressurePlate(ModBlocks.SPLITPINE_PRESSURE_PLATE);
-
-
-        BlockStateModelGenerator.BlockTexturePool blueMeaniePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUE_MEANIE_PLANKS);
-
-        blueMeaniePool.stairs(ModBlocks.BLUE_MEANIE_STAIRS);
-        blueMeaniePool.slab(ModBlocks.BLUE_MEANIE_SLAB);
-        blueMeaniePool.fence(ModBlocks.BLUE_MEANIE_FENCE);
-        blueMeaniePool.fenceGate(ModBlocks.BLUE_MEANIE_FENCE_GATE);
-        blueMeaniePool.button(ModBlocks.BLUE_MEANIE_BUTTON);
-        blueMeaniePool.pressurePlate(ModBlocks.BLUE_MEANIE_PRESSURE_PLATE);
 
 
         BlockStateModelGenerator.BlockTexturePool devilsToothPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEVILS_TOOTH_PLANKS);
@@ -145,16 +115,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(ModBlocks.SAVORSHROOM_PLANKS, ModBlocks.SAVORSHROOM_SIGN, ModBlocks.SAVORSHROOM_WALL_SIGN);
 
 
-        BlockStateModelGenerator.BlockTexturePool witchstoolPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WITCHSTOOL_PLANKS);
-
-        witchstoolPool.stairs(ModBlocks.WITCHSTOOL_STAIRS);
-        witchstoolPool.slab(ModBlocks.WITCHSTOOL_SLAB);
-        witchstoolPool.fence(ModBlocks.WITCHSTOOL_FENCE);
-        witchstoolPool.fenceGate(ModBlocks.WITCHSTOOL_FENCE_GATE);
-        witchstoolPool.button(ModBlocks.WITCHSTOOL_BUTTON);
-        witchstoolPool.pressurePlate(ModBlocks.WITCHSTOOL_PRESSURE_PLATE);
-
-
     }
 
     @Override
@@ -162,8 +122,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.PETRIFIED_SEEDS, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMBER_FUNGUS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.PLANT_VIAL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SPORE_VIAL, Models.GENERATED);
 
         itemModelGenerator.register(ModBlocks.COCONUT.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT_MILK, Models.GENERATED);

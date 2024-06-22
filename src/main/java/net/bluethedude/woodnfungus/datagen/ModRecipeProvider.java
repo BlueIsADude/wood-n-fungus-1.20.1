@@ -25,17 +25,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BOULDERBARK_SAPLING)
-                .pattern(" S ")
-                .pattern("RVR")
-                .pattern(" O ")
-                .input('S', Items.ECHO_SHARD)
-                .input('R', ItemTags.STONE_CRAFTING_MATERIALS)
-                .input('V', ModItems.PLANT_VIAL)
-                .input('O', Blocks.OAK_SAPLING)
-                .criterion(hasItem(ModItems.PLANT_VIAL), conditionsFromItem(ModItems.PLANT_VIAL))
-                .offerTo(exporter);
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, Blocks.CAKE)
                 .pattern("MMM")
                 .pattern("CEC")

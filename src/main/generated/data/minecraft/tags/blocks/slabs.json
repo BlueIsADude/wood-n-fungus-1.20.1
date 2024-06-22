@@ -2,13 +2,9 @@
   "replace": false,
   "values": [
     "woodnfungus:palm_slab",
-    "woodnfungus:lignum_vitae_slab",
     "woodnfungus:boulderbark_slab",
-    "woodnfungus:splitpine_slab",
-    "woodnfungus:blue_meanie_slab",
     "woodnfungus:devils_tooth_slab",
     "woodnfungus:stained_devils_tooth_slab",
-    "woodnfungus:savorshroom_slab",
-    "woodnfungus:witchstool_slab"
+    "woodnfungus:savorshroom_slab"
   ]
 }

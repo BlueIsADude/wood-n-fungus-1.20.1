@@ -31,14 +31,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addPottedPlantDrops(ModBlocks.POTTED_PALM_SAPLING);
         addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, SAPLING_DROP_CHANCE));
 
-        addDrop(ModBlocks.LIGNUM_VITAE_PLANKS);
-        addDrop(ModBlocks.LIGNUM_VITAE_STAIRS);
-        addDrop(ModBlocks.LIGNUM_VITAE_SLAB, slabDrops(ModBlocks.LIGNUM_VITAE_SLAB));
-        addDrop(ModBlocks.LIGNUM_VITAE_FENCE);
-        addDrop(ModBlocks.LIGNUM_VITAE_FENCE_GATE);
-        addDrop(ModBlocks.LIGNUM_VITAE_BUTTON);
-        addDrop(ModBlocks.LIGNUM_VITAE_PRESSURE_PLATE);
-
         addDrop(ModBlocks.BOULDERBARK_LOG);
         addDrop(ModBlocks.STRIPPED_BOULDERBARK_LOG);
         addDrop(ModBlocks.BOULDERBARK_WOOD);
@@ -71,22 +63,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAGENTA_BOULDERBARK_LEAVES);
         addDrop(ModBlocks.PINK_BOULDERBARK_LEAVES);
 
-        addDrop(ModBlocks.SPLITPINE_PLANKS);
-        addDrop(ModBlocks.SPLITPINE_STAIRS);
-        addDrop(ModBlocks.SPLITPINE_SLAB, slabDrops(ModBlocks.SPLITPINE_SLAB));
-        addDrop(ModBlocks.SPLITPINE_FENCE);
-        addDrop(ModBlocks.SPLITPINE_FENCE_GATE);
-        addDrop(ModBlocks.SPLITPINE_BUTTON);
-        addDrop(ModBlocks.SPLITPINE_PRESSURE_PLATE);
-
-        addDrop(ModBlocks.BLUE_MEANIE_PLANKS);
-        addDrop(ModBlocks.BLUE_MEANIE_STAIRS);
-        addDrop(ModBlocks.BLUE_MEANIE_SLAB, slabDrops(ModBlocks.BLUE_MEANIE_SLAB));
-        addDrop(ModBlocks.BLUE_MEANIE_FENCE);
-        addDrop(ModBlocks.BLUE_MEANIE_FENCE_GATE);
-        addDrop(ModBlocks.BLUE_MEANIE_BUTTON);
-        addDrop(ModBlocks.BLUE_MEANIE_PRESSURE_PLATE);
-
         addDrop(ModBlocks.DEVILS_TOOTH_PLANKS);
         addDrop(ModBlocks.DEVILS_TOOTH_STAIRS);
         addDrop(ModBlocks.DEVILS_TOOTH_SLAB, slabDrops(ModBlocks.DEVILS_TOOTH_SLAB));
@@ -118,13 +94,5 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SAVORSHROOM_TRAPDOOR);
         addDrop(ModBlocks.SAVORSHROOM);
         addPottedPlantDrops(ModBlocks.POTTED_SAVORSHROOM);
-
-        addDrop(ModBlocks.WITCHSTOOL_PLANKS);
-        addDrop(ModBlocks.WITCHSTOOL_STAIRS);
-        addDrop(ModBlocks.WITCHSTOOL_SLAB, slabDrops(ModBlocks.WITCHSTOOL_SLAB));
-        addDrop(ModBlocks.WITCHSTOOL_FENCE);
-        addDrop(ModBlocks.WITCHSTOOL_FENCE_GATE);
-        addDrop(ModBlocks.WITCHSTOOL_BUTTON);
-        addDrop(ModBlocks.WITCHSTOOL_PRESSURE_PLATE);
     }
 }
